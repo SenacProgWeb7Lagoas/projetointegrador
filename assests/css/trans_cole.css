@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.dflex {
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+.brilho:hover {
+    filter: brightness(110%);
+}
+
+body {
+    background-color: #c4c4c4;
+}
+header {
+    height: 100px;
+    background-color: #322a54;
+    
+}
+
+main {    
+    height: calc(100vh - 210px);
+}
+.dflex {
+    display: flex;
+}
+.container {
+    width: 80%;
+    height: 50px;
+    margin: auto;
+}
+
+.topoSelect {
+    margin-top: 10px;
+    background-color: white;
+    justify-content: space-between;
+}
+.topoSelect div{
+    padding: 10px 20px;
+    justify-content: space-between;
+}
+.abasSelecione {
+    width: 93%;
+    margin: auto;
+}
+.abasSelecione a{
+    text-decoration: none;
+}
+.abasSelecione a div {
+    width: 180px;
+    margin: 0px;
+    text-align: center;    
+   
+}
+.abasSelecione a div h2{
+    font-size: 13px;
+    color: white;   
+    font-weight: 600;
+    
+}
+.eletricidade {
+    background-color: #a6ce39;
+}
+.gas {
+    background-color: #0f7491;
+}
+.transpIndividual {
+    background-color: #ed217c;
+}
+.transpAereo {
+    background-color: #f15a29;
+}
+.blocoPerguntas {
+    height: calc(100vh - 240px) ;
+    background-color: white;
+}
+.resultado {
+    background-color: #753874;
+}
+.perguntas {
+    margin-top: 10px;
+}
+
+footer {
+    height: 100px;
+    background-color: #322a54;
+}
+@media (max-width: 1260px) {
+    .abasSelecione a {
+        margin-bottom: 10px;
+    }
+    .dflex {
+        margin: 20px;
+    }
+}
+@media (max-width: 360px) {
+    .abasSelecione {
+        margin: auto;
+        margin-left: 35px;
+    }
+    
+    
+}
