@@ -77,7 +77,7 @@ main {
     background-color: #f15a29;
 }
 .blocoPerguntas {
-    height: calc(100vh - 240px) ;
+    height: calc(100vh - 240px);
     background-color: white;
     
 }
@@ -110,6 +110,8 @@ footer {
     height: 100px;
     background-color: #322a54;
 }
+
+
 @media (max-width: 1260px) {
     .abasSelecione a {
         margin-bottom: 10px;
@@ -122,20 +124,40 @@ footer {
         background-color: white;
     }
     main {    
-        height: auto;
-        position: relative;
+        height: 1200px;
     }
     footer {
-        position: absolute;
+        position: relative;
         bottom: 0;
         width:100%;
     }
 }
+
+
+
+
+
 @media (max-width: 360px) {
+    
     .abasSelecione {
         margin: auto;
-        margin-left: 35px;
+        padding-right: 500px;
+    }  
+    main {    
+        height: 1600px;
     }
-   
+    .container {
+        width: 100%;
+        margin: auto;
+    }
+    .topoSelect div{
+        padding: 10px 20px;
+        justify-content: space-between;
+    }
+    .perguntas div {
+       
+        display: block;
+        
+    }
     
 }
