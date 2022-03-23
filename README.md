@@ -19,3 +19,14 @@ As páginas na versão desktop, seguirão o seguinte padrão
 
 * Roxo do botão Resultado
 <label style="background-color: #753874"> #753874</label>
+
+## Modo Escuro
+
+<img src="./documentacao/imagens/layout-desktop-modo-escuro.PNG">
+
+
+### cores do modo escuro
+
+* Fundo do site <label style="background-color: #3E3E3E"> #3E3E3E</label>
+
+* Fundo do cabeçalho <label style="background-color: #252625"> #252625</label>
