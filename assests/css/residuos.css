@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,300;1,400&display=swap'); 
+
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700& family=Muli:ital,wght@0,200;0,300;0,400;0,500;1.200;1.300;1400&display=swap');
+
+:root {
+    /* fontes */
+     --font1: 'Roboto', sans-serif;
+     --font2: "Baloo Da 2", serif;
+     --padrao: Arial, Helvetica, sans-serif;
+
+    /* cores modo claro*/
+     --cinza: #c4c4c4;
+     --branco: #ffffff;
+
+     /* cores botao */
+     --azulescuro: #322a54;
+     --eletricidade: #a6ce39;
+     --gas: #0f7491;
+     --transportecoletivo: #ed217c;
+     --transporteaereo: #f15a29;
+     --roxoresultado: #753874;
+
+     /* cores modo escuro */
+     --fundosite: #3E3E3E;
+     --fundocabecalho: #252625;
+}
