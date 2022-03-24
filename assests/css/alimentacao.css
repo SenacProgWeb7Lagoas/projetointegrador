@@ -1,0 +1,109 @@
+body{
+    background-color: #c4c4c4;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    background-color: #322a54;
+    padding: 30px 30px;
+    font-weight: bold;
+}
+main{
+    margin-top: 15px;
+    margin-left: 120px;
+    margin-right: 120px;
+}
+.cabecalho{
+    background-color: #ffffff;
+    margin-bottom: 20px;
+}
+h1{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+p{
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+select{
+    font-size: 20px;
+}
+
+.perguntas{
+    background-color: #ffffff;
+    text-align: center;
+}
+.button1{
+    background-color: #a6ce39;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.button2{
+    background-color: #0f7491;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.button3{
+    background-color: #ed217c;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.button4{
+    background-color: #f15a29;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.button5{
+    background-color: #753874;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.cabecalho{
+    background-color: #0f7491;
+    padding: 10px;
+}
+/*
+Estava pensando em deixar a cor do cabeçalho de
+acordo com cada sessão
+*/
+li{
+    display: inline-block;
+}
+ul{
+    text-align: center;
+}
