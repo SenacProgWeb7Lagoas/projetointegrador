@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br"> <!--Estava "en" alterei para pt-br que é Brasil-->
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,19 +13,32 @@
             <main>
 
                 <header>
+                    <!--O cabeçalho deve ser feito aqui-->
+                    <!--Para o Cabeçalho ao invés de usar a tag h3 usar ul depois li e depois a(que seria o link)Quando o usuário clica nele irá levar para outra pagina, por exemplo:
+                    <ul>
+                        <li>
+                            <a href="#">Moradia</a>
+                        </li>
+                        <li>
+                            <a href="#">Alimentação</a>
+                        </li>
+                    </ul>
+                    -->
                 </header>
 
-                <section align="center"><font face="Arial" <!--Corpo do site-->
+                <section align="center"><font face="Arial"></font> <!--Corpo do site-->
+                    <!--Toda esta estilização de align = center, font face arial é feita no arquivo css e não diretamente no html-->
                     <div class="itens1">
                         <section>
+                            <!--Mudando para o header, aí através do arquivo css usando as classes vamos estilizar o cabeçalho usando display flex para alinhar um do lado do outro.-->
                             <h3 class="verde">Moradia</h3>
                             <h3 class="azul">Alimentação</h3>
-                            <h3 clas="rosa">Transporte</h3> <!-- Tô com dificuldade pra manter esses itens na mesma linha-->
+                            <h3 clas="rosa">Transporte</h3> <!-- Tô com dificuldade pra manter esses itens na mesma linha **** Vamos usar o display flex e outras propriedades****-->
                             <h3 class="laranja">Consumo</h3>
                             <h3 class="roxo">Resíduos</h3>
                         </section>
                     </div>
-                    <div class="perguntas"> <!--Perguntas-->
+                    <div class="perguntas"> <!--Perguntas --- apartir desta parte será main mesmo-->
                         <h1>
                             Alimentação
                         </h1>
