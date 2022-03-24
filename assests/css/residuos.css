@@ -25,3 +25,8 @@
      --fundosite: #3E3E3E;
      --fundocabecalho: #252625;
 }
+
+form label{
+display: flex;
+
+}

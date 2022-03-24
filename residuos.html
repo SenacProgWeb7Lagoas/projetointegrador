@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt=br">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +8,98 @@
     <link rel="stylesheet" href="./assests/css/residuos.css">
 </head>
 <body>
-    <p>ola mundo</p>
-    <h2>oi</h2>
+    <header>
+        <section>
+
+        </section>
+
+        <section>
+            <h1>Calculadora pegada Ecologica</h1>
+        </section>
+
+        <nav>
+            <ul>
+                <li><a href="#">Moradia</a></li>
+                <li><a href="#">Alimentação</a></li>
+                <li><a href="#">Transporte</a></li>
+                <li><a href="#">Consumo</a></li>
+                <li><a href="#">Residuos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- fim do cabeçalho -->
+
+    <main>
+        <h2>Resíduos</h2>
+
+        <section>
+            <form class="modelo1">
+                <h4>Procuras reduzir a produção de resíduos? (por exemplo: evitar produtos com muita embalagem, reutilizar o papel, evitar os sacos de plastico, etc...)</h4>
+                <label>
+                    <input type="radio" name="reduzir-produção-residuos" value="Sempre"> Sempre
+                </label>
+
+                <label>
+                    <input type="radio" name="reduzir-produção-residuos" value="asvezes"> As vezes
+                </label>
+                
+                <label>
+                    <input type="radio" name="reduzir-produção-residuos" value="raramente"> Raramente
+                </label>
+
+                <label>
+                    <input type="radio" name="reduzir-produção-residuos" value="nunca"> Nunca
+                </label>            
+            </form>
+            <hr>
+        </section>
+        <!-- fim do input modelo 1 -->
+
+        <article class="article">
+            <form class="modelo2">
+                <h4>Pratica compostagem dos residuos orgânicos?</h4>
+                <label>
+                    <input type="checkbox" name="praricas-compostagem" value="Sempre1"> Sempre
+                </label>
+                <label>
+                    <input type="checkbox" name="praricas-compostagem" value="asvezes1"> As vezes
+                 </label>
+                <label>
+                    <input type="checkbox" name="praricas-compostagem" value="raramente1"> Raramente
+                </label>
+                <label>
+                    <input type="checkbox" name="praricas-compostagem" value="nunca1">  Nunca
+                </label>
+            </form>
+            <hr>
+        </article>
+            <!-- fim do input modelo 2 -->
+
+        <article class="article2">
+            <h4>Costuma retirar o lixo e coloca-lo na lixeira para ser reciclado?</h4>
+            <select name="oi" id=""> escolha
+                <option value="sempre2">Sempre</option>
+                <option value="asvezes2">As vezes</option>
+                <option value="raramente2">Raramente</option>
+                <option value="nunca2">Nunca</option>
+            </select>
+            <hr>
+        </article>
+        <!-- fim do input modelo 3 -->
+
+        <aside>
+            <h4>Quantos sacos de sacos de lixos é produzidor por semana?</h4>
+            <input type="radio">
+            <label>1</label>
+            <input type="radio">
+            <label>2</label>
+            <input type="radio">
+            <label>3</label>
+            <input type="radio">
+            <label>4 ou mais</label>
+        </aside>
+        <!-- fim do input modelo 3 -->
+    </main>
+    
 </body>
 </html>
