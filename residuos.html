@@ -36,11 +36,13 @@
             <form class="modelo1">
                 <h4>Procuras reduzir a produção de resíduos? (por exemplo: evitar produtos com muita embalagem, reutilizar o papel, evitar os sacos de plastico, etc...)</h4>
                 <label>
-                    <input type="radio" name="reduzir-produção-residuos" value="Sempre"> Sempre
+                    Sempre <!--modo correto de fazer-->
+                    <input type="radio" name="reduzir-produção-residuos" value="Sempre">
                 </label>
 
                 <label>
-                    <input type="radio" name="reduzir-produção-residuos" value="asvezes"> As vezes
+                    As vezes <!--modo correto de fazer-->
+                    <input type="radio" name="reduzir-produção-residuos" value="asvezes"> 
                 </label>
                 
                 <label>
@@ -59,16 +61,17 @@
             <form class="modelo2">
                 <h4>Pratica compostagem dos residuos orgânicos?</h4>
                 <label>
-                    <input type="checkbox" name="praricas-compostagem" value="Sempre1"> Sempre
+                    Sempre
+                    <input type="text" name="praricas-compostagem" value="Sempre1"> 
                 </label>
                 <label>
-                    <input type="checkbox" name="praricas-compostagem" value="asvezes1"> As vezes
+                    <input type="text" name="praricas-compostagem" value="asvezes1"> As vezes
                  </label>
                 <label>
-                    <input type="checkbox" name="praricas-compostagem" value="raramente1"> Raramente
+                    <input type="text" name="praricas-compostagem" value="raramente1"> Raramente
                 </label>
                 <label>
-                    <input type="checkbox" name="praricas-compostagem" value="nunca1">  Nunca
+                    <input type="text" name="praricas-compostagem" value="nunca1">  Nunca
                 </label>
             </form>
             <hr>
