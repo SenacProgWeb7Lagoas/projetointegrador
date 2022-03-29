@@ -13,17 +13,13 @@
 
         </section>
 
-        <section>
-            <h1>Calculadora pegada Ecologica</h1>
-        </section>
-
         <nav>
             <ul>
-                <li><a href="#">Moradia</a></li>
-                <li><a href="#">Alimentação</a></li>
-                <li><a href="#">Transporte</a></li>
-                <li><a href="#">Consumo</a></li>
-                <li><a href="#">Residuos</a></li>
+                <li class="botao-moradia"><a href="#">Moradia</a></li>
+                <li class="botao-alimentacao"><a href="#">Alimentação</a></li>
+                <li class="botao-transporte"><a href="#">Transporte</a></li>
+                <li class="botao-consumo"><a href="#">Consumo</a></li>
+                <li class="botao-residuos"><a href="#">Residuos</a></li>
             </ul>
         </nav>
     </header>
@@ -33,24 +29,27 @@
         <h2>Resíduos</h2>
 
         <section>
+            <h4>Procuras reduzir a produção de resíduos? (por exemplo: evitar produtos com muita embalagem, reutilizar o papel, evitar os sacos de plastico, etc...)</h4>
+
             <form class="modelo1">
-                <h4>Procuras reduzir a produção de resíduos? (por exemplo: evitar produtos com muita embalagem, reutilizar o papel, evitar os sacos de plastico, etc...)</h4>
-                <label>
+                <label for="sempre1">
                     Sempre <!--modo correto de fazer-->
-                    <input type="radio" name="reduzir-produção-residuos" value="Sempre">
+                    <input type="radio" id="sempre1" name="reduzir-produção-residuos" value="Sempre">
                 </label>
 
-                <label>
+                <label for="as vezes1">
                     As vezes <!--modo correto de fazer-->
-                    <input type="radio" name="reduzir-produção-residuos" value="asvezes"> 
+                    <input type="radio" id="as vezes1" name="reduzir-produção-residuos" value="asvezes"> 
                 </label>
                 
-                <label>
-                    <input type="radio" name="reduzir-produção-residuos" value="raramente"> Raramente
+                <label for="raramente1">
+                    Raramente
+                    <input type="radio" id="raramente1" name="reduzir-produção-residuos" value="raramente"> 
                 </label>
 
-                <label>
-                    <input type="radio" name="reduzir-produção-residuos" value="nunca"> Nunca
+                <label for="nunca1">
+                    Nunca
+                    <input type="radio" id="nuca1" name="reduzir-produção-residuos" value="nunca"> 
                 </label>            
             </form>
             <hr>
@@ -80,6 +79,7 @@
 
         <article class="article2">
             <h4>Costuma retirar o lixo e coloca-lo na lixeira para ser reciclado?</h4>
+
             <select name="oi" id=""> escolha
                 <option value="sempre2">Sempre</option>
                 <option value="asvezes2">As vezes</option>
@@ -91,18 +91,22 @@
         <!-- fim do input modelo 3 -->
 
         <aside>
+            <form class="modelo3"></form>
             <h4>Quantos sacos de sacos de lixos é produzidor por semana?</h4>
-            <input type="radio">
+            <input type="number">
             <label>1</label>
-            <input type="radio">
+            <input type="number">
             <label>2</label>
-            <input type="radio">
+            <input type="number">
             <label>3</label>
-            <input type="radio">
+            <input type="number">
             <label>4 ou mais</label>
         </aside>
         <!-- fim do input modelo 3 -->
     </main>
     
+    <footer>
+        
+    </footer>
 </body>
 </html>

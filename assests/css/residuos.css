@@ -15,18 +15,109 @@
 
      /* cores botao */
      --azulescuro: #322a54;
-     --eletricidade: #a6ce39;
-     --gas: #0f7491;
-     --transportecoletivo: #ed217c;
-     --transporteaereo: #f15a29;
-     --roxoresultado: #753874;
+     --moradia: #a6ce39;
+     --alimentacao: #0f7491;
+     --transporte: #ed217c;
+     --consumo: #f15a29;
+     --residuos: #753874;
 
      /* cores modo escuro */
      --fundosite: #3E3E3E;
      --fundocabecalho: #252625;
 }
 
-form label{
-display: flex;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font1);
+    font-size: 1.1rem;
+}
+
+header section {
+    background-color: var(--azulescuro);
+    width: 100%;
+    height: 100px;
+    margin-bottom: 24px;
+}
+
+header nav {
+    height: 80px;
+    width: 70%;
+    max-width: 1200px;
+    background-color: rgba(255, 0, 0, 0.315);
+    margin: 0 auto;
+}
+
+header nav ul {
+    height: 80px;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    padding:  0;
+}
+
+.botao-moradia {
+    background-color: var(--moradia);
+}
+.botao-alimentacao {
+    background-color: var(--alimentacao);
+}
+.botao-transporte {
+    background-color: var(--transporte);
+}
+.botao-consumo {
+    background-color: var(--consumo);
+}
+.botao-residuos {
+    background-color: var(--residuos);
+}
+
+
+header nav ul li a {
+    text-decoration: none;
+    color: var(--branco);
+    padding: 32px;
+}
+
+main {
+    width: 70%;
+    max-width: 1200px;
+    background-color: rgba(255, 0, 0, 0.308);
+    margin: auto;
+}
+
+h2 { 
+    width: 80%;
+    height: 130px;
+    background-color: var(--residuos);
+    font-family: var(--font2);
+    font-weight: bolder;
+    font-size: 2.5rem;
+    color: white;
+    margin: 20px 30px;
+    padding: 30px;
+}
+
+ h4 {
+    max-width: 900px;
+    margin: 18px 30px;
+}
+
+.modelo1 label {
+    margin: 18px 32px;
+}
+
+.modelo2 {
 
 }
+
+/* footer {
+    background-color: var(--azulescuro);
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+} */
