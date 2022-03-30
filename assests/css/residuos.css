@@ -63,17 +63,19 @@ nav {
 
 header nav ul {
     max-width: 1200px;
-    max-width: 1200px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-top: 17px;
+
 }
 
 header nav ul li {
+    font-size: 1rem;
     list-style-type: none;
     margin: 0 32px;
     padding: 8px 12px;
+    text-align: justify;
 }
 
 header nav ul li a {
@@ -84,15 +86,19 @@ header nav ul li a {
 .botao-moradia {
     background-color: var(--moradia);
 }
+
 .botao-alimentacao {
     background-color: var(--alimentacao);
 }
+
 .botao-transporte {
     background-color: var(--transporte);
 }
+
 .botao-consumo {
     background-color: var(--consumo);
 }
+
 .botao-residuos {
     background-color: var(--residuos);
 }
@@ -100,7 +106,7 @@ header nav ul li a {
 /* fim da estilizção do cabecalho header */
 
 main {
-    height: 700px;
+    height: 740px;
     width: 70%;
     max-width: 1200px;
     background-color: var(--branco);
@@ -159,6 +165,7 @@ h2 {
     height: 1rem;
     margin: 8px 5px;
     border-bottom: 1px dashed var(--corinput); 
+    cursor: pointer;
 }
 
 /* fim do modelo1 */
@@ -185,6 +192,7 @@ h2 {
     width: 1rem;
     height: 1rem;
     margin: 8px 5px;
+    cursor: pointer;
 }
 
 /* fim do modelo2 */
@@ -198,6 +206,7 @@ h2 {
     margin: 18px 32px; 
     padding-bottom: 16px; 
     border-bottom: 1px dashed var(--corinput); 
+    cursor: pointer;
 }
 
 .modelo3 h4 {
@@ -206,14 +215,16 @@ h2 {
 }
 
 .modelo3 select {
-    width: 30%;
+    width: 290px;
     background-color: rgba(0, 0, 0, 0.192);
     font-size: 1.2rem;
     padding: 5px;
     margin-right: 30px;
     border: 0 none;
     outline: 0;
+    cursor: pointer;
 }
+
 
 .modelo3 select:focus-visible {
     border: 1px solid rgba(0, 0, 0, 0.192);
@@ -241,7 +252,7 @@ aside h4 {
 }
 
 .input-text {
-    width: 30%;
+    width: 260px;
     background-color: rgba(0, 0, 0, 0.199);
     font-size: 1.2rem;
     padding: 5px;
@@ -262,11 +273,15 @@ aside h4 {
 
 /* fim do aside */
 
+.btn-submit {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 3rem 12rem;
+}
+
 .btn-envio {
-    position: absolute;
-    top: 800px;
-    left: 970px;
-    width: 13%;
+    min-width: 25%;
     background-color: var(--azulescuro);
     color: var(--branco);
     padding: 10px;
@@ -288,6 +303,225 @@ footer {
 }
 
 footer.dark-mode {
-	background-color: #8d9797;
-	color: var(--fundocabecalho);
+	background-color: var(--fundocabecalho);
+}
+
+
+/* reposinvidae */
+
+@media (max-width: 1240px) {
+    header nav {
+        height: 280px;
+    }
+
+    header nav ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    header nav ul li {
+        margin-bottom: 10px;
+    }
+
+    .botao-moradia {
+        width: 150px;
+        text-align: center;
+    }   
+
+    .botao-alimentacao {
+        width: 150px;
+        text-align: center;
+    }
+
+    .botao-transporte {
+        width: 150px;
+        text-align: center;
+    }
+
+    .botao-consumo {
+        width: 150px;
+        text-align: center;
+    }
+
+    .botao-residuos {
+        width: 150px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 1050px) {
+    main {
+        height: 800px;
+    }
+    
+    .modelo3 {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 20px; 
+        margin-bottom: 20px;
+    }
+
+    .modelo3 select {
+        margin-top: 10px;
+        margin-left: 5px;
+    }
+
+    aside {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .input-text {
+        display: block;
+        margin-left: 14px;
+        margin-top: 10px;
+    }
+
+    .btn-submit {
+        margin-right: 90px;
+    }
+}
+
+@media (max-width: 915px) {
+     main {
+        height: 1000px;
+    }
+
+    h4 {
+        text-align: justify;
+    }
+
+    .modelo1 label{
+        display: flex;
+        flex-direction: row; 
+        flex-wrap: wrap;
+        width: 100%;
+        margin: 10px 10px;
+    }
+
+    .modelo1 input{
+        width: 1rem;
+        height: .7rem;
+        margin: 6px;
+        border-bottom: 1px dashed var(--corinput); 
+        cursor: pointer;
+    }
+
+    .modelo2 label{
+        display: flex;
+        flex-direction: row; 
+        flex-wrap: wrap;
+        width: 100%;
+        margin: 2px 0px;
+    }
+
+    .modelo2 input{
+        width: 1rem;
+        height: .7rem;
+        margin: 6px;
+        border-bottom: 1px dashed var(--corinput); 
+        cursor: pointer;
+    }
+    .modelo3 select {
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 820px) {
+    main {
+        height: 1080px;
+    }
+
+    h4 {
+        font-size: 1rem;
+        line-height: 1.7rem;
+    }
+
+    label {
+        font-size: .9rem;
+    }
+
+    .modelo3 select {
+        width: 70%;
+        font-size: 1rem;
+        cursor: pointer;
+    }
+    
+    .modelo3 select:hover {
+        font-size: 1rem;
+        padding: 5px;
+    }
+
+    .input-text {
+        width: 70%;
+        font-size: 1rem;
+    } 
+
+    .input-text:hover {
+        width: 70%;
+        font-size: 1rem;
+    } 
+
+    .btn-submit {
+        display: flex;
+        justify-content: right;
+        margin: 32px 30px;
+    }
+}
+
+ @media (max-width: 523px) {
+    main {
+        height: 1180px;
+    }
+}  
+
+@media (max-width: 442px) {
+    main {
+        height: 1430px;
+    }
+
+    h2 {
+        height: 80px;
+        font-size: 1.8rem;
+        padding: 15px;
+    }
+
+    h4 {
+        font-size: .9rem;
+        text-align: start;
+    }
+
+    .label-type {
+        font-size: .8rem;
+    }
+
+    .modelo3 select {
+        width: 80%;
+        font-size: .8rem;
+        cursor: pointer;
+    }
+    
+    .modelo3 select:hover {
+        font-size: .8rem;
+        padding: 5px;
+    }
+
+    .input-text {
+        font-size: .9rem;
+        padding: 5px;
+        width: 70%;
+    }
+
+    .input-text:hover {
+        font-size: .8rem;
+        padding: 6px;
+    }
+
+    .btn-submit {
+        display: flex;
+        margin-left: 32px;
+        width: 70%;
+        padding: 3px;
+    }
 }
