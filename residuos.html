@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./assests/css/residuos.css">
 </head>
 <body>
+    <button aria-label="selecionar-modo" id="mode-selector" class="dark-light">Light Mode ON</button>
     <header>
         <section>
         </section>
@@ -28,84 +29,82 @@
         <h2>Resíduos</h2>
 
         <section>
-            <h4>Procuras reduzir a produção de resíduos? (por exemplo: evitar produtos com muita embalagem, reutilizar o papel, evitar os sacos de plastico, etc...)</h4>
-
-            <form class="modelo1">
-                <label for="sempre1">
-                    Sempre <!--modo correto de fazer-->
-                    <input type="radio" id="sempre1" name="reduzir-produção-residuos" value="Sempre">
+            <form action="reduzir-residuos" class="modelo1">
+                <h4>Procuras reduzir a produção de resíduos? (por exemplo: evitar produtos com muita embalagem, reutilizar o papel, evitar os sacos de plastico, etc...)</h4>
+                <label for="sempre1" class="label-type">
+                    Sempre 
+                    <input type="radio" id="reduzir-residuos" name="reduzir-produção-residuos" value="Sempre" checked>
                 </label>
 
-                <label for="as vezes1">
-                    As vezes <!--modo correto de fazer-->
-                    <input type="radio" id="as vezes1" name="reduzir-produção-residuos" value="asvezes"> 
+                <label for="as vezes1" class="label-type"> 
+                    As vezes
+                    <input type="radio" id="reduzir-residuos" name="reduzir-produção-residuos" value="asvezes"> 
                 </label>
                 
-                <label for="raramente1">
+                <label for="raramente1" class="label-type">
                     Raramente
-                    <input type="radio" id="raramente1" name="reduzir-produção-residuos" value="raramente"> 
+                    <input type="radio" id="reduzir-residuos" name="reduzir-produção-residuos" value="raramente"> 
                 </label>
 
-                <label for="nunca1">
+                <label for="nunca1" class="label-type">
                     Nunca
-                    <input type="radio" id="nuca1" name="reduzir-produção-residuos" value="nunca"> 
+                    <input type="radio" id="reduzir-residuos" name="reduzir-produção-residuos" value="nunca"> 
                 </label>            
             </form>
-            <hr>
         </section>
         <!-- fim do input modelo 1 -->
 
         <article class="article">
-            <form class="modelo2">
+            <form action="residuos-organicos" class="modelo2">
                 <h4>Pratica compostagem dos residuos orgânicos?</h4>
                 <label>
                     Sempre
-                    <input type="text" name="praricas-compostagem" value="Sempre1"> 
+                    <input type="radio" id="residuos-organicos" name="praricas-compostagem" value="Sempre1" checked class="label-type"> 
                 </label>
                 <label>
-                    <input type="text" name="praricas-compostagem" value="asvezes1"> As vezes
+                    As vezes
+                    <input type="radio" id="residuos-organicos" name="praricas-compostagem" value="asvezes1" class="label-type"> 
                  </label>
                 <label>
-                    <input type="text" name="praricas-compostagem" value="raramente1"> Raramente
+                    Raramente
+                    <input type="radio" id="residuos-organicos" name="praricas-compostagem" value="raramente1" class="label-type">
                 </label>
                 <label>
-                    <input type="text" name="praricas-compostagem" value="nunca1">  Nunca
+                    Nunca
+                    <input type="radio" id="residuos-organicos" name="praricas-compostagem" value="nunca1" class="label-type">
                 </label>
             </form>
-            <hr>
         </article>
             <!-- fim do input modelo 2 -->
 
         <article class="article2">
-            <h4>Costuma retirar o lixo e coloca-lo na lixeira para ser reciclado?</h4>
-
-            <select name="oi" id=""> escolha
-                <option value="sempre2">Sempre</option>
-                <option value="asvezes2">As vezes</option>
-                <option value="raramente2">Raramente</option>
-                <option value="nunca2">Nunca</option>
-            </select>
-            <hr>
+            <form action="retiralixo" class="modelo3" aria>
+                <h4>Costuma retirar o lixo e coloca-lo na lixeira para ser reciclado?</h4>
+                    <select name="lixolixeira" id=""> escolha
+                        <option id="retiralixo" value="sempre2">Escolha uma opção</option>
+                        <option id="retiralixo" value="sempre2">Sempre</option>
+                        <option id="retiralixo" value="asvezes2">As vezes</option>
+                        <option id="retiralixo" value="raramente2">Raramente</option>
+                        <option id="retiralixo" value="nunca2">Nunca</option>
+                    </select>
+            </form>
         </article>
         <!-- fim do input modelo 3 -->
 
         <aside>
-            <form class="modelo3"></form>
-            <h4>Quantos sacos de sacos de lixos é produzidor por semana?</h4>
-            <input type="number">
-            <label>1</label>
-            <input type="number">
-            <label>2</label>
-            <input type="number">
-            <label>3</label>
-            <input type="number">
-            <label>4 ou mais</label>
+            <form action="lixosforadecasa" class="modelo4"></form>
+                <h4>Em média quantos sacos de lixos é produzidor por semana?</h4>
+                <input type="text" id="lixosforadecasa" placeholder="Se sim digite a quantidade" class="input-text">
         </aside>
         <!-- fim do input modelo 3 -->
+
+        <button class="btn-envio">Enviar/ Proximo</button>
     </main>
     
     <footer>
         
     </footer>
+
+    <script src="./assests/js/test.js"></script>
 </body>
 </html>
