@@ -1,22 +1,36 @@
+/* Body */
 body{
-    background-color: #c4c4c4 ;
     font-family: Arial, Helvetica, sans-serif;
 }
-
-header{
+.body_claro{
+    background-color: #c4c4c4;
+}
+.body_escuro{
+    background-color: #3e3e3e;
+}
+/* Header / Footer / Main */
+footer, header{
     background-color: #322a54;
+    width: 100%;
     height: 80px;
-    font-weight: bold;
 }
 main{
     margin: 15px 120px;
 }
-.cabecalho{
-    background-color: #ffffff;
+
+/* Cabeçalho */
+.cabecalho_claro, .cabecalho_escuro{
     margin-bottom: 20px;
-    border: 5px solid #0f7491;
     border-radius: 10px;
+    padding: 13px;
 }
+.cabecalho_claro{
+    background-color: #0f7491;
+}
+.cabecalho_escuro{
+    background-color: #165d71;
+}
+/* H1 */
 h1{
     font-size: 35px;
     padding: 20px 0px;
@@ -24,20 +38,31 @@ h1{
     font-weight: bold;
     background-color: #0f7491;
 }
-p{
-    font-size: 20px;
-    margin: 30px 0px;
+.h1_claro{
+    background-color: #0f7491;
+}
+.h1_escuro{
+    background-color: #165d71;
 }
 select{
     font-size: 17px;
 }
-.perguntas{
-    background-color: #ffffff;
+/* Perguntas */
+.perguntas_claro, .perguntas_escuro{
     text-align: center;
-    border: 5px solid #0f7491;
     border-radius: 10px;
 }
-.button1{
+.perguntas_claro{
+    background-color: #ffffff;
+    border: 5px solid #0f7491;
+}
+.perguntas_escuro{
+    background-color: #252625;
+    border: 5px solid #165d71;
+}
+
+/* Botões claro ----------- */
+.button1_claro{
     background-color: #a6ce39;
     border: none;
     color: #ffffff;
@@ -49,7 +74,7 @@ select{
     margin: 4px 2px;
     cursor: pointer;
 }
-.button2{
+.button2_claro{
     background-color: #0f7491;
     border: none;
     color: #ffffff;
@@ -61,7 +86,7 @@ select{
     margin: 4px 2px;
     cursor: pointer;
 }
-.button3{
+.button3_claro{
     background-color: #ed217c;
     border: none;
     color: #ffffff;
@@ -73,7 +98,7 @@ select{
     margin: 4px 2px;
     cursor: pointer;
 }
-.button4{
+.button4_claro{
     background-color: #f15a29;
     border: none;
     color: #ffffff;
@@ -85,7 +110,7 @@ select{
     margin: 4px 2px;
     cursor: pointer;
 }
-.button5{
+.button5_claro{
     background-color: #753874;
     border: none;
     color: #ffffff;
@@ -97,30 +122,95 @@ select{
     margin: 4px 2px;
     cursor: pointer;
 }
-.cabecalho{
-    background-color: #0f7491;
-    padding: 10px;
+/*Escuro ------------- */
+.button1_escuro{
+    background-color: #779451;
+    border: none;
+    color: #ffffff;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
 }
+.button2_escuro{
+    background-color: #165d71;
+    border: none;
+    color: #ffffff;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.button3_escuro{
+    background-color: #b12262;
+    border: none;
+    color: #ffffff;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.button4_escuro{
+    background-color: #b44a28;
+    border: none;
+    color: #ffffff;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.button5_escuro{
+    background-color: #5d335c;
+    border: none;
+    color: #ffffff;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
 li{
     display: inline-block;
 }
 ul{
     text-align: center;
 }
-.opcoes{
+
+/* Opções */
+.opcoes, .opcoes_escuro{
     padding: 10px;
 }
-.opcoes label {
+.opcoes label, .opcoes_escuro label{
     font-size: 17px;
     margin-right: 20px;
 }
-.proximo {
+.opcoes_escuro{
+    color: #ffffff;
+}
+
+/* Próximo */
+.proximo_claro{
     width: 100%;
     height: 60px;
     margin-top: 10px;
     padding: 10px;
 }
-.proximo button{
+.proximo_claro button{
     background-color: #0f7491;
     border-radius: 7px;
     border: none;
@@ -129,18 +219,43 @@ ul{
     float: right;
     margin-right: 20px;
 }
-.proximo a{
+.proximo_escuro{
+    width: 100%;
+    height: 60px;
+    margin-top: 10px;
+    padding: 10px;
+}
+.proximo_escuro button{
+    background-color: #165d71;
+    border-radius: 7px;
+    border: none;
+    width: 80px;
+    height: 35px;
+    float: right;
+    margin-right: 20px;
+}
+.proximo_escuro a, .proximo_claro a{
     text-decoration: none;
     color:#ffffff;
     text-align: center;
     font-size: 16px;
 }
-footer{
-    background-color: #322a54;
-    width: 100%;
-    height: 80px;
+/* P */
+p{
+    font-size: 20px;
+    margin: 30px 0px;
 }
-#box-alimen_p1, #alimentacao_p2{
-  border: 2px solid #0f7491;
-  border-radius: 10px;
+.p_escuro{
+    color: #ffffff;
+}
+/* Caixa de perguntas */
+.box-alimen_p1_C, .alimentacao_p2_C{
+    border: 2px solid #0f7491;
+    border-radius: 10px;
+}
+.box-alimen_p1_E, .alimentacao_p2_E{
+    border: 2px solid #165d71;
+    border-radius: 10px;
+    background-color: #252625;
+    color: #ffffff;
 }
