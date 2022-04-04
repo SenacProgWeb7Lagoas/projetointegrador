@@ -21,6 +21,5 @@ function modoNoturno(){
         document.documentElement.style.setProperty('--rosa', '#ed217c');
         document.documentElement.style.setProperty('--laranja', '#f15a29');
         document.documentElement.style.setProperty('--roxo', '#753874');
-
     }
 }
