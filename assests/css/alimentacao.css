@@ -3,6 +3,10 @@
     --cabeca: #ffffff;
     --borda: #0f7491;
     --texto: #000000;
+    --verde: #a6ce39;
+    --rosa: #ed217c;
+    --laranja: #f15a29;
+    --roxo: #753874;
 }
 
 .noturno{
@@ -57,7 +61,7 @@ select{
     color: var(--texto);
 }
 .button1{
-    background-color: #a6ce39;
+    background-color: var(--verde);
     border: none;
     color: #ffffff;
     padding: 10px 15px;
@@ -81,7 +85,7 @@ select{
     cursor: pointer;
 }
 .button3{
-    background-color: #ed217c;
+    background-color: var(--rosa);
     border: none;
     color: #ffffff;
     padding: 10px 15px;
@@ -93,7 +97,7 @@ select{
     cursor: pointer;
 }
 .button4{
-    background-color: #f15a29;
+    background-color: var(--laranja);
     border: none;
     color: #ffffff;
     padding: 10px 15px;
@@ -105,7 +109,7 @@ select{
     cursor: pointer;
 }
 .button5{
-    background-color: #753874;
+    background-color: var(--roxo);
     border: none;
     color: #ffffff;
     padding: 10px 15px;
