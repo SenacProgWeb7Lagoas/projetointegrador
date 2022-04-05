@@ -4,10 +4,61 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assests/css/reset.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap">
+    <link rel="stylesheet" href="./assests/css/consumo.css" >
+    
     <title>CONSUMO</title>
 </head>
 <body>
-    <p>Quantas compras de grande volume você, ou sua família, fez no último ano? (ex: TV, computador, móveis, eletrodométicos, etc.)</p>
-    <p>Ao comprar este tipo de produto, você costuma dar preferência a produtos de baixo impacto ambiental?</p>
+    <header>
+        <button class="noturno" onclick="modoNoturno()">Modo noturno</button>
+    </header>
+    <div class="cabecalho">
+        <ul>
+            <li>
+                <a href="#" class="button1">Moradia</a>
+            </li>
+            <li>
+                <a href="#" class="button2">Alimentação</a>
+            </li>
+            <li>
+                <a href="#" class="button3">Transporte</a>
+            </li>
+            <li>
+                <a href="#" class="button4">Consumo</a>
+            </li>
+            <li>
+                <a href="#" class="button5">Resíduos</a>
+            </li>
+        </ul>
+    </div>
+    <div class="perguntas">
+        <p>Quantas compras de grande volume você, ou sua família, fez no último ano? (ex: TV, computador, móveis, eletrodométicos, etc.)</p>
+            <select id="box_consumo_p1">
+                <option value="Escolha uma opção">Escolha uma opção</option>
+                <option value="Nenhuma">Nenhuma</option>
+                <option value="1 a 3">1 a 3</option>
+                <option value="4 a 6">4 a 6</option>
+                <option value="Mais de 6">Mais de 6</option>
+            </select>
+        <p>Ao comprar este tipo de produto, você costuma dar preferência a produtos de baixo impacto ambiental?</p>
+            <div class="opcoes">
+                <input type="radio" name="pergunta2" id="sim">
+                <label for="sim">Sim</label>
+                <input type="radio" name="pergunta2" id="nao">
+                <label for="nao">Não</label>
+            </div>
+        <div class="proximo">
+    </div>
+    <div class="proximo">
+        <button><a href="#">Próximo</a></button>
+    </div>
+</div>
+<footer>
+</footer>
+<script src="./assests/js/consumo.js"></script>
 </body>
 </html>
+
+            
