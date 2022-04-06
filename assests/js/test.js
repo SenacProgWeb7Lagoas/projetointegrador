@@ -28,6 +28,6 @@ function changeText() {
 const darkModeClass = 'dark-mode';
 const button = document.getElementById('mode-selector');
 const body = document.getElementsByTagName('body')[0];
-const footer = document.getElementsByTagName('footer')[0];
+const footer = document.getElementsByClassName('footer')[0];
 
 button.addEventListener('click', changeMode);
