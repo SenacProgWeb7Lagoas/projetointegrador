@@ -49,8 +49,6 @@ h1{
 p{
     font-size: 20px;
     margin: 30px 0px;
-    display: flex;
-    justify-content: space-between;
 }
 select{
     font-size: 17px;
@@ -62,9 +60,65 @@ select{
     border-radius: 10px;
     color: var(--texto);
 }
-.cabecalho{
+.button1{
+    background-color: var(--verde);
+    border: none;
+    color: #ffffff;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.button2{
     background-color: var(--borda);
-    padding: 10px;
+    border: none;
+    color: #ffffff;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.button3{
+    background-color: var(--rosa);
+    border: none;
+    color: #ffffff;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.button4{
+    background-color: var(--laranja);
+    border: none;
+    color: #ffffff;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.button5{
+    background-color: var(--roxo);
+    border: none;
+    color: #ffffff;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
 }
 li{
     display: inline-block;
@@ -100,7 +154,7 @@ ul{
     text-align: center;
     font-size: 16px;
 }
-#box-alimen_p1, #alimentacao_p2{
+#box_consumo_p1, #opcoes{
   border: 2px solid var(--borda);
   border-radius: 10px;
   color: var(--texto);
