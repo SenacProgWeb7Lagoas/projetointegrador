@@ -463,6 +463,12 @@ footer {
     main {
         height: 1180px;
     }
+
+    .btn-submit {
+        display: flex;
+        justify-content: center;
+        margin-left: 20px;
+    }
 }  
 
 @media (max-width: 442px) {
@@ -509,8 +515,19 @@ footer {
 
     .btn-submit {
         display: flex;
-        margin-left: 32px;
+        justify-content: left;
+        margin-left: 40px;
+    }
+
+    .btn-envio {
         width: 70%;
-        padding: 3px;
+        padding: 1px 5px;
+    }
+
+    .btn-envio:hover{
+        padding: 5px;
+        background-color: var(--cinza);
+        color: black;
+        border: 1px solid rgba(0, 0, 0, 0.199);
     }
 }
