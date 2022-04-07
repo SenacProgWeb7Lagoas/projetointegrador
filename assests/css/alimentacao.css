@@ -164,3 +164,33 @@ ul{
   color: var(--texto);
   background-color: var(--cabeca)
 }
+
+/*Responsividade*/
+
+@media(max-width: 442px){
+   
+    main{
+        margin: 10px 50px;
+    }
+    .cabecalho{
+        display: flex;  
+    }
+    header, footer{
+        height: 70px;
+    }
+
+    .button1, .button2, .button3, .button4, .button5{
+        width: 100%;
+    }
+    ul{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    h1{
+        font-size: 25px;
+        padding: 15px 0;
+    }
+    
+}
+/*Responsividade em processo, não finalizado*/
