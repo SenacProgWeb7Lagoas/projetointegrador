@@ -14,3 +14,17 @@ function checkButton() {
     }
 
 }
+
+// Modo Light e Dark-mode
+
+let darkMode = document.querySelector (".color-model")
+
+    document.querySelector(".color-model").addEventListener("click", function(){
+    document.querySelector(".container").classList.toggle("change-color")
+    document.querySelector("body").classList.toggle("change-color")
+    document.querySelector("nav").classList.toggle("change-color")
+})
+
+
+
+
