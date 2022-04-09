@@ -39,19 +39,21 @@ function secondSection(){ // Função que seleciona os valores da segunda pergun
 function trashBags(){ // Função que seleciona o valor da última pergunta.
 
     var value3;
+    var valor =  document.getElementById("lixosforadecasa").value;
 
-    if(document.getElementById("lixosforadecasa").value === 1){
+    if( valor == 1){
         value3 = 10;
     }
-    else if(document.getElementById("lixosforadecasa").value === 2){
+    else if(valor == 2){
         value3 = 20;
     }
-    else if(document.getElementById("lixosforadecasa").value >= 3){
+    else if(valor >= 3){
         value3 = 30;
     }
     else{
         value3 = 0;
     }
+
     return value3;
 }
 function selector(){ // Função que escolhe os valores da 3º Pergunta.
@@ -69,7 +71,7 @@ function selector(){ // Função que escolhe os valores da 3º Pergunta.
         value4 = 20;
     }
     else if(valor === "nunca2"){
-        value4 = 20;
+        value4 = 25;
     }
     return value4;
 } 
