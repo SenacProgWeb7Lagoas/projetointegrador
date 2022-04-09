@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Residuos</title>
     <link rel="stylesheet" href="./assests/css/residuos.css">
+    <script src="./assests/js/script.js" defer></script>
    
 </head>
 <body>
@@ -84,12 +85,14 @@
         <article class="article2">
             <form action="retiralixo" class="modelo3" aria>
                 <h4>Costuma retirar o lixo e coloca-lo na lixeira para ser reciclado?</h4>
-                    <select name="lixolixeira" id="retiralixo"> escolha
-                        <option id="retiralixo" value="sempre2">Escolha uma opção</option>
-                        <option id="retiralixo" value="sempre2">Sempre</option>
-                        <option id="retiralixo" value="asvezes2">As vezes</option>
-                        <option id="retiralixo" value="raramente2">Raramente</option>
-                        <option id="retiralixo" value="nunca2">Nunca</option>
+                    <select name="lixolixeira" id="retiralixo" onclick="selector()"> escolha
+
+                        <option  value="escolha" > Escolha uma opção </option>
+                        <option  value="sempre2" > Sempre </option>
+                        <option  value="asvezes2"> As vezes </option>
+                        <option  value="raramente2"> Raramente </option>
+                        <option  value="nunca2"> Nunca </option>
+
                     </select>
             </form>
         </article>
@@ -111,6 +114,6 @@
     <footer>
         
     </footer>
-    <script src="./assests/js/script.js"></script> 
+     
 </body>
 </html>
