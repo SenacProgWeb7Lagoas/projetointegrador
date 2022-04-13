@@ -25,10 +25,10 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-header, footer{
+header{
     background-color: #322a54;
     height: 80px;
-    font-weight: bold;
+    font-weight: bold;    
 }
 main{
     margin: 15px 120px;
@@ -50,6 +50,33 @@ p{
     font-size: 20px;
     margin: 30px 0px;
 }
+
+.footer{
+    background-color: #322a54;
+    height: 200px;
+    }
+h3{
+    font-size: 20px;
+    color: #ffffff;
+      }
+.texto_rodape{
+    font-size:15px;
+    background-color: #322a54;
+    color: #ffffff;
+    display: middle;
+
+}
+.alunos_rodape{
+    font: size 15px;
+    background-color: #322a54;
+    color: #ffffff;
+    display: right;
+} 
+.logo{
+    width: 125px;
+    display: left;
+    background-color: #322a54;
+}   
 select{
     font-size: 17px;
 }
