@@ -18,6 +18,12 @@
             </button>
         </section>
 
+        <div class="hamburger">
+            <div class="line" id="line1"></div>
+            <div class="line" id="line2"></div>
+            <div class="line" id="line3"></div>
+        </div>
+
         <nav>
             <ul>
                 <li class="botao-moradia"><a href="#">Moradia</a></li>
@@ -25,6 +31,7 @@
                 <li class="botao-transporte"><a href="#">Transporte</a></li>
                 <li class="botao-consumo"><a href="#">Consumo</a></li>
                 <li class="botao-residuos"><a href="#">Residuos</a></li>
+                <li class="logo"><a href="/"><img src="./assests/images/logo.png" alt=""></a></li>
             </ul>
         </nav>
     </header>
@@ -38,7 +45,7 @@
                 <h4>Procuras reduzir a produção de resíduos? (por exemplo: evitar produtos com muita embalagem, reutilizar o papel, evitar os sacos de plastico, etc...)</h4>
                 <label for="sempre1" class="label-type">
                     Sempre 
-                    <input type="radio" id="inSempre" name="reduzir-produção-residuos" value="Sempre" onclick="fristSection()">
+                    <input type="radio" id="inSempre" name="reduzir-produção-residuos" value="Sempre" onclick="fristSection()" checked>
                 </label>
 
                 <label for="as vezes1" class="label-type"> 
@@ -64,7 +71,7 @@
                 <h4>Pratica compostagem dos residuos orgânicos?</h4>
                 <label>
                     Sempre
-                    <input type="radio" id="inSempre1" name="praricas-compostagem" value="Sempre1"  class="label-type" onclick="secondSection()"> 
+                    <input type="radio" id="inSempre1" name="praricas-compostagem" value="Sempre1"  class="label-type" onclick="secondSection()" checked> 
                 </label>
                 <label>
                     As vezes
