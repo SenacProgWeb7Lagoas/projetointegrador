@@ -23,3 +23,5 @@ function modoNoturno(){
         document.documentElement.style.setProperty('--roxo', '#753874');
     }
 }
+
+
