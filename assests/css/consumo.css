@@ -19,6 +19,10 @@
     margin-top: 19px;
     margin-left: 10px;
 }
+.noturno:hover{
+    scale: 90%;
+    background-color:#474161
+}
 
 body{
     background-color: var(--body);
@@ -32,6 +36,8 @@ header{
 }
 main{
     margin: 15px 120px;
+    font-size: 20px;
+    font-display: var(--body);
 }
 .cabecalho{
     background-color: var(--cabeca);
@@ -46,14 +52,11 @@ h1{
     font-weight: bold;
     background-color: var(--borda);
 }
-p{
-    font-size: 20px;
-    margin: 30px 0px;
-}
-
 .footer{
+    position: absolute;
     background-color: #322a54;
     height: 200px;
+    display: flex;
     }
 h3{
     font-size: 20px;
@@ -63,18 +66,17 @@ h3{
     font-size:15px;
     background-color: #322a54;
     color: #ffffff;
-    display: middle;
-
+    display: flex;
 }
 .alunos_rodape{
     font: size 15px;
     background-color: #322a54;
     color: #ffffff;
-    display: right;
+    display: flex;
 } 
 .logo{
     width: 125px;
-    display: left;
+    display: flex;
     background-color: #322a54;
 }   
 select{
