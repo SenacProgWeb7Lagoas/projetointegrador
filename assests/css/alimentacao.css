@@ -187,7 +187,12 @@ ul {
   background-color: var(--cabeca)
 }
 
+.oculta{
+    display: none;
+}
+
 /*Responsividade*/
+
 
 @media(max-width: 580px){
 
