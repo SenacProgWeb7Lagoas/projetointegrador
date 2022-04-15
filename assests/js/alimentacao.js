@@ -31,6 +31,7 @@ function mobile(){ // função acionada quando se clica no menu em barras ou no 
     document.querySelector(".cabecalho").classList.toggle("show-menu")
     document.querySelector(".nav").classList.toggle("show-menu")
     document.querySelector("header").classList.toggle("show-menu")
+    document.querySelector(".logo").classList.toggle("show-menu")
 }
 
 

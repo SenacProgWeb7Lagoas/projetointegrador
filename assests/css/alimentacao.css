@@ -152,7 +152,7 @@ select{
     padding: 10px 15px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
+    display: none;
     font-size: 16px;
     margin: 20px 10px;
     cursor: pointer;
@@ -273,7 +273,9 @@ ul {
     header.show-menu{
         height: 80vh;
     }
-    
+    .logo.show-menu{
+        display: inline-block;
+    }
     .button1, .button2, .button3, .button4, .button5{
         width: 50%;
     }
