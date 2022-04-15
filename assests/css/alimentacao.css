@@ -213,11 +213,26 @@ ul {
 @media(max-width: 580px){
 
     /*  max-width 580px e 442px não finalizado */
-   
+   header {
+       height: 130px;
+       border: 2px solid yellow;
+       
+   }
     main{
         margin: 10px 40px;
+        height: 600px;
+    }
+    .cabecalho{
+        width: 50%;
+        height: 350px;
+        float: right;
+
     }
    
+    .perguntas{
+        height: 100%;
+    }
+
     .line{
         box-shadow:0.1rem 0.1rem  1px #000000;
         background-color: #ffffff;
@@ -239,11 +254,12 @@ ul {
         flex-direction: column;
         justify-content: space-evenly;
         cursor: pointer;
+        position: absolute;
     }
     
 
-    header, footer{
-        height: 700px;
+    footer{
+        height: 90px;
     }
 
     .button1, .button2, .button3, .button4, .button5{
@@ -253,27 +269,44 @@ ul {
         display: flex;
         flex-direction: column;
         width: 100%;
+
     }
     h1{
         font-size: 50px;
         padding: 15px 0;
     }
-    p{
-        font-size: 60px;
+    .perguntas p{
+        font-size: 1rem;
+        height: 8px;
+        padding: 10px 0px;
     }
     
-    select{
-        font-size: 12px;
+    .perguntas select{
+        font-size: 1rem;
     }
       
-
-     .opcoes {
-        font-size: 60px;
+    .opcoes{
+        height: 120px;
+        align-items: center;
     }
-   
-    .proximo a{
-        font-size: 12px ;
-        width: 50px;
+    .opcoes ul{
+        height: 100px;
+    }
+    .opcoes li{
+        height: 100%
+    }
+    .container{
+        display: none;
+    }
+
+    .proximo {
+        margin-top: 10px;
+        padding: 10px;
+       
+    }
+    .proximo button{
+        height: 35px;
+        margin-right: 20px;
     }
  
 }
