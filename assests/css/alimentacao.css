@@ -646,6 +646,22 @@ ul {
     }
 }
 
+/****resposta****/
 
+#resposta{
+    display: none;
+    margin: 30px 50px;
+    width: 90%;
+    height: 120px;
+    border:2px solid var(--borda);
+    text-align: center;
+    color: #fff;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    box-shadow:2px 3px #1b71a6 ;
+
+
+
+}
 
 
