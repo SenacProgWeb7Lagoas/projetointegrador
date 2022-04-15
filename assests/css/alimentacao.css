@@ -208,29 +208,42 @@ ul {
 }
 
 /*Responsividade*/
+@media(max-width: 442px){
 
+     main{
+         margin: 10px 22px;
+         
+     }
+     main{
+         height: 1500px;
+     }
+ }
+ 
 
 @media(max-width: 580px){
 
-    /*  max-width 580px e 442px não finalizado */
    header {
        height: 130px;
-       border: 2px solid yellow;
-       
+
    }
     main{
-        margin: 10px 40px;
+        margin: 10px 30px;
         height: 600px;
+        
     }
     .cabecalho{
         width: 50%;
         height: 350px;
-        float: right;
-
+        position: absolute;
+        z-index: 1;
+        right: 80px;
+        top: 150px;
+        opacity: .9;
     }
    
     .perguntas{
         height: 100%;
+    
     }
 
     .line{
@@ -243,6 +256,19 @@ ul {
        
     }
 
+    .show-menu .line:nth-child(1){
+        transform: rotate(-45deg) translate(.5rem, 1.4rem);
+        width: 1.5rem;
+    }
+    
+    .show-menu .line:nth-child(2){
+        opacity: 0;
+    }
+    
+    .show-menu .line:nth-child(3){
+        transform: rotate(45deg) translate(.7rem, -1.2rem);
+        width: 1.5rem;
+    }
     .nav{
         width: 2rem;
         height: 1.5rem;
@@ -257,6 +283,25 @@ ul {
         position: absolute;
     }
     
+     .cabecalho{
+        display: none;
+    }
+   
+    .cabecalho.show-menu{
+        display: flex;
+        height: 400px;        
+    }
+   
+   
+    .logo{
+        position: relative;
+        left: 30%;
+        right: 30%;
+    }
+   
+    .logo.show-menu{
+        display:inline-flex
+    }
 
     footer{
         height: 90px;
@@ -276,13 +321,13 @@ ul {
         padding: 15px 0;
     }
     .perguntas p{
-        font-size: 1rem;
+        font-size: .9rem;
         height: 8px;
         padding: 10px 0px;
     }
     
     .perguntas select{
-        font-size: 1rem;
+        font-size: .9rem;
     }
       
     .opcoes{
@@ -295,9 +340,7 @@ ul {
     .opcoes li{
         height: 100%
     }
-    .container{
-        display: none;
-    }
+   
 
     .proximo {
         margin-top: 10px;
@@ -363,8 +406,14 @@ ul {
 @media(max-width: 915px){
     main{
         margin: 15px 100px;
+        height: 800px;
         
     }
+
+    footer{
+        height: 120px;
+    }
+    
     
 
     .cabecalho{
@@ -399,8 +448,10 @@ ul {
     }
     h1{
         font-size: 32px;
+        padding: 30px 0px;
     }
     p{
+        margin-top: 50px;
         font-size: 18px;
     }
     
@@ -415,6 +466,11 @@ ul {
     .proximo a{
         font-size: 16px ;
         width: 70px;
+    }
+    .proximo {
+        position: relative;
+        top: 120px;
+       
     }
     
 

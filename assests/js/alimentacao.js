@@ -1,5 +1,6 @@
 let ativarNoturno = true
 
+
 function modoNoturno(){
     ativarNoturno = !ativarNoturno
 
@@ -25,3 +26,9 @@ function modoNoturno(){
 }
 
 
+function mobile(){  
+    document.querySelector(".cabecalho").classList.toggle("show-menu")
+    document.querySelector(".nav").classList.toggle("show-menu")
+    document.querySelector("header").classList.toggle("show-menu")
+    document.querySelector(".logo").classList.toggle("show-menu")
+}
