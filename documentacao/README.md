@@ -4,7 +4,7 @@
 
 ## Layout
 As páginas na versão desktop, seguirão o seguinte padrão
-<img src="./documentacao/imagens/layout-desktop.PNG">
+<img src="./imagens/layout-desktop.PNG">
 
 ### cores 
 
@@ -22,7 +22,7 @@ As páginas na versão desktop, seguirão o seguinte padrão
 
 ## Modo Escuro
 
-<img src="./documentacao/imagens/layout-desktop-modo-escuro.PNG">
+<img src="./imagens/layout-desktop-modo-escuro.PNG">
 
 
 ### cores do modo escuro
