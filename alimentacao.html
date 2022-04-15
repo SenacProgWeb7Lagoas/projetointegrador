@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./assests/css/reset.css">
+        <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap" rel="stylesheet">
+        <link href="assests/css/alimentacao.css" rel="stylesheet">
+        <title>Alimentação</title>
+    </head>
+        <body>
+            <header>
+                <div class="estilo">
+                    <button class="noturno" onclick="modoNoturno()">Modo</button>
+                    <div class="nav">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                    </div>
+                </div>  
+                <!--Inicio links navegações-->
+                <div class="cabecalho">
+                    <ul>
+                        <li>
+                            <a href="#" class="button1">Moradia</a>
+                        </li>
+                        <li>
+                            <a href="./alimentacao.html" class="button2">Alimentação</a>
+                        </li>
+                        <li>
+                            <a href="#" class="button3">Transporte</a>
+                        </li>
+                        <li>
+                            <a href="#" class="button4">Consumo</a>
+                        </li>
+                        <li>
+                            <a href="./residuos.html" class="button5">Resíduos</a>
+                        </li>
+                        <li class="logo oculta">
+                            <a href="#"><img src="./assests/img/logo.png" alt="Logo Pegada Ecológica" ></a>
+                        </li>
+                    </ul>
+                </div>
+
+            </header>
+        <main>
+            
+            <div class="perguntas">
+                <h1>
+                    Alimentação
+                </h1>
+                <p>
+                    Quantas refeições de carne ou de peixe come por semana?
+                </p>
+                <select id="box-alimen_p1">
+                    <option value="Escolha uma opção">Escolha uma opção</option>
+                    <option value="Nenhuma">Nenhuma</option>
+                    <option value="1 a 3">1 a 3</option>
+                    <option value="4 a 6">4 a 6</option>
+                    <option value="7 a 10">7 a 10</option>
+                    <option value="Mais de 10">Mais de 10</option>
+                </select>
+                <p>
+                    Quantas refeições feitas em casa você como por semana?
+                </p>
+                <select name="" id="alimentacao_p2">
+                    <option value="Escolha uma opção">Escolha uma opção</option>
+                    <option value="Menos de 10">Menos de 10</option>
+                    <option value="10 a 14">10 a 14</option>
+                    <option value="15 a 18">15 a 18</option>
+                    <option value="Mais de 10">Mais de 10</option>
+                </select>
+                <p>
+                    Procura comprar alimentos produzidos localmente?
+                </p>
+                <div class="opcoes">
+                    <input type="radio" name="pergunta2" id="sim">
+                    <label for="sim">Sim</label>
+                    <input type="radio" name="pergunta2" id="nao">
+                    <label for="nao">Não</label>
+                    <input type="radio" name="pergunta2" id="as_vezes">
+                    <label for="as_vezes">As vezes</label>
+                    <input type="radio" name="pergunta2" id="raramente">
+                    <label for="raramente">Raramente</label>
+                </div>
+                <div class="proximo">
+                    <button><a href="#">Próximo</a></button>
+                </div>
+            </div>
+        </main>
+        <footer>
+        </footer>
+        <script src="./assests/js/alimentacao.js"></script>
+        </body>
+    </html>
