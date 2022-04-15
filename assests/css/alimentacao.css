@@ -25,35 +25,49 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-header, footer{
+footer{
     background-color: #322a54;
     height: 90px;
     font-weight: bold;
 }
+
+header{
+    height: 250px;
+}
+
+.estilo{
+    background-color: #322a54;
+    font-weight: bold; 
+    height: 120px;
+
+}
+
 main{
-    margin: 15px 120px;
-    height: 100%;
+    margin: 5px 120px;
+    height: 680px;
 }
 
 
 .cabecalho{
     background-color: var(--cabeca);
-    margin-bottom: 20px;
+    margin: 10px 120px;
     border: 5px solid var(--borda);
     border-radius: 10px;
     height: 100px;
+  
 
 }
 h1{
     font-size: 35px;
-    padding: 20px 0px;
+    padding: 28px 0px;
     color: #ffffff;
     font-weight: bold;
     background-color: var(--borda);
 }
 p{
     font-size: 20px;
-    margin: 30px 0px;
+    margin: 40px 0px;
+    padding: 10px 0px;
 }
 select{
     font-size: 17px;
@@ -64,6 +78,7 @@ select{
     border: 5px solid var(--borda);
     border-radius: 10px;
     color: var(--texto);
+    height: 100%;
 }
 .button1{
     background-color: var(--verde);
@@ -162,8 +177,9 @@ ul {
 .proximo {
     width: 100%;
     height: 60px;
-    margin-top: 10px;
-    padding: 10px;
+    margin-top: 45px;
+    padding: 20px;
+   
 }
 .proximo button{
     background-color: var(--borda);
@@ -223,16 +239,15 @@ ul {
         flex-direction: column;
         justify-content: space-evenly;
         cursor: pointer;
-        
     }
     
 
     header, footer{
-        height: 70px;
+        height: 700px;
     }
 
     .button1, .button2, .button3, .button4, .button5{
-        width: 100%;
+        width: 50%;
     }
     ul{
         display: flex;
@@ -265,12 +280,6 @@ ul {
 
 
 @media(max-width: 1050px){
-
-
-    .logo{
-        width: 70px;
-
-    }
      
     .button1{
         padding: 8px 10px;
@@ -326,13 +335,9 @@ ul {
     
 
     .cabecalho{
-        margin-left: 5px ;
+        margin: 15px 100px;
     }
 
-    .logo{
-        width: 68px;
-
-    }
      
     .button1{
         padding: 8px 10px;
@@ -388,38 +393,33 @@ ul {
     }
 
     .cabecalho{
-        margin-left: 5px ;
-    }
-
-    .logo{
-        width: 58px;
-
+        margin: 15px 90px;
     }
      
     .button1{
         padding: 8px 10px;
-        font-size: 14px;
+        font-size: .90rem;
         margin: 15px 6px;
         padding: 9px 12px;
     }
     .button2{
         padding: 8px 10px;
-        font-size: 15px;
+        font-size: .90rem;
         margin: 15px 7px;
     }
     .button3{
         padding: 8px 10px;
-        font-size: 15px;
+        font-size: .90rem;
         margin: 15px 7px;
     }
     .button4{
         padding: 8px 10px;
-        font-size: 15px;
+        font-size: .90rem;
         margin: 15px 7px;
     }
     .button5{
         padding: 8px 10px;
-        font-size: 15px;
+        font-size: .90rem;
         margin: 15px 7px;
     }
 
@@ -435,11 +435,11 @@ ul {
     }
 
     .opcoes label{
-        font-size: 15px;
+        font-size: .90rem;
     }
    
     .proximo a{
-        font-size: 15px ;
+        font-size: .90rem ;
         width: 70px;
     }
     
@@ -450,35 +450,34 @@ ul {
         margin: 15px 80px;
     }
 
-
-    .logo{
-        width: 55px;
-
+    .cabecalho{
+        margin: 15px 80px;
     }
+
      
     .button1{
         padding: 8px 9px;
-        font-size: 13px;
+        font-size: .90rem;
         margin: 15px 6px;
     }
     .button2{
         padding: 8px 9px;
-        font-size: 13px;
+        font-size: .90rem;
         margin: 15px 6px;
     }
     .button3{
         padding: 8px 9px;
-        font-size: 13px;
+        font-size: .90rem;
         margin: 15px 6px;
     }
     .button4{
         padding: 8px 9px;
-        font-size: 13px;
+        font-size: .90rem;
         margin: 15px 6px;
     }
     .button5{
         padding: 8px 9px;
-        font-size: 13px;
+        font-size: .90rem;
         margin: 15px 6px;
     }
     h1{
@@ -505,41 +504,37 @@ ul {
 @media(max-width: 760px){
     
     main{
-        margin: 15px 35px;
+        margin: 15px 37px;
     }
     .cabecalho{
-        margin-right: 5px;
+        margin: 15px 37px;
     }
 
-    .logo{
-        width: 50px;
-
-    }
      
     .button1{
-        padding: 7px ;
-        font-size: 12px;
-        margin: 15px 5px;
+        padding: 8.2px ;
+        font-size: 0.88rem;
+        margin: 15px 4px;
     }
     .button2{
-        padding: 6px ;
-        font-size: 12px;
-        margin: 15px 5px;
+        padding: 8.2px ;
+        font-size: 0.88rem;
+        margin: 15px 4px;
     }
     .button3{
-        padding: 6px ;
-        font-size: 12px;
-        margin: 15px 5px;
+        padding: 8.2px ;
+        font-size: 0.88rem;
+        margin: 15px 4px;
     }
     .button4{
-        padding: 6px ;
-        font-size: 12px;
-        margin: 15px 5px;
+        padding: 8.2px ;
+        font-size: 0.88rem;
+        margin: 15px 4px;
     }
     .button5{
-        padding: 6px ;
-        font-size: 12px;
-        margin: 15px 6px;
+        padding: 8.2px ;;
+        font-size: 0.88rem;
+        margin: 15px 4px;
     }
     h1{
         font-size: 23px;
