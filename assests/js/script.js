@@ -113,3 +113,18 @@ hamburger.addEventListener("click", function (){
     document.querySelector("nav").classList.toggle("show-menu")
     document.querySelector(".hamburger").classList.toggle("show-menu")
 })
+
+
+// let onOff = false
+    
+//         document.querySelector('span').addEventListener('click', function (){
+//          if (onOff) {
+//              onOff = false
+//             document.querySelector('.positivo').innerHTML = '&#10004'
+//             console.log('ola')
+//         }else {
+//             onOff = true
+//             document.querySelector('.positivo').innerHTML = 'ola'
+//         }
+//         console.log(onOff)
+// })

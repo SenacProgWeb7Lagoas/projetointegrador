@@ -75,6 +75,7 @@ nav {
     height: 70px;
     width: 70%;
     max-width: 1200px;
+    border-radius: 5px;
     margin: 0 auto;
 }
 
@@ -119,6 +120,16 @@ header nav ul li a {
     background-color: var(--residuos);
 }
 
+.botao-residuos:focus-within {
+    border-radius: 5px;
+    border: 2px solid var(--alimentacao);
+    transition: 1s;
+}
+
+.botao-residuos span:focus-within{
+    display: none;
+}
+
 .logo {
     display: none;
 }
@@ -130,6 +141,7 @@ main {
     width: 70%;
     max-width: 1200px; 
     background-color: var(--branco);
+    border-radius: 5px;
     margin: 30px auto;
     padding-top: 10px;
 }
@@ -142,6 +154,7 @@ h2 {
     font-weight: bolder;
     font-size: 2.2rem;
     color: white;
+    border-radius: 5px;
     margin: 20px 30px;
     padding: 24px 48px;
 }
