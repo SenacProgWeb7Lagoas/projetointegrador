@@ -179,7 +179,6 @@ ul {
     height: 60px;
     margin-top: 45px;
     padding: 20px;
-   
 }
 .proximo button{
     background-color: var(--borda);
@@ -189,6 +188,7 @@ ul {
     height: 35px;
     float: right;
     margin-right: 20px;
+
 }
 .proximo a{
     text-decoration: none;
