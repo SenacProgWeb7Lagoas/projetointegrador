@@ -31,7 +31,7 @@ está dentro do Header
                         <li class="button2"><a href="alimentacao.html">Alimentação</a></li>
                         <li class="button3"><a href="transporte.html">Transporte</a></li>
                         <li class="button4"><a href="#">Consumo</a></li>
-                        <li class="button5"><a href="#">Residuos</a> <!-- <span class="positivo"></span>--></li>
+                        <li class="button5"><a href="#">Residuos</a></li>
                         <li class="logo"><a href="/"><img src="./assests/images/logo.png" alt=""></a></li>
                     </ul>
                 </nav>
@@ -66,17 +66,28 @@ está dentro do Header
                     Procura comprar alimentos produzidos localmente?
                 </p>
                 <div class="opcoes">
-                    <input type="radio" name="pergunta2" id="sim">
-                    <label for="sim">Sim</label>
-                    <input type="radio" name="pergunta2" id="nao">
-                    <label for="nao">Não</label>
-                    <input type="radio" name="pergunta2" id="as_vezes">
-                    <label for="as_vezes">As vezes</label>
-                    <input type="radio" name="pergunta2" id="raramente">
-                    <label for="raramente">Raramente</label>
+                    <ul>
+                        <li>
+                            <input type="radio" name="pergunta2" value="Sim">
+                            <label for="sim">Sim</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="pergunta2" value="Não">
+                            <label for="nao">Não</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="pergunta2" value="As vezes">
+                            <label for="as_vezes">As vezes</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="pergunta2" value="Raramente">
+                            <label for="raramente">Raramente</label>
+                        </li>
+                    </ul>
                 </div>
+
                 <div class="proximo">
-                    <button><a href="transporte.html">Próximo</a></button>
+                    <button><a id="resultado" href="transporte.html" onclick="escolha()" href=#>Próximo</a></button>
                 </div>
 <!--
 mudei o "próximo" para ir pra página de transporte, não sei <section>

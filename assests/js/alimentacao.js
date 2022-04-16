@@ -1,4 +1,5 @@
-let ativarNoturno = true
+let ativarNoturno = true;
+
 
 function modoNoturno(){
     ativarNoturno = !ativarNoturno
@@ -25,3 +26,23 @@ function modoNoturno(){
         document.documentElement.style.setProperty('--font', 'none');
     }
 }
+
+//Responsividade
+function mobile(){
+    document.querySelector(".cabecalho").classList.toggle("show-menu")
+    document.querySelector(".nav").classList.toggle("show-menu")
+    document.querySelector("header").classList.toggle("show-menu")
+    document.querySelector(".logo").classList.toggle("show-menu")
+}
+//Fim responsividade
+
+//Função para a 3º pergunta
+const escolha = function(){
+    let radios = document.getElementsByName("pergunta2");
+    for(let i = 0; i<radios.length; i++){
+        if(radios[i].checked){
+            console.log("Escoheu " + radios[i].value);
+            alert("você escolheu como resposta: " + radios[i].value)
+      }
+        }
+  }
