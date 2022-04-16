@@ -7,32 +7,36 @@
         <link rel="stylesheet" href="./assests/css/reset.css">
         <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap" rel="stylesheet">
         <link href="assests/css/alimentacao.css" rel="stylesheet">
-        <title>Teste alimentação</title>
+        <title>Alimentação</title>
     </head>
         <body>
+
+<!--
+Fiz a estilização como o Wisley pediu, no entanto acho que
+vai ter que ajeitar a responsividade pra dar certo já que o cabeçalho
+está dentro do Header
+-->
             <header>
-                <button class="noturno" onclick="modoNoturno()">Modo</button>
+            <section>
+                <button class="noturno" onclick="modoNoturno()">Modo C / E</button>
+            </section>
+                <div class="hamburger">
+                    <div class="line" id="line1"></div>
+                    <div class="line" id="line2"></div>
+                    <div class="line" id="line3"></div>
+                </div>
+              <nav>
+                    <ul>
+                        <li class="button1"><a href="moradia.html">Moradia</a></li>
+                        <li class="button2"><a href="alimentacao.html">Alimentação</a></li>
+                        <li class="button3"><a href="transporte.html">Transporte</a></li>
+                        <li class="button4"><a href="#">Consumo</a></li>
+                        <li class="button5"><a href="#">Residuos</a> <!-- <span class="positivo"></span>--></li>
+                        <li class="logo"><a href="/"><img src="./assests/images/logo.png" alt=""></a></li>
+                    </ul>
+                </nav>
             </header>
         <main>
-            <div class="cabecalho">
-                <ul>
-                    <li>
-                        <a href="#" class="button1">Moradia</a>
-                    </li>
-                    <li>
-                        <a href="#" class="button2">Alimentação</a>
-                    </li>
-                    <li>
-                        <a href="#" class="button3">Transporte</a>
-                    </li>
-                    <li>
-                        <a href="#" class="button4">Consumo</a>
-                    </li>
-                    <li>
-                        <a href="#" class="button5">Resíduos</a>
-                    </li>
-                </ul>
-            </div>
             <div class="perguntas">
                 <h1>
                     Alimentação
@@ -72,8 +76,13 @@
                     <label for="raramente">Raramente</label>
                 </div>
                 <div class="proximo">
-                    <button><a href="#">Próximo</a></button>
+                    <button><a href="transporte.html">Próximo</a></button>
                 </div>
+<!--
+mudei o "próximo" para ir pra página de transporte, não sei <section>
+é pra deixar assim ou só pra salvar as respostas
+</section>
+-->
             </div>
         </main>
         <footer>

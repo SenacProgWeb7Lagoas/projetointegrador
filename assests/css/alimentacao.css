@@ -7,25 +7,31 @@
     --rosa: #ed217c;
     --laranja: #f15a29;
     --roxo: #753874;
+    --font: Arial, Helvetica, sans-serif;
 }
+
+/*
+alterei um pouco aqui também pra ficar como Wisley pediu
+*/
 
 .noturno{
     background-color: #1d1830;
     border-radius: 7px;
     border: none;
-    width: 80px;
+    width:100px;
     height: 35px;
     color: #ffffff;
-    margin-top: 19px;
-    margin-left: 10px;
+    margin: 20px;
+    margin-top: 30px;
 }
 
 body{
     background-color: var(--body);
     font-family: Arial, Helvetica, sans-serif;
+    font-weight: var(--font);
 }
 
-header, footer{
+footer{
     background-color: #322a54;
     height: 80px;
     font-weight: bold;
@@ -33,11 +39,48 @@ header, footer{
 main{
     margin: 15px 120px;
 }
-.cabecalho{
-    background-color: var(--cabeca);
-    margin-bottom: 20px;
-    border: 5px solid var(--borda);
-    border-radius: 10px;
+
+
+nav {
+  background-color: var(--borda);
+  margin: 10px 120px;
+  border: 5px solid var(--borda);
+  border-radius: 10px;
+  height: 90px;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 17px;
+}
+
+header nav ul li {
+    font-size:  1rem;
+    list-style-type: none;
+    margin: 0 2%;
+    padding: 8px;
+    border-radius: 7px;
+    text-align: justify;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+.hamburger {
+    opacity: 0;
+}
+.logo {
+    display: none;
+}
+
+header section {
+    background-color: #322a54;
+    width: 100%;
+    height: 100px;
+    margin-bottom: 32px;
 }
 h1{
     font-size: 35px;
@@ -59,6 +102,7 @@ select{
     border: 5px solid var(--borda);
     border-radius: 10px;
     color: var(--texto);
+    margin-bottom: 30px;
 }
 .button1{
     background-color: var(--verde);
@@ -74,7 +118,6 @@ select{
 }
 .button2{
     background-color: var(--borda);
-    border: none;
     color: #ffffff;
     padding: 10px 15px;
     text-align: center;
@@ -83,6 +126,7 @@ select{
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
+    border: 1px solid #ffffff;
 }
 .button3{
     background-color: var(--rosa);
@@ -168,12 +212,12 @@ ul{
 /*Responsividade*/
 
 @media(max-width: 442px){
-   
+
     main{
         margin: 10px 50px;
     }
     .cabecalho{
-        display: flex;  
+        display: flex;
     }
     header, footer{
         height: 70px;
@@ -191,5 +235,5 @@ ul{
         font-size: 25px;
         padding: 15px 0;
     }
-    
+
 }
