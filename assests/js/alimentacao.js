@@ -45,5 +45,7 @@ const escolha = function(){
         }
   }
 
+  
+
     
     
