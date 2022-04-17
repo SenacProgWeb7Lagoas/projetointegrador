@@ -1,0 +1,94 @@
+* {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+:root {
+    --transporte:#ED217C;
+}
+header {
+    width: 100%;
+    height: 100px;
+    background-color: #322954;
+}
+main {
+    padding: 20px 100px;
+    background-color: #C4C4C4;
+}
+.bb{
+    /* border: black solid 1px; */
+}
+.SectionTop {
+    width: 100%;
+    background-color: white;    
+    padding: 22px 0px;
+    margin: auto;
+   
+}
+.paginas {
+   justify-content: space-between;
+   
+   margin: auto;
+    
+  
+}
+.paginas table {
+    width: 95%;
+    margin: auto;
+    justify-content: space-between;
+}
+.paginas table tr {
+    width: 100%;
+    margin: auto;
+    
+}
+.paginas table tr td button{
+    display: flex;
+    padding: 11px 40px;    
+    margin: 0 20px;    
+   
+}
+/* botões */
+.overButton {
+    color: white;
+    border: none;
+}
+.moradia {
+    background-color: #8DC641;    
+}
+.alimentacao {
+    background-color: #1E7491;    
+}
+.transporte {
+    background-color: #ED217C;    
+}
+.consumo {
+    background-color: #F15A29;    
+}
+.residuos {
+    background-color: #753875;    
+}
+/* Fim botões */
+
+.titleTransporte {
+    background-color: var(--transporte);
+    width: 20%;
+    padding: 10px;
+    font-size: 25px;
+    color: white;
+}
+.questions {
+    background-color: white;
+    margin: 20px 0;
+    padding: 20px;
+}
+.perguntas h2 {
+    font-size: 20px;
+}
+footer {
+    width: 100%;
+    height: 100px;
+    background-color: #322954;
+}
+
+
+
+
