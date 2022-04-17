@@ -66,7 +66,15 @@ main {
 .residuos {
     background-color: #753875;    
 }
+.overButton:hover {
+    cursor: pointer;;
+}
 /* Fim botões */
+.ativo {
+    box-shadow: #ED217C 0px 0px 10px 0px;
+    background-color: #ed217d;
+    border: #ED217C solid 1px;
+}
 
 .titleTransporte {
     background-color: var(--transporte);
