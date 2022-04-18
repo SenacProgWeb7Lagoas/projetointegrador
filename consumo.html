@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,47 +14,50 @@
     <header>
         <button class="noturno" onclick="modoNoturno()">Modo noturno</button>
     </header>
-    <div class="cabecalho">
-        <ul>
-            <li>
-                <a href="#" class="button1">Moradia</a>
-            </li>
-            <li>
-                <a href="#" class="button2">Alimentação</a>
-            </li>
-            <li>
-                <a href="#" class="button3">Transporte</a>
-            </li>
-            <li>
-                <a href="#" class="button4">Consumo</a>
-            </li>
-            <li>
-                <a href="#" class="button5">Resíduos</a>
-            </li>
-        </ul>
-    </div>
-    <div class="perguntas">
-        <p>Quantas compras de grande volume você, ou sua família, fez no último ano? (ex: TV, computador, móveis, eletrodométicos, etc.)</p>
-            <select id="box_consumo_p1">
-                <option value="Escolha uma opção">Escolha uma opção</option>
-                <option value="Nenhuma">Nenhuma</option>
-                <option value="1 a 3">1 a 3</option>
-                <option value="4 a 6">4 a 6</option>
-                <option value="Mais de 6">Mais de 6</option>
-            </select>
-        <p>Ao comprar este tipo de produto, você costuma dar preferência a produtos de baixo impacto ambiental?</p>
-            <div class="opcoes">
-                <input type="radio" name="pergunta2" id="sim">
-                <label for="sim">Sim</label>
-                <input type="radio" name="pergunta2" id="nao">
-                <label for="nao">Não</label>
-            </div>
+    <main>
+        <div class="cabecalho">
+            <ul>
+                <li>
+                    <a href="./moradia.html" class="button1">Moradia</a>
+                </li>
+                <li>
+                    <a href="./alimentacao.html" class="button2">Alimentação</a>
+                </li>
+                <li>
+                    <a href="./transporte.html" class="button3">Transporte</a>
+                </li>
+                <li>
+                    <a href="./consumo.html" class="button4">Consumo</a>
+                </li>
+                <li>
+                    <a href="./residuos.html" class="button5">Resíduos</a>
+                </li>
+            </ul>
+        </div>
+        <div class="perguntas">
+            <section>
+                <p>Quantas compras de grande volume você, ou sua família, fez no último ano? (ex: TV, computador, móveis, eletrodométicos, etc.)</p>
+                    <select id="box_consumo_p1">
+                        <option value="Escolha uma opção">Escolha uma opção</option>
+                        <option value="Nenhuma">Nenhuma</option>
+                        <option value="1 a 3">1 a 3</option>
+                        <option value="4 a 6">4 a 6</option>
+                        <option value="Mais de 6">Mais de 6</option>
+                    </select>
+            </section>
+            <section>
+                <p>Ao comprar este tipo de produto, você costuma dar preferência a produtos de baixo impacto ambiental?</p>
+                    <div class="opcoes">
+                        <input type="radio" name="pergunta2" id="sim">
+                        <label for="sim">Sim</label>
+                        <input type="radio" name="pergunta2" id="nao">
+                        <label for="nao">Não</label>
+            </section>
+        </div>
         <div class="proximo">
-    </div>
-    <div class="proximo">
-        <button><a href="#">Próximo</a></button>
-    </div>
-</div>
+            <button><a href="./residuos.html">Próximo</a></button>
+        </div>
+    </main>
 <footer>
     <figure>
         <img class="logo" src="assests/img/logo.png" alt="Logo">
@@ -62,41 +65,43 @@
     <div class="texto_rodape">
         <ul>
             <h3>Projeto Integrador - Turma 05.2021.0107</h3>
-                <br>
-                Este site foi desenvolvido pelos alunos do curso de Programção Web do SENAC Minas - Unidade Sete Lagoas. Este curso faz parte do <a href="https://www.mg.senac.br/Paginas/minas-programando.aspx">Projeto Minas Programando</a>, idealizado pela Secretaria de Estado de Desenvolvimento Social de Minas Gerais.
-                Esta calculadora de pegada ecológica foi elaborada para fins pedagógicos, direcionados às finalidades do curso de programação. Para saber mais sobre o cálculo de pegada ecológica e consultar plataformas mais completas, clique <a href="">aqui</a>.
+                <p>Este site foi desenvolvido pelos alunos do curso de Programção Web do SENAC Minas - Unidade Sete Lagoas. Este curso faz parte do <a href="https://www.mg.senac.br/Paginas/minas-programando.aspx">Projeto Minas Programando</a>, idealizado pela Secretaria de Estado de Desenvolvimento Social de Minas Gerais.</p>
+                <p>Esta calculadora de pegada ecológica foi elaborada para fins pedagógicos, direcionados às finalidades do curso de programação. Para saber mais sobre o cálculo de pegada ecológica e consultar plataformas mais completas, clique <a href="">aqui</a>.</p>
                 <!--
-                Colocar contorno no botão laranja
-                Mudar a background color do headear de branco pra laranja 
                 Pesquisar a propriedade hover
                 Ajustar altura da main pra não deixar o footer flutuando 
                 Montar o javascript para salvar os valores da resposta do formulário 
-                Trocar a tag p e refazer a formatação de todas as seções. 
-                Descobrir porquê a formatação CSS tá sendo a mesma para classes diferentes
                 Organizar a logo e as duas em listas no CSS com o display flex
                 Organizar a lista de alunos em tabela pra não perder a configuração quando a responsividade for pra mobile  -->
         </ul>
-    </p>
     </div>
     <div class="alunos_rodape">
-        <ul>
-            <h3>Desenvolvido por:</h3>
-            <br>
-            Luíza Araújo | <a href="https://github.com/lh-ude">GitHub</a> | <a href="https://br.linkedin.com/in/luiza-helena-ude-goddard-ara%C3%BAjo-b202a9a0">Linkedin</a>
-            <br>
-            Luíza Araújo | <a href="https://github.com/lh-ude">GitHub</a> | <a href="https://br.linkedin.com/in/luiza-helena-ude-goddard-ara%C3%BAjo-b202a9a0">Linkedin</a>
-            <br>
-            Luíza Araújo | <a href="https://github.com/lh-ude">GitHub</a> | <a href="https://br.linkedin.com/in/luiza-helena-ude-goddard-ara%C3%BAjo-b202a9a0">Linkedin</a>
-            <br>
-            Luíza Araújo | <a href="https://github.com/lh-ude">GitHub</a> | <a href="https://br.linkedin.com/in/luiza-helena-ude-goddard-ara%C3%BAjo-b202a9a0">Linkedin</a>
-            <br>
-            Luíza Araújo | <a href="https://github.com/lh-ude">GitHub</a> | <a href="https://br.linkedin.com/in/luiza-helena-ude-goddard-ara%C3%BAjo-b202a9a0">Linkedin</a>
-            <br>
-            Luíza Araújo | <a href="https://github.com/lh-ude">GitHub</a> | <a href="https://br.linkedin.com/in/luiza-helena-ude-goddard-ara%C3%BAjo-b202a9a0">Linkedin</a>
-            <br>
-            Luíza Araújo | <a href="https://github.com/lh-ude">GitHub</a> | <a href="https://br.linkedin.com/in/luiza-helena-ude-goddard-ara%C3%BAjo-b202a9a0">Linkedin</a>
-            <br>
-            Luíza Araújo | <a href="https://github.com/lh-ude">GitHub</a> | <a href="https://br.linkedin.com/in/luiza-helena-ude-goddard-ara%C3%BAjo-b202a9a0">Linkedin</a>
+        <h3>Desenvolvido por:</h3>
+        <ul>    
+            <li>
+                Luíza Araújo | <a href="https://github.com/lh-ude">GitHub</a> | <a href="https://br.linkedin.com/in/luiza-helena-ude-goddard-ara%C3%BAjo-b202a9a0">Linkedin</a>
+            </li>
+           <li>
+               Luíza Araújo | <a href="https://github.com/lh-ude">GitHub</a> | <a href="https://br.linkedin.com/in/luiza-helena-ude-goddard-ara%C3%BAjo-b202a9a0">Linkedin</a>
+            </li>
+            <li>
+                Luíza Araújo | <a href="https://github.com/lh-ude">GitHub</a> | <a href="https://br.linkedin.com/in/luiza-helena-ude-goddard-ara%C3%BAjo-b202a9a0">Linkedin</a>
+             </li>
+             <li>
+                Luíza Araújo | <a href="https://github.com/lh-ude">GitHub</a> | <a href="https://br.linkedin.com/in/luiza-helena-ude-goddard-ara%C3%BAjo-b202a9a0">Linkedin</a>
+             </li>
+             <li>
+                Luíza Araújo | <a href="https://github.com/lh-ude">GitHub</a> | <a href="https://br.linkedin.com/in/luiza-helena-ude-goddard-ara%C3%BAjo-b202a9a0">Linkedin</a>
+             </li>
+             <li>
+                Luíza Araújo | <a href="https://github.com/lh-ude">GitHub</a> | <a href="https://br.linkedin.com/in/luiza-helena-ude-goddard-ara%C3%BAjo-b202a9a0">Linkedin</a>
+             </li>
+             <li>
+                Luíza Araújo | <a href="https://github.com/lh-ude">GitHub</a> | <a href="https://br.linkedin.com/in/luiza-helena-ude-goddard-ara%C3%BAjo-b202a9a0">Linkedin</a>
+             </li>
+             <li>
+                Luíza Araújo | <a href="https://github.com/lh-ude">GitHub</a> | <a href="https://br.linkedin.com/in/luiza-helena-ude-goddard-ara%C3%BAjo-b202a9a0">Linkedin</a>
+             </li>
         </ul>
     </div>
 </footer>
