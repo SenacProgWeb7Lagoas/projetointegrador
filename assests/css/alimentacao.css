@@ -7,6 +7,7 @@
     --rosa: #ed217c;
     --laranja: #f15a29;
     --roxo: #753874;
+    --font: Arial, Helvetica, sans-serif;
 }
 
 .noturno{
@@ -19,10 +20,10 @@
     margin-top: 19px;
     margin-left: 10px;
 }
-
 body{
     background-color: var(--body);
     font-family: Arial, Helvetica, sans-serif;
+    font-weight: var(--font);
 }
 
 footer{
@@ -32,12 +33,12 @@ footer{
 }
 
 header{
-    height: 250px;
+    height: 240px;
 }
 
 .estilo{
     background-color: #322a54;
-    font-weight: bold; 
+    font-weight: bold;
     height: 120px;
 
 }
@@ -54,8 +55,6 @@ main{
     border: 5px solid var(--borda);
     border-radius: 10px;
     height: 100px;
-  
-
 }
 h1{
     font-size: 35px;
@@ -67,7 +66,7 @@ h1{
 p{
     font-size: 20px;
     margin: 40px 0px;
-    padding: 10px 0px;
+    padding: 2px 0px;
 }
 select{
     font-size: 17px;
@@ -78,7 +77,7 @@ select{
     border: 5px solid var(--borda);
     border-radius: 10px;
     color: var(--texto);
-    height: 100%;
+    height: 98%;
 }
 .button1{
     background-color: var(--verde);
@@ -145,7 +144,7 @@ select{
 .logo img{
     width: 100%;
     height: auto;
-    
+
 }
 
 .logo{
@@ -157,12 +156,10 @@ select{
 
 .cabecalho{
     background-color: var(--borda);
-    padding: 10px;
-    
+    padding: 6px;
 }
 li{
     display: inline-block;
-    
 }
 ul {
     text-align: center;
@@ -177,9 +174,9 @@ ul {
 .proximo {
     width: 100%;
     height: 60px;
-    margin-top: 45px;
-    padding: 20px;
-   
+    margin-top: 70px;
+    padding: 25px;
+
 }
 .proximo button{
     background-color: var(--borda);
@@ -207,18 +204,21 @@ ul {
     display: none;
 }
 
+
+
+
 /*Responsividade*/
 @media(max-width: 442px){
 
      main{
          margin: 10px 22px;
-         
+
      }
      main{
          height: 1500px;
      }
  }
- 
+
 
 @media(max-width: 580px){
 
@@ -229,7 +229,7 @@ ul {
     main{
         margin: 10px 30px;
         height: 600px;
-        
+
     }
     .cabecalho{
         width: 50%;
@@ -240,10 +240,10 @@ ul {
         top: 150px;
         opacity: .9;
     }
-   
+
     .perguntas{
         height: 100%;
-    
+
     }
 
     .line{
@@ -253,18 +253,18 @@ ul {
         width: 100%;
         transition: transform 1s;
         margin: 2.5px;
-       
+
     }
 
     .show-menu .line:nth-child(1){
         transform: rotate(-45deg) translate(.5rem, 1.4rem);
         width: 1.5rem;
     }
-    
+
     .show-menu .line:nth-child(2){
         opacity: 0;
     }
-    
+
     .show-menu .line:nth-child(3){
         transform: rotate(45deg) translate(.7rem, -1.2rem);
         width: 1.5rem;
@@ -282,23 +282,23 @@ ul {
         cursor: pointer;
         position: absolute;
     }
-    
+
      .cabecalho{
         display: none;
     }
-   
+
     .cabecalho.show-menu{
         display: flex;
-        height: 400px;        
+        height: 400px;
     }
-   
-   
+
+
     .logo{
         position: relative;
         left: 30%;
         right: 30%;
     }
-   
+
     .logo.show-menu{
         display:inline-flex
     }
@@ -325,11 +325,11 @@ ul {
         height: 8px;
         padding: 10px 0px;
     }
-    
+
     .perguntas select{
         font-size: .9rem;
     }
-      
+
     .opcoes{
         height: 120px;
         align-items: center;
@@ -344,7 +344,7 @@ ul {
     .proximo {
         margin-top: 10px;
         padding: 10px;
-       
+
     }
     .proximo button{
         height: 35px;
@@ -354,7 +354,7 @@ ul {
 
 
 @media(max-width: 1050px){
-     
+
     .button1{
         padding: 8px 10px;
         font-size: 16px;
@@ -383,7 +383,7 @@ ul {
     p{
         font-size: 18px;
     }
-    
+
     select{
         font-size: 16px;
     }
@@ -391,31 +391,31 @@ ul {
     .opcoes label{
         font-size: 16px;
     }
-   
+
     .proximo a{
         font-size: 16px ;
         width: 70px;
     }
-    
+
 }
 
 @media(max-width: 915px){
     main{
         margin: 15px 100px;
         height: 800px;
-        
+
     }
 
     footer{
         height: 120px;
     }
-    
-    
+
+
     .cabecalho{
         margin: 15px 100px;
     }
 
-     
+
     .button1{
         padding: 8px 10px;
         font-size: 15px;
@@ -449,7 +449,7 @@ ul {
         margin-top: 50px;
         font-size: 18px;
     }
-    
+
     select{
         font-size: 16px;
     }
@@ -457,7 +457,7 @@ ul {
     .opcoes label{
         font-size: 16px;
     }
-   
+
     .proximo a{
         font-size: 16px ;
         width: 70px;
@@ -465,9 +465,9 @@ ul {
     .proximo {
         position: relative;
         top: 120px;
-       
+
     }
-    
+
 
 }
 
@@ -479,7 +479,7 @@ ul {
     .cabecalho{
         margin: 15px 90px;
     }
-     
+
     .button1{
         padding: 8px 10px;
         font-size: .90rem;
@@ -513,7 +513,7 @@ ul {
     p{
         font-size: 17px;
     }
-    
+
     select{
         font-size: 15px;
     }
@@ -521,12 +521,12 @@ ul {
     .opcoes label{
         font-size: .90rem;
     }
-   
+
     .proximo a{
         font-size: .90rem ;
         width: 70px;
     }
-    
+
 
 }
 @media(max-width: 820px){
@@ -538,7 +538,7 @@ ul {
         margin: 15px 80px;
     }
 
-     
+
     .button1{
         padding: 8px 9px;
         font-size: .90rem;
@@ -570,7 +570,7 @@ ul {
     p{
         font-size: 17px;
     }
-    
+
     select{
         font-size: 15px;
     }
@@ -578,7 +578,7 @@ ul {
     .opcoes label{
         font-size: 15px;
     }
-   
+
     .proximo a{
         font-size: 15px ;
         width: 70px;
@@ -586,7 +586,7 @@ ul {
 }
 
 @media(max-width: 760px){
-    
+
     main{
         margin: 15px 37px;
     }
@@ -594,7 +594,7 @@ ul {
         margin: 15px 37px;
     }
 
-     
+
     .button1{
         padding: 8.2px ;
         font-size: 0.88rem;
@@ -626,7 +626,7 @@ ul {
     p{
         font-size: 15px;
     }
-    
+
     select{
         font-size: 13px;
     }
@@ -634,7 +634,7 @@ ul {
     .opcoes label{
         font-size: 13px;
     }
-   
+
     .proximo a{
         font-size: 13px ;
         width: 60px;
