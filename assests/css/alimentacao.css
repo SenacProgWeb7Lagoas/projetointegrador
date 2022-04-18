@@ -179,6 +179,7 @@ ul {
     height: 60px;
     margin-top: 45px;
     padding: 20px;
+   
 }
 .proximo button{
     background-color: var(--borda);
@@ -188,10 +189,6 @@ ul {
     height: 35px;
     float: right;
     margin-right: 20px;
-
-
-
-    
 }
 .proximo a{
     text-decoration: none;
@@ -343,7 +340,6 @@ ul {
     .opcoes li{
         height: 100%
     }
-   
 
     .proximo {
         margin-top: 10px;
@@ -354,7 +350,6 @@ ul {
         height: 35px;
         margin-right: 20px;
     }
- 
 }
 
 
@@ -402,9 +397,7 @@ ul {
         width: 70px;
     }
     
-
 }
-
 
 @media(max-width: 915px){
     main{
@@ -418,7 +411,6 @@ ul {
     }
     
     
-
     .cabecalho{
         margin: 15px 100px;
     }
@@ -648,23 +640,3 @@ ul {
         width: 60px;
     }
 }
-
-/****resposta****/
-
-#resposta{
-    display: none;
-    margin: 30px 50px;
-    width: 90%;
-    height: 120px;
-    border:2px solid var(--borda);
-    text-align: center;
-    color: #fff;
-    border-radius: 10px;
-    font-size: 1.5rem;
-    box-shadow:2px 3px #1b71a6 ;
-
-
-
-}
-
-
