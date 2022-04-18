@@ -11,18 +11,20 @@
 </head>
 <body>
     <header>
-
+        <div id="dmode" >
+            <input class="darkM"  type="button" value="escuro" id="modeColor" onclick="dMode()">            
+        </div>
     </header>
-    <main>
+    <main id="mainD">
         <section class="SectionTop bb" id="contain_selectPage">
             <div class="paginas bb" id="pages">
                 <table>
                     <tr class="">
-                        <td><button  class="moradia overButton">Moradia</button></td>
-                        <td><button class="alimentacao overButton">Alimentação</button></td>
-                        <td><button class="transporte overButton ativo">Transporte</button></td>
-                        <td><button class="consumo overButton">Consumo</button></td>
-                        <td><button class="residuos overButton">Resíduos</button></td>
+                        <td><button  class="moradia overButton"><a href="/moradia.html">Moradia</a></button></td>
+                        <td><button class="alimentacao overButton"><a href="/alimentacao.html">Alimentação</a></button></td>
+                        <td><button class="transporte overButton ativo"><a href="/transporte.html">Transporte</a></button></td>
+                        <td><button class="consumo overButton"><a href="/consumo">Consumo</a></button></td>
+                        <td><button class="residuos overButton"><a href="/residuos.html">Resíduos</a></button></td>
                     </tr>
                 </table>
             </div>
@@ -35,6 +37,14 @@
             <div class="perguntas" id="contain_quests">
                 <h2>1- Possui algum veículo automotor?</h2>
                 <table>
+                    <select class="selectV" id="veiculo">
+                        <option value="">Selecione</option>
+                        <option value="moto">Moto</option>
+                        <option value="carro">Carro</option>
+                        <option value="caminhao">Caminhão</option>
+                        <option value="nao_possuo">Não possuo</option>
+                    </select>
+
                     <tr>
                         <td><button>Moto</button></td>
                         <td><button>Carro</button></td>
@@ -85,5 +95,6 @@
     <footer>
 
     </footer>
+    <script src="./assests/js/transporte.js"></script>
 </body>
 </html>
