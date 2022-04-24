@@ -348,3 +348,24 @@ nav.change-color {
     color: var(--branco);
 }
 /* fim do modo light e dark mode */
+
+
+/* animação da imagem*/
+
+.animacao {
+    animation: go-back 10s;
+    width: 100%;
+}
+
+
+@keyframes go-back {
+     0% {
+        transform: translateY(80px);
+        opacity: 0;
+     }
+
+    100% {
+        transform: translateY(-180%);
+        z-index: 0;
+    }
+} 
