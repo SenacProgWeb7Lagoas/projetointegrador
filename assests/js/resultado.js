@@ -1,3 +1,28 @@
+import  sendSum from 'script.js';
+
+let outResiduos = document.getElementById("outResiduos");
+
+outResiduos.innerHTML = sendSum ();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // Modo Light e Dark-mode
 
 let darkMode = document.querySelector (".color-model")
@@ -7,6 +32,7 @@ let darkMode = document.querySelector (".color-model")
     document.querySelector("body").classList.toggle("change-color")
     document.querySelector("nav").classList.toggle("change-color")
 })
+
 
 // Muda o texto do botão de acordo com o modo
 
