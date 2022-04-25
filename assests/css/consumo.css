@@ -17,18 +17,21 @@ header{
     height: 70px;
     font-weight: bold;    
 }
+
 main{
     background-color: #ffffff;
     width: 100%;
     font-size: 20px;
-    height: 400px;
+    height: 500px; /* aumentei o tamanho do main para footer ficar mais abaixo */
     justify-content: space-between;
     line-height: normal;
 }
+
 .cabecalho{
     background-color: #f15a29;
     height: 50px;
-    }
+}
+
 h1{
     font-size: 35px;
     padding: 20px 0px;
@@ -36,48 +39,75 @@ h1{
     font-weight: bold;
     background-color: var(--borda);
 }
-.footer{
+
+/* alterei aqui */ 
+footer{
     position: absolute;
     background-color: #322a54;
-    height: 200px;
+    height: 250px; /* ( fui testanto) 
+    para tentar seguir o rascunho */
     width: 100%;
     display: flex;
-    }
+    justify-content: space-between;
+    padding: 2% 5%; /* adicionei esse padding para  com esse valores ( fui testanto) 
+    para tentar seguir o rascunho */
+}
+
 h3{
     font-size: 20px;
     color: #ffffff;
     padding-bottom: 20px;
     padding-top: 10px;
-      }
-.logo{
+}
+
+/* alterei aqui */ 
+.logo{  
     width: 150px;
     height: 150px;
     background-color: #322a54;
     align-content: center;
-    float: left;
-    }
+    /*float: left; não ha necessidade uma vez que o footer é diplay: flex
+     e justify-content: space-between; */
+}
+
+/* alterei aqui */ 
 .alunos_rodape{
     font: size 15px;
     background-color: #322a54;
     color: #ffffff;
-    height: 200px;
-    width: 300px;
+    /* height: 200px;
+    width: 300px; 
+    não há necessidade dos valores fixos aqui, 
+    sem eles pode facilitar a resposividade */
     text-align: center;
-    float: right;
+    /* float: right; não ha necessidade uma vez que o footer é diplay: flex
+     e justify-content: space-between; */
 } 
+
+/* adicionei aqui para que lista dos nomes dos alunos fique um abaixo do outro
+    A estilização aqui foi feita por hierarquia, ou seja, nesse caso
+    buscamos a class primeiro, depois a lista <ul> para somente buscar os itens <li> 
+    e estiliza-los.
+ */
+
+.alunos_rodape ul li{
+    display: block;
+}
+
 .texto_rodape{
     font-size:15px;
     background-color: #322a54;
     color: #ffffff;
-    height: 200px;
-    width: 800px;
+    width: 50%; /* tamanho não fixo a responsividade pode ficar melhor também */
     text-align: justify;
 }
+
 select{
     font-size: 18px;
 }
+
 section{
-padding-block: 10px;
+    padding-block: 10px;
 }
 .perguntas{
     background-color: var(--cabeca);
