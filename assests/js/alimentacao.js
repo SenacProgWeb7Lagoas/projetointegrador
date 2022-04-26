@@ -1,4 +1,5 @@
-let ativarNoturno = true
+let ativarNoturno = true;
+
 
 function modoNoturno(){
     ativarNoturno = !ativarNoturno
@@ -12,6 +13,7 @@ function modoNoturno(){
         document.documentElement.style.setProperty('--rosa', '#b12262');
         document.documentElement.style.setProperty('--laranja', '#b44a28');
         document.documentElement.style.setProperty('--roxo', '#5d335c');
+        document.documentElement.style.setProperty('--font', 'bold');
     }else{
         document.documentElement.style.setProperty('--body', '#c4c4c4');
         document.documentElement.style.setProperty('--cabeca', '#ffffff');
@@ -21,17 +23,24 @@ function modoNoturno(){
         document.documentElement.style.setProperty('--rosa', '#ed217c');
         document.documentElement.style.setProperty('--laranja', '#f15a29');
         document.documentElement.style.setProperty('--roxo', '#753874');
+        document.documentElement.style.setProperty('--font', 'none');
     }
 }
 
-function mobile(){ // função acionada quando se clica no menu em barras ou no X
-
-    // adiciona a class showmenu no elemento que não tem essa classe e retira show-menu no elemento que contem
-    // ou seja alternar entre adicionar e retirar  
+function mobile(){
     document.querySelector(".cabecalho").classList.toggle("show-menu")
     document.querySelector(".nav").classList.toggle("show-menu")
     document.querySelector("header").classList.toggle("show-menu")
     document.querySelector(".logo").classList.toggle("show-menu")
 }
 
-
+//Função para a 3º pergunta
+const escolha = function(){
+    let radios = document.getElementsByName("pergunta2");
+    for(let i = 0; i<radios.length; i++){
+        if(radios[i].checked){
+            console.log("Escoheu " + radios[i].value);
+            alert("você escolheu como resposta: " + radios[i].value)
+      }
+        }
+  }

@@ -1,0 +1,642 @@
+:root{
+    --body: #c4c4c4;
+    --cabeca: #ffffff;
+    --borda: #0f7491;
+    --texto: #000000;
+    --verde: #a6ce39;
+    --rosa: #ed217c;
+    --laranja: #f15a29;
+    --roxo: #753874;
+    --font: Arial, Helvetica, sans-serif;
+}
+
+.noturno{
+    background-color: #1d1830;
+    border-radius: 7px;
+    border: none;
+    width: 80px;
+    height: 35px;
+    color: #ffffff;
+    margin-top: 19px;
+    margin-left: 10px;
+}
+body{
+    background-color: var(--body);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: var(--font);
+}
+
+footer{
+    background-color: #322a54;
+    height: 90px;
+    font-weight: bold;
+}
+
+header{
+    height: 240px;
+}
+
+.estilo{
+    background-color: #322a54;
+    font-weight: bold;
+    height: 120px;
+
+}
+
+main{
+    margin: 5px 120px;
+    height: 680px;
+}
+
+
+.cabecalho{
+    background-color: var(--cabeca);
+    margin: 10px 120px;
+    border: 5px solid var(--borda);
+    border-radius: 10px;
+    height: 100px;
+}
+h1{
+    font-size: 35px;
+    padding: 28px 0px;
+    color: #ffffff;
+    font-weight: bold;
+    background-color: var(--borda);
+}
+p{
+    font-size: 20px;
+    margin: 40px 0px;
+    padding: 2px 0px;
+}
+select{
+    font-size: 17px;
+}
+.perguntas{
+    background-color: var(--cabeca);
+    text-align: center;
+    border: 5px solid var(--borda);
+    border-radius: 10px;
+    color: var(--texto);
+    height: 98%;
+}
+.button1{
+    background-color: var(--verde);
+    border: none;
+    color: #ffffff;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 20px 10px;
+    cursor: pointer;
+}
+.button2{
+    background-color: var(--borda);
+    border: none;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 20px 10px;
+    cursor: pointer;
+}
+.button3{
+    background-color: var(--rosa);
+    border: none;
+    color: #ffffff;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 20px 10px;
+    cursor: pointer;
+}
+.button4{
+    background-color: var(--laranja);
+    border: none;
+    color: #ffffff;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 20px 10px;
+    cursor: pointer;
+}
+.button5{
+    background-color: var(--roxo);
+    border: none;
+    color: #ffffff;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 20px 10px;
+    cursor: pointer;
+}
+
+.logo img{
+    width: 100%;
+    height: auto;
+
+}
+
+.logo{
+    float: right;
+    width: 80px;
+    height: auto;
+    display: block;
+}
+
+.cabecalho{
+    background-color: var(--borda);
+    padding: 6px;
+}
+li{
+    display: inline-block;
+}
+ul {
+    text-align: center;
+}
+.opcoes{
+    padding: 10px;
+}
+.opcoes label {
+    font-size: 17px;
+    margin-right: 20px;
+}
+.proximo {
+    width: 100%;
+    height: 60px;
+    margin-top: 70px;
+    padding: 25px;
+
+}
+.proximo button{
+    background-color: var(--borda);
+    border-radius: 7px;
+    border: none;
+    width: 80px;
+    height: 35px;
+    float: right;
+    margin-right: 20px;
+}
+.proximo a{
+    text-decoration: none;
+    color:#ffffff;
+    text-align: center;
+    font-size: 16px;
+}
+#box-alimen_p1, #alimentacao_p2{
+  border: 2px solid var(--borda);
+  border-radius: 10px;
+  color: var(--texto);
+  background-color: var(--cabeca)
+}
+
+.oculta{
+    display: none;
+}
+
+
+
+
+/*Responsividade*/
+@media(max-width: 442px){
+
+     main{
+         margin: 10px 22px;
+
+     }
+     main{
+         height: 1500px;
+     }
+ }
+
+
+@media(max-width: 580px){
+
+   header {
+       height: 130px;
+
+   }
+    main{
+        margin: 10px 30px;
+        height: 600px;
+
+    }
+    .cabecalho{
+        width: 50%;
+        height: 350px;
+        position: absolute;
+        z-index: 1;
+        right: 80px;
+        top: 150px;
+        opacity: .9;
+    }
+
+    .perguntas{
+        height: 100%;
+
+    }
+
+    .line{
+        box-shadow:0.1rem 0.1rem  1px #000000;
+        background-color: #ffffff;
+        height: 2rem;
+        width: 100%;
+        transition: transform 1s;
+        margin: 2.5px;
+
+    }
+
+    .show-menu .line:nth-child(1){
+        transform: rotate(-45deg) translate(.5rem, 1.4rem);
+        width: 1.5rem;
+    }
+
+    .show-menu .line:nth-child(2){
+        opacity: 0;
+    }
+
+    .show-menu .line:nth-child(3){
+        transform: rotate(45deg) translate(.7rem, -1.2rem);
+        width: 1.5rem;
+    }
+    .nav{
+        width: 2rem;
+        height: 1.5rem;
+        position: fixed;
+        z-index: 100;
+        right: 2rem;
+        top: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        cursor: pointer;
+        position: absolute;
+    }
+
+     .cabecalho{
+        display: none;
+    }
+
+    .cabecalho.show-menu{
+        display: flex;
+        height: 400px;
+    }
+
+
+    .logo{
+        position: relative;
+        left: 30%;
+        right: 30%;
+    }
+
+    .logo.show-menu{
+        display:inline-flex
+    }
+
+    footer{
+        height: 90px;
+    }
+
+    .button1, .button2, .button3, .button4, .button5{
+        width: 50%;
+    }
+    ul{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+    }
+    h1{
+        font-size: 50px;
+        padding: 15px 0;
+    }
+    .perguntas p{
+        font-size: .9rem;
+        height: 8px;
+        padding: 10px 0px;
+    }
+
+    .perguntas select{
+        font-size: .9rem;
+    }
+
+    .opcoes{
+        height: 120px;
+        align-items: center;
+    }
+    .opcoes ul{
+        height: 100px;
+    }
+    .opcoes li{
+        height: 100%
+    }
+
+    .proximo {
+        margin-top: 10px;
+        padding: 10px;
+
+    }
+    .proximo button{
+        height: 35px;
+        margin-right: 20px;
+    }
+}
+
+
+@media(max-width: 1050px){
+
+    .button1{
+        padding: 8px 10px;
+        font-size: 16px;
+        margin: 15px 8px;
+    }
+    .button2{
+        padding: 8px 10px;
+        font-size: 16px;
+        margin: 15px 8px;
+    }
+    .button3{
+        padding: 8px 10px;
+        font-size: 16px;
+        margin: 15px 8px;
+    }
+    .button4{
+        padding: 8px 10px;
+        font-size: 16px;
+        margin: 15px 8px;
+    }
+    .button5{
+        padding: 8px 10px;
+        font-size: 16px;
+        margin: 15px 8px;
+    }
+    p{
+        font-size: 18px;
+    }
+
+    select{
+        font-size: 16px;
+    }
+
+    .opcoes label{
+        font-size: 16px;
+    }
+
+    .proximo a{
+        font-size: 16px ;
+        width: 70px;
+    }
+
+}
+
+@media(max-width: 915px){
+    main{
+        margin: 15px 100px;
+        height: 800px;
+
+    }
+
+    footer{
+        height: 120px;
+    }
+
+
+    .cabecalho{
+        margin: 15px 100px;
+    }
+
+
+    .button1{
+        padding: 8px 10px;
+        font-size: 15px;
+        margin: 15px 7px;
+    }
+    .button2{
+        padding: 8px 10px;
+        font-size: 15px;
+        margin: 15px 7px;
+    }
+    .button3{
+        padding: 8px 10px;
+        font-size: 15px;
+        margin: 15px 7px;
+    }
+    .button4{
+        padding: 8px 10px;
+        font-size: 15px;
+        margin: 15px 7px;
+    }
+    .button5{
+        padding: 8px 10px;
+        font-size: 15px;
+        margin: 15px 7px;
+    }
+    h1{
+        font-size: 32px;
+        padding: 30px 0px;
+    }
+    p{
+        margin-top: 50px;
+        font-size: 18px;
+    }
+
+    select{
+        font-size: 16px;
+    }
+
+    .opcoes label{
+        font-size: 16px;
+    }
+
+    .proximo a{
+        font-size: 16px ;
+        width: 70px;
+    }
+    .proximo {
+        position: relative;
+        top: 120px;
+
+    }
+
+
+}
+
+@media(max-width: 890px){
+    main{
+        margin: 15px 90px;
+    }
+
+    .cabecalho{
+        margin: 15px 90px;
+    }
+
+    .button1{
+        padding: 8px 10px;
+        font-size: .90rem;
+        margin: 15px 6px;
+        padding: 9px 12px;
+    }
+    .button2{
+        padding: 8px 10px;
+        font-size: .90rem;
+        margin: 15px 7px;
+    }
+    .button3{
+        padding: 8px 10px;
+        font-size: .90rem;
+        margin: 15px 7px;
+    }
+    .button4{
+        padding: 8px 10px;
+        font-size: .90rem;
+        margin: 15px 7px;
+    }
+    .button5{
+        padding: 8px 10px;
+        font-size: .90rem;
+        margin: 15px 7px;
+    }
+
+    h1{
+        font-size: 30px;
+    }
+    p{
+        font-size: 17px;
+    }
+
+    select{
+        font-size: 15px;
+    }
+
+    .opcoes label{
+        font-size: .90rem;
+    }
+
+    .proximo a{
+        font-size: .90rem ;
+        width: 70px;
+    }
+
+
+}
+@media(max-width: 820px){
+    main{
+        margin: 15px 80px;
+    }
+
+    .cabecalho{
+        margin: 15px 80px;
+    }
+
+
+    .button1{
+        padding: 8px 9px;
+        font-size: .90rem;
+        margin: 15px 6px;
+    }
+    .button2{
+        padding: 8px 9px;
+        font-size: .90rem;
+        margin: 15px 6px;
+    }
+    .button3{
+        padding: 8px 9px;
+        font-size: .90rem;
+        margin: 15px 6px;
+    }
+    .button4{
+        padding: 8px 9px;
+        font-size: .90rem;
+        margin: 15px 6px;
+    }
+    .button5{
+        padding: 8px 9px;
+        font-size: .90rem;
+        margin: 15px 6px;
+    }
+    h1{
+        font-size: 28px;
+    }
+    p{
+        font-size: 17px;
+    }
+
+    select{
+        font-size: 15px;
+    }
+
+    .opcoes label{
+        font-size: 15px;
+    }
+
+    .proximo a{
+        font-size: 15px ;
+        width: 70px;
+    }
+}
+
+@media(max-width: 760px){
+
+    main{
+        margin: 15px 37px;
+    }
+    .cabecalho{
+        margin: 15px 37px;
+    }
+
+
+    .button1{
+        padding: 8.2px ;
+        font-size: 0.88rem;
+        margin: 15px 4px;
+    }
+    .button2{
+        padding: 8.2px ;
+        font-size: 0.88rem;
+        margin: 15px 4px;
+    }
+    .button3{
+        padding: 8.2px ;
+        font-size: 0.88rem;
+        margin: 15px 4px;
+    }
+    .button4{
+        padding: 8.2px ;
+        font-size: 0.88rem;
+        margin: 15px 4px;
+    }
+    .button5{
+        padding: 8.2px ;;
+        font-size: 0.88rem;
+        margin: 15px 4px;
+    }
+    h1{
+        font-size: 23px;
+    }
+    p{
+        font-size: 15px;
+    }
+
+    select{
+        font-size: 13px;
+    }
+
+    .opcoes label{
+        font-size: 13px;
+    }
+
+    .proximo a{
+        font-size: 13px ;
+        width: 60px;
+    }
+}
