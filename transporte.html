@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assests/css/reset.css">
+    <link rel="stylesheet" href="assests/css/transporte.css">
+    <title>Transporte</title>
+</head>
+<body>
+    <header>
+        <div id="dmode" >
+            <input class="darkM"  type="button" value="escuro" id="modeColor" onclick="dMode()">            
+        </div>
+    </header>
+    <main id="mainD">
+        <section class="SectionTop bb" id="contain_selectPage">
+            <div class="paginas bb" id="pages">
+                <table>
+                    <tr class="">
+                        <td><button  class="moradia overButton"><a href="/moradia.html">Moradia</a></button></td>
+                        <td><button class="alimentacao overButton"><a href="/alimentacao.html">Alimentação</a></button></td>
+                        <td><button class="transporte overButton ativo"><a href="/transporte.html">Transporte</a></button></td>
+                        <td><button class="consumo overButton"><a href="/consumo">Consumo</a></button></td>
+                        <td><button class="residuos overButton"><a href="/residuos.html">Resíduos</a></button></td>
+                    </tr>
+                </table>
+            </div>
+            <div id="saida">
+
+            </div>
+        </section>
+        <section class="questions" id="contain_transporte">
+            <div class="titleTransporte ">
+                <h1>TRANSPORTE</h1>
+            </div>
+            
+            <div class="perguntas" id="contain_quests">
+                <h2>1- Possui algum veículo automotor?</h2>
+                <table>
+                    <select class="selectV" id="veiculo">
+                        <option value="">Selecione</option>
+                        <option value="35">Moto</option>
+                        <option value="100">Carro</option>
+                        <option value="130">Caminhão</option>
+                        <option value="0">Não possuo</option>
+                    </select>
+                </table>
+                <h2>2- Como se desloca para o trabalho ou emprego?</h2>
+                <table>
+                    <select class="selectV" id="TrabalhoEmprego">
+                        <option value="">Selecione</option>
+                        <option value="60">Carro</option>
+                        <option value="30">Carona (dividir)</option>
+                        <option value="15">Transporte público</option>
+                        <option value="0">Bicicleta ou a pé</option>
+                    </select>
+                    
+                </table>
+                <h2>3- Quantos quilômetros percorre por dia utilizadno o veículo acima:</h2>
+                <table>
+                    <select class="selectV" id="percorreDia">
+                        <option value="">Selecione</option>
+                        <option value="10">00 a 10 km</option>
+                        <option value="20">11 a 30 km</option>
+                        <option value="30">31 a 50 km</option>
+                        <option value="70">Mais de 51 km</option>
+                    </select>
+                    
+                </table>
+                <h2>4- Onde passou as férias?</h2>
+                <table>
+                    <select class="selectV" id="ferias">
+                        <option value="">Selecione</option>
+                        <option value="0">Não viajei</option>
+                        <option value="10">Viagem curta até 300km</option>
+                        <option value="20">Viagem de média distância de 300 a 800km</option>
+                        <option value="50">Viagem de longa distância acima de 1300km</option>
+                    </select>
+                    
+                </table>
+                <h2>5- Você costuma viajar aos fins de semana? Quantos km?</h2>
+                <table>
+                    <tr>
+                        <select class="selectV" id="fimdeSemana">
+                            <option value="">Selecione</option>
+                            <option value="10">0 km</option>
+                            <option value="20">1 a 15 km</option>
+                            <option value="30">16 a 50 km</option>
+                            <option value="40">Mais de 50 km</option>
+                        </select>                        
+                    </tr>
+                </table>
+            </div>
+            <div class="contain_button ">
+                <a href="#"><button class="transporte proximo" onclick="saida()">Próximo >></button></a>
+            </div>
+        </section>
+        
+    </main>
+    <footer>
+
+    </footer>
+    <script src="./assests/js/transporte.js"></script>
+</body>
+</html>
