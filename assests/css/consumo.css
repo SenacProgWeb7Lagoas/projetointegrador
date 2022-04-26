@@ -21,14 +21,14 @@ main{
     background-color: #ffffff;
     width: 100%;
     font-size: 20px;
-    height: 400px;
+    height: 500px;
     justify-content: space-between;
     line-height: normal;
 }
 .cabecalho{
     background-color: #f15a29;
     height: 50px;
-    }
+}
 h1{
     font-size: 35px;
     padding: 20px 0px;
@@ -39,58 +39,52 @@ h1{
 footer{
     position: absolute;
     background-color: #322a54;
-    height: 200px;
+    height: 250px;
     width: 100%;
     display: flex;
-    }
+    justify-content: space-between;
+    padding: 2% 5%;
+}
 h3{
     font-size: 20px;
     color: #ffffff;
     padding-bottom: 20px;
     padding-top: 10px;
-      }
-.logo{
+}
+.logo{  
     width: 150px;
     height: 150px;
     background-color: #322a54;
     align-content: center;
-    float: left;
-    margin-top: 20px;
-    }
+}
 .alunos_rodape{
     font-size: 15px;
     background-color: #322a54;
     color: #ffffff;
-    height: 200px;
-    width: 300px;
     text-align: center;
-    float: right;
+} 
+.alunos_rodape ul li{
+    display: block;
 }
 .texto_rodape{
     font-size: 15px;
     background-color: #322a54;
     color: #ffffff;
-    height: 200px;
-    width: 800px;
-    text-align: left;
-    justify-content: space-between;
-    line-height: 20px;
-    padding-top: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
-    display: left;
+    width: 50%;
+    text-align: justify;
 }
 select{
     font-size: 18px;
 }
 section{
-padding-block: 10px;
+    padding-block: 10px;
 }
 .perguntas{
     background-color: var(--cabeca);
     text-align: center;
     color: var(--texto);
     padding: 10px;
+    height: 100%;
 }
 .button1{
     background-color: var(--verde);

@@ -62,8 +62,10 @@
     <figure>
         <img class="logo" src="assests/img/logo.png" alt="Logo">
     </figure> 
-    <div class="texto_rodape">
-        <ul>
+    <!-- é melhor o uso de section --> 
+    <section class="texto_rodape">
+        <div> <!-- aqui o mais correto seria mesmo uma div e não uma ul já que 
+        não vamos fazer uma lista aqui -->
             <h3>Projeto Integrador - Turma 05.2021.0107</h3>
                 <p>Esta calculadora foi elaborada para fins didáticos do curso de programação. Para saber mais sobre o cálculo de pegada ecológica e consultar plataformas mais completas, clique <a href="">aqui</a>.</p><!--falta colocar o link da página de ONGs e sites de calculadoras -->
                 <br>
@@ -74,9 +76,9 @@
                 Montar o javascript para salvar os valores da resposta do formulário 
                 Organizar a logo e as duas em listas no CSS com o display flex
                 Organizar a lista de alunos em tabela pra não perder a configuração quando a responsividade for pra mobile  -->
-        </ul>
-    </div>
-    <div class="alunos_rodape">
+        </div>
+    </section>
+    <section class="alunos_rodape">
         <h3>Desenvolvido por:</h3>
         <ul>    
             <li>
@@ -104,7 +106,7 @@
                 Luíza Araújo | <a href="https://github.com/lh-ude">GitHub</a> | <a href="https://br.linkedin.com/in/luiza-helena-ude-goddard-ara%C3%BAjo-b202a9a0">Linkedin</a>
              </li>
         </ul>
-    </div>
+    </section>
 </footer>
 <script src="./assests/js/consumo.js"></script>
 </body>
