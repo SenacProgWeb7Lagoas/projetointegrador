@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assests/css/reset.css">
+    <link rel="stylesheet" href="./assests/css/moradia.css">
+    <title> Moradia </title>
+</head>
+<body>
+    <header class="cabecalho">
+        <section>
+            <button aria-label="Modo de cor do site" class="color-model change-text"> 
+                Light Mode 
+            </button>
+        </section>
+
+        <div class="hamburger"> 
+            <div class="line" id="line1"></div>
+            <div class="line" id="line2"></div>
+            <div class="line" id="line3"></div>            
+        </div>
+        <nav>
+            <ul>
+                <li class="botao-moradia"><a href="#"> Moradia </a></li>
+                <li class="botao-alimentacao"><a href="#"> Alimentação </a></li>
+                <li class="botao-transporte"><a href="#"> Transporte </a></li>
+                <li class="botao-consumo"><a href="#"> Consumo </a></li>
+                <li class="botao-residuos"><a href="#"> Resíduos </a></li>
+                <li class="logo-site"><a href="#"> <img src="./assests/images/logo.png" alt="Logo do site"> </a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        
+        <h2> Moradia </h2>        
+
+        <section>
+            <form action="" class="pergunta1">
+                <h4> Quantas pessoas moram em sua casa? </h4>
+                <select name="pessoas-casa" id="">
+                    <option> Escolha uma opção </option>
+                    <option> 1 </option>
+                    <option> 2 </option>
+                    <option> 3 </option>
+                    <option> 4 </option>
+                    <option> 5 ou mais </option>         
+                </select>
+
+            </form>
+        </section>
+
+        <article>
+            <form action="" class="pergunta2">
+                <p> Quantas torneiras existem em sua casa? </p>
+                <label for="torneiras-a">
+                    <input type="radio" name="opcao"> Menos de 3            
+                </label>
+                <label for="torneiras-b">                    
+                    <input type="radio" name="opcao"> 6 a 8                    
+                </label>
+                <label for="torneiras-c">                    
+                    <input type="radio" name="opcao"> 8 a 10                    
+                </label>
+                <label for="torneiras-d">                    
+                    <input type="radio" name="opcao"> Mais de 10
+                </label>
+            </form>
+        </article>
+
+        <aside>
+            <form action="" class="pergunta3">
+                <p> Em que tipo de moradia você vive? </p>
+                <select name="tipo-casa" id="">
+                    <option> Escolha uma opção </option>
+                    <option> Casa </option>
+                    <option> Apartamento </option>                            
+                </select>
+            </form>
+        </aside>
+
+        <button type="submit" class="botao-proximo"> <a href=""> Próximo </a>  </button>
+
+    </main>
+    <footer>
+
+    </footer>
+    
+</body>
+</html>

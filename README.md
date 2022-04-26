@@ -1,21 +1,20 @@
-# Projeto Intregrador
+# Calculadora Pegada Ecológica
+<div style="width: 200px; height: 200px">
+    <img src="./assests/images/logo.png">
+</div>
 
-## Justificativa
+Disponível em [site](https://senacprogweb7lagoas.github.io/projetointegrador/)
 
-## Layout
-As páginas na versão desktop, seguirão o seguinte padrão
-<img src="./documentacao/imagens/layout-desktop.PNG">
+## Desenvolvido por:  
 
-### cores 
+* [Bianca](https://github.com/BrytanniADJ)
+* [Claudia](https://github.com/claudiaapj)
+* [Gleiton](https://github.com/gleitons)
+* [Luíza](https://github.com/lh-ude)
+* [Mariani](https://github.com/marianibarbosa)
+* [Marcos](https://github.com/marcosfmd)
+* [Michelle](https://github.com/MichelleAndrade)
+* [Pedro](https://github.com/PedroProgramador02)
+* [Sávio](https://github.com/SaVio-FrAncIsco)
 
-* Cinza #c4c4c4 <label style="background-color: #c4c4c4; color: #000"> #c4c4c4</label>
-* Branco <label style="background-color: #ffffff; color: #000"> #ffffff</label>
-*  Azul Escuro <label style="background-color: #322a54"> #322a54</label>
-* Verde do botão eletricidade <label style="background-color: #a6ce39 ; color: #000"> #a6ce39</label>
-* Azul do botão Gás <label style="background-color: #0f7491"> #0f7491</label>
-* Rosa do botão Transporte coletivo <label style="background-color: #ed217c"> #ed217c</label>
-
-* Laranja do botão transporte aéreo <label style="background-color: #f15a29"> #f15a29</label>
-
-* Roxo do botão Resultado
-<label style="background-color: #753874"> #753874</label>
+* Professor [Wisley](https://github.com/wistech7l) 
