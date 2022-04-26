@@ -24,4 +24,14 @@ function modoNoturno(){
     }
 }
 
+function mobile(){ // função acionada quando se clica no menu em barras ou no X
+
+    // adiciona a class showmenu no elemento que não tem essa classe e retira show-menu no elemento que contem
+    // ou seja alternar entre adicionar e retirar  
+    document.querySelector(".cabecalho").classList.toggle("show-menu")
+    document.querySelector(".nav").classList.toggle("show-menu")
+    document.querySelector("header").classList.toggle("show-menu")
+    document.querySelector(".logo").classList.toggle("show-menu")
+}
+
 
