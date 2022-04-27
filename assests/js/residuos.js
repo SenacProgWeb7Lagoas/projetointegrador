@@ -76,12 +76,11 @@ function selector(){ // Função que escolhe os valores da 3º Pergunta.
     return value4;
 } 
 
-export function sendSum(){ //Função para retornar a soma. 
+function sendSum(){ //Função para retornar a soma. 
 
     sum = trashBags() + secondSection() + fristSection() + selector();
 
-    return sum;
-    //alert ("A soma é: " + sum);
+    alert ("A soma é: " + sum);
 }
 // Modo Light e Dark-mode
 
