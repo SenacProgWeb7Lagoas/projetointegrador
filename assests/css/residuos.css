@@ -71,7 +71,7 @@ header section {
 }
 
 nav {
-    background-color: var(--branco);
+    background-color: var(--residuos);
     height: 70px;
     width: 70%;
     max-width: 1200px;
