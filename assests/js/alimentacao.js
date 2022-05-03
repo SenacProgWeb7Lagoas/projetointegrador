@@ -47,7 +47,6 @@ const escolha = function(){
     for(let i = 0; i<radios.length; i++){
         if(radios[i].checked){
             console.log("Escoheu " + radios[i].value);
-
-      }
         }
+    }
   }
