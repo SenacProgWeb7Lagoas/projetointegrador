@@ -43,6 +43,7 @@ function mobile(){
 const escolha = function(){
     let radios = document.getElementsByName("pergunta2");
     console.log('Teste1');
+    console.log('Test2');
     for(let i = 0; i<radios.length; i++){
         if(radios[i].checked){
             console.log("Escoheu " + radios[i].value);
