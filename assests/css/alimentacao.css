@@ -7,7 +7,6 @@
     --rosa: #ed217c;
     --laranja: #f15a29;
     --roxo: #753874;
-    --font: Arial, Helvetica, sans-serif;
 }
 
 .noturno{
@@ -22,13 +21,12 @@
 }
 body{
     background-color: var(--body);
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: var(--font);
+    font-family: Helvetica
 }
 
 footer{
     background-color: #322a54;
-    height: 90px;
+    height: 205px;
     font-weight: bold;
 }
 
@@ -39,21 +37,26 @@ header{
 .estilo{
     background-color: #322a54;
     font-weight: bold;
+<<<<<<< HEAD
     height: 120px;
+=======
+    height: 100px;
+
+>>>>>>> alimentacao
 }
 
 main{
-    margin: 5px 120px;
+    margin: 5px 195px;
     height: 680px;
 }
-
-
 .cabecalho{
     background-color: var(--cabeca);
-    margin: 10px 120px;
+    width: 70%;
+    margin: 0 auto;
     border: 5px solid var(--borda);
     border-radius: 10px;
     height: 100px;
+    margin-top: 32px;
 }
 h1{
     font-size: 35px;
@@ -61,83 +64,51 @@ h1{
     color: #ffffff;
     font-weight: bold;
     background-color: var(--borda);
+    text-align: center;
 }
 p{
     font-size: 20px;
     margin: 40px 0px;
-    padding: 2px 0px;
+    padding: 2px 30px;
+    text-align: left;
 }
 select{
     font-size: 17px;
 }
 .perguntas{
     background-color: var(--cabeca);
-    text-align: center;
     border: 5px solid var(--borda);
     border-radius: 10px;
     color: var(--texto);
     height: 98%;
 }
-.button1{
-    background-color: var(--verde);
+.button1 , .button2 , .button3 , .button4 , .button5{
     border: none;
     color: #ffffff;
     padding: 10px 15px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 20px;
     margin: 20px 10px;
     cursor: pointer;
+    border-radius: 5px;
+}
+.button1{
+    background-color: var(--verde);
 }
 .button2{
     background-color: var(--borda);
-    border: none;
-    color: #ffffff;
     border: 1px solid #ffffff;
-    padding: 10px 15px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 20px 10px;
-    cursor: pointer;
 }
 .button3{
     background-color: var(--rosa);
-    border: none;
-    color: #ffffff;
-    padding: 10px 15px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 20px 10px;
-    cursor: pointer;
 }
 .button4{
     background-color: var(--laranja);
-    border: none;
-    color: #ffffff;
-    padding: 10px 15px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 20px 10px;
-    cursor: pointer;
 }
 .button5{
     background-color: var(--roxo);
-    border: none;
-    color: #ffffff;
-    padding: 10px 15px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 20px 10px;
-    cursor: pointer;
 }
 
 .logo img{
@@ -160,11 +131,12 @@ select{
 li{
     display: inline-block;
 }
-ul {
+.ul{
     text-align: center;
 }
 .opcoes{
     padding: 10px;
+    margin: 0px 85px;
 }
 .opcoes label {
     font-size: 17px;
@@ -196,15 +168,13 @@ ul {
   border: 2px solid var(--borda);
   border-radius: 10px;
   color: var(--texto);
-  background-color: var(--cabeca)
+  background-color: var(--cabeca);
+  margin: 0px 100px;
 }
 
 .oculta{
     display: none;
 }
-
-
-
 
 /*Responsividade*/
 @media(max-width: 442px){
