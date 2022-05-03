@@ -1,8 +1,10 @@
-import  sendSum from 'script.js';
-
 let outResiduos = document.getElementById("outResiduos");
 
-outResiduos.innerHTML = sendSum ();
+
+const storedValue = localStorage.getItem('myKey');
+
+
+outResiduos.innerHTML = storedValue;
 
 
 
