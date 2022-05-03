@@ -79,7 +79,9 @@ function selector(){ // Função que escolhe os valores da 3º Pergunta.
 function sendSum(){ //Função para retornar a soma. 
 
     sum = trashBags() + secondSection() + fristSection() + selector();
-    alert ("A soma é: " + sum);
+    //alert ("A soma é: " + sum);
+    window.location.assign('./resultado.html');
+    console.log('test');
 }
 // Modo Light e Dark-mode
 
