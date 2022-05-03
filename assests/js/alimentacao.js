@@ -42,6 +42,7 @@ function mobile(){
 //Função para a 3º pergunta
 const escolha = function(){
     let radios = document.getElementsByName("pergunta2");
+    console.log('Teste1');
     for(let i = 0; i<radios.length; i++){
         if(radios[i].checked){
             console.log("Escoheu " + radios[i].value);
