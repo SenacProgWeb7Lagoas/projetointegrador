@@ -5,26 +5,6 @@ const storedValue = localStorage.getItem('myKey');
 
 
 outResiduos.innerHTML = storedValue;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // Modo Light e Dark-mode
 
 let darkMode = document.querySelector (".color-model")
