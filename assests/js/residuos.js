@@ -80,7 +80,7 @@ function sendSum(){ //Função para retornar a soma.
 
     sum = trashBags() + secondSection() + fristSection() + selector();
     
-    localStorage['myKey'] = sum;
+    localStorage['residuos'] = sum;
     
     window.location.assign('./resultado.html');
 }
