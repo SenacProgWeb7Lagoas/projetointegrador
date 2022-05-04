@@ -79,8 +79,15 @@ function selector(){ // Função que escolhe os valores da 3º Pergunta.
 function sendSum(){ //Função para retornar a soma. 
 
     sum = trashBags() + secondSection() + fristSection() + selector();
+<<<<<<< HEAD
 
     alert ("A soma é: " + sum);
+=======
+    
+    localStorage['myKey'] = sum;
+    
+    window.location.assign('./resultado.html');
+>>>>>>> resultados
 }
 // Modo Light e Dark-mode
 
@@ -111,8 +118,11 @@ let hamburger = document.querySelector (".hamburger");
 
 
 hamburger.addEventListener("click", function (){
+<<<<<<< HEAD
     console.log('> nav',document.querySelector("nav") )
     console.log('> hamburger ',document.querySelector(".hamburger") )
+=======
+>>>>>>> resultados
     document.querySelector("nav").classList.toggle("show-menu")
     document.querySelector(".hamburger").classList.toggle("show-menu")
 })

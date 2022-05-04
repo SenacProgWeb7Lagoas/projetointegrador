@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,300;1,400&display=swap'); 
+
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700& family=Muli:ital,wght@0,200;0,300;0,400;0,500;1.200;1.300;1400&display=swap');
+
+:root {
+    /* fontes */
+     --font1: 'Roboto', sans-serif;
+     --font2: "Baloo Da 2", serif;
+     --padrao: Arial, Helvetica, sans-serif;
+
+    /* cores modo claro*/
+     --cinza: #c4c4c4;
+     --branco: #ffffff;
+     --black: #333;
+
+     /* cores botao */
+     --azulescuro: #322a54;
+     --moradia: #a6ce39;
+     --alimentacao: #0f7491;
+     --transporte: #ed217c;
+     --consumo: #f15a29;
+     --residuos: #753874;
+
+     /* cores modo escuro */
+     --fundosite: #3E3E3E;
+     --fundocabecalho: #252625;
+
+     /* cor do input */
+     --corinput: #58595b;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font1);
+}
+
+body {
+    background-color: var(--cinza);
+    height: 100vh;
+}
+
+header section {
+    background-color: var(--azulescuro);
+    width: 100%;
+    height: 100px;
+    margin-bottom: 32px;
+}
+
+.color-model {
+    width: 7.8rem;
+    background-color: rgba(0, 0, 0, 0.384);
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: var(--branco);
+    padding: 8px;
+    margin: 35px 0 0 30px; 
+    cursor: pointer; 
+}
+
+.color-model:hover {
+    background-color: var(--branco);
+    color: var(--azulescuro);
+}
+
+.hamburger {
+    opacity: 0;
+}
+
+nav {
+    background-color: var(--branco);
+    height: 70px;
+    width: 70%;
+    max-width: 1200px;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 17px;
+}
+
+header nav ul li {
+    font-size:  1rem;
+    list-style-type: none;
+    margin: 0 2%;
+    padding: 8px;
+    border-radius: 7px;
+    text-align: justify;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: var(--branco);
+    pointer-events: none;
+    cursor: default;
+}
+
+.botao-moradia {
+    background-color: var(--moradia);
+}
+
+.botao-alimentacao {
+    background-color: var(--alimentacao);
+}
+
+.botao-transporte {
+    background-color: var(--transporte);
+}
+
+.botao-consumo {
+    background-color: var(--consumo);
+}
+
+.botao-residuos {
+    background-color: var(--residuos);
+}
+
+/* fim da estilizção do cabecalho header */
+
+
+main {
+    height: 100%;
+    width: 70%;
+    max-width: 1200px; 
+    background-color: var(--branco);
+    border-radius: 5px;
+    margin: 30px auto;
+    padding-top: 10px;
+}
+
+.background {
+    background-image: linear-gradient(to bottom, #a6ce397a, #0f75917a, #ed217d7a, #f15b297a, #7538747a); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 30px;
+}
+
+
+.title h1 {
+    font-size: 2.6rem;
+    font-family: var(--font2);
+}
+.title p {
+    margin-bottom: 30px;
+}
+
+.grid-template {
+    width: 100%;
+    height: 450px;
+    background-color: rgba(0, 0, 0, 0);
+    display: grid;
+    grid-template-areas: 
+    "columns1 columns1"
+    "columns2 columns2"
+    "columns3 columns3"
+    ;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+h3 {
+    font-size: 1.3rem;
+    text-align: justify;
+    padding-bottom: 20px;
+}
+
+h4 {
+    font-size: 1rem;
+    font-weight: normal;
+    padding: 15px 0;
+    border-bottom: 1px solid black;
+}
+
+.total {
+    font-size: 1rem;
+    padding: 15px 0;
+}
+
+.rodape-text {
+    display: flex;
+    width: 100%;
+    margin-top: -110px;
+}
+
+footer {
+    background-color: var(--azulescuro);
+    width: 100%;
+    height: 100px;
+}
+
+/* Responsividade */
+
+@media (max-width: 800px) {
+    header nav ul li {
+        margin: 0 1%;
+        padding: 6px;
+    }
+
+    header nav ul li a {
+        font-size: .8rem;
+    }
+}
+
+@media (max-width: 580px) {
+    header section{ 
+        margin-bottom: 0;
+    }
+
+   .hamburger {
+       width: 2rem;
+       height: 2rem;
+       position: absolute; 
+       opacity: 100;
+       right: 1rem;  
+       top: 2rem;  
+       display: flex;
+       flex-direction: column;
+       justify-content: space-evenly;
+       cursor: pointer;
+   }
+   
+   .hamburger.show-menu {
+       right: 2rem;
+   }
+   
+   .line {
+       width: 100%;
+       height: .2rem;
+       background-color:  #fff;
+       box-shadow: 0.1rem 0.1rem 1px #000;
+       transition: transform 1s;
+   }
+   
+   .show-menu .line:nth-child(1){
+       transform: rotate(-45deg) translate(.5rem, 1.4rem);
+   }
+   
+   .show-menu .line:nth-child(2){
+       opacity: 0;
+   }
+   
+   .show-menu .line:nth-child(3){
+       transform: rotate(45deg) translate(.6rem, -1.4rem);
+   }
+   
+   nav {
+       display: none;
+   }
+
+   header nav.show-menu {
+       height: 100vh;
+       width: 100%;
+   }
+
+    header nav ul {
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       gap: 3.5rem;
+       border-radius: 5px;
+       text-align: justify;
+   } 
+
+   header nav ul li{
+       width: 150px;
+       text-align: center;
+   }
+
+   header nav.show-menu{
+       height: 90vh;
+       width: 100%;
+   }
+
+   nav.show-menu {
+       display: block;
+   }
+
+   nav.show-menu ul li  {
+       padding: .8rem;
+   }
+
+   nav.show-menu ul li a {
+       font-size: 1.3rem;
+   }
+
+   header nav ul li:nth-child(6) {
+       margin: 0 0 20px 30px;
+       padding: 0;
+   }
+
+   nav.show-menu ul li img {
+       width: 100px;
+   }
+
+   body.show-menu {
+       height: 100%;
+       overflow: hidden;
+   }
+}  
+
+
+/* estialização do modo light e dark-mode */
+
+body.change-color {
+    background-color: var(--fundosite);
+}
+
+nav.change-color {
+    background-color: var(--fundocabecalho);
+}
+
+/* main modo light e dark mode */
+.container.change-color {
+    background-color: var(--fundocabecalho);
+}
+
+.container.change-color h1{
+    font-weight: 600;
+    color: var(--branco);
+}
+
+.container.change-color h3{
+    font-weight: 400;
+    color: var(--branco);
+}
+
+.container.change-color h5{
+    font-weight: 400;
+    color: var(--branco);
+}
+
+.container.change-color h4{
+    font-weight: 400;
+    color: var(--branco);
+}
+
+.container.change-color p {
+    color: var(--branco);
+}
+/* fim do modo light e dark mode */
