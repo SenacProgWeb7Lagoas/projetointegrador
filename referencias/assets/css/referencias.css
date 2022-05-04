@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 :root{
     
     /*fontes*/
@@ -73,7 +71,7 @@
 }
 
 nav{
-    background-color: var(--moradia);
+    background-color: #12842d;
     width: 70%;
     height: 100px;
     border-radius: 5px;
@@ -84,7 +82,7 @@ nav{
 nav ul{
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
+    align-items: left;
     padding-top: 20px;
     border-radius: 5px;    
 }
@@ -94,41 +92,21 @@ header nav ul li{
     padding: 8px;
     border-radius: 4px;
 }
-
-
 header nav ul li a{
     font-size: 20px;
     text-decoration: none;
     color: var(--branco);    
 }
-
-.botao-moradia{
-    background-color: var(--moradia);
+.botao-voltar{
+    background-color: #12842d;
     border: 1px solid var(--branco);
-    border-radius: 5px;  
+    border-radius: 5px; 
 }
-
-.botao-alimentacao{
-    background-color: var(--alimentacao);
-}
-
-.botao-transporte{
-    background-color: var(--transporte);
-}
-
-.botao-consumo{
-    background-color: var(--consumo);
-}
-
-.botao-residuos{
-    background-color: var(--residuos);
-}
-
 .logo-site{
     display: none;
 }
 
-/* Estilização da seção de perguntas */
+/* Estilização da main */
 
 main{
     background-color: var(--branco);
@@ -136,10 +114,9 @@ main{
     max-width: 1200px;    
     border-radius: 4px;
     margin: 0 auto;
-    height: 100vh;
-    border: 4px solid var(--moradia);     
+    height: auto;
+    border: 4px solid #12842d;     
 }
-
 
 h2{
     /* width: 100%; */
@@ -152,58 +129,11 @@ h2{
     border-radius: 3px;
     text-align: center;  
 }
-
-.pergunta1 {
-    margin: 20px 20px;
-    font-size: 18px;  
+.leituras{
+    font-size: 10px;
 }
-
-.pergunta1 select{
-    margin: 10px 0px; 
-    font-size: 16px; 
-    padding: 3px;    
-}
-
-.pergunta2{
-    margin: 20px 20px;
-    display: block;
-    font-size: 18px;  
-}
-
-.pergunta2 input{
-    margin: 15px 0px 10px 0px;          
-}
-
-.pergunta2 label{    
-    padding-right: 30px;
-}
-
-.pergunta3{
-    margin: 20px 20px;
-    font-size: 18px;  
-}
-
-.pergunta3 select{
-    margin: 10px 0px; 
-    font-size: 16px;
-    padding: 3px;    
-}
-
-.botao-proximo{
-    margin: 0px 20px;
-    font-size: 18px;
-    background-color: #718d25;
-    padding: 8px;
-    border: none;
-    border-radius: 4px;
-    float: right;
-    margin: 10px 40px 20px 0px;    
-}
-
-.botao-proximo a{
-    text-decoration: none;
-    color: var(--branco);   
-
+.outrasCalculadoras{
+    font-size: 10px;
 }
 
 /* Responsividade */
@@ -370,4 +300,48 @@ main.change_color{
 
 .pergunta3 select{
     background-color: var(--cinza);
+}
+/* Estilização do footer */
+footer{
+    position: absolute;
+    background-color: #322a54;
+    height: 250px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 5%;
+}
+h3{
+    font-size: 20px;
+    color: #ffffff;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+.logo{  
+    width: 150px;
+    height: 150px;
+    background-color: #322a54;
+    align-content: center;
+}
+.alunos_rodape{
+    font-size: 15px;
+    background-color: #322a54;
+    color: #ffffff;
+    text-align: center;
+} 
+.alunos_rodape ul li{
+    display: block;
+}
+.texto_rodape{
+    font-size: 15px;
+    background-color: #322a54;
+    color: #ffffff;
+    width: 50%;
+    text-align: justify;
+}
+li{
+    display: inline-block;
+}
+ul{
+    text-align: center;
 }
