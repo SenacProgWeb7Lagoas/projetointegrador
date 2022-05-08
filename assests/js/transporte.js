@@ -1,3 +1,4 @@
+
 function dMode() {
     const mainC = document.getElementById('mainD');
     const selPage = document.getElementById('contain_selectPage');
@@ -29,10 +30,17 @@ function saida() {
         const fimdeSemana = document.getElementById('fimdeSemana');
         const infoFimSemana = fimdeSemana.options[fimdeSemana.selectedIndex].value;
         const somatransporte = parseInt(infoFimSemana) + parseInt(infoVeiculo) + parseInt(infoTrabalho) + parseInt(infoPercorrer) + parseInt(infoFerias);
-        alert(somatransporte)
         localStorage.setItem('transporte', `${somatransporte}`);
         location.href = '/consumo.html';
         
         
         
+}
+function menuMobile() {
+        const menu = document.getElementById('menuM');
+        if (menu.style.display == 'flex') {
+                menu.style.display = 'none';    
+        } else {
+                menu.style.display = 'flex';                         
+        }       
 }
