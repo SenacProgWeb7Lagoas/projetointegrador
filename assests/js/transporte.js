@@ -3,18 +3,24 @@ function dMode() {
     const mainC = document.getElementById('mainD');
     const selPage = document.getElementById('contain_selectPage');
     const conQuestions = document.getElementById('contain_transporte');
+    const conQ = document.getElementById('contain_quests');
+    
     const atual = document.getElementById('modeColor').value;
 
     if (atual == 'Escuro') {
             document.getElementById('dmode').innerHTML = `<input class="darkM"  type="button" value="Claro" id="modeColor" onclick="dMode()">`
             mainC.style.background = '#3E3E3E';
             selPage.style.background = '#252625';
-            conQuestions.style.background = '#252625';        
+            conQuestions.style.background = '#ED217C';      
+            conQ.style.background =   '#252625';
+            document.documentElement.style.setProperty('--perguntas', '#d6d6d6');
     } else {
             document.getElementById('dmode').innerHTML = `<input class="darkM"  type="button" value="Escuro" id="modeColor" onclick="dMode()">`
             mainC.style.background = '#C4C4C4';
-            selPage.style.background = 'white';
-            conQuestions.style.background = 'white';
+            selPage.style.background = '#ED217C';
+            conQuestions.style.background = '#ED217C';
+            conQ.style.background =   'white';
+            document.documentElement.style.setProperty('--perguntas', 'rgb(40, 40, 40)');
     }
 
 }
