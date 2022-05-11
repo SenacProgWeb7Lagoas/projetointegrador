@@ -48,14 +48,13 @@ function mobile(){
 const escolha = function(){
     let radios = document.getElementsByName("pergunta2");
     for(let i = 0; i<radios.length; i++){
-        if(radios[i].checked){
+        if(radios[i].c){
             let marca = radios[i].value
-            console.log("Escoheu " + radios[i].value);
             for(let i = 0; i<radios.length; i++){
                 if(marca == 'sim'){
                     result3=+ 25;
-                   
-                    return
+
+                return
                 }else if(marca == 'nao'){
                     result3=+ 125
                    
@@ -68,6 +67,8 @@ const escolha = function(){
                     result3=+ 100
                     
                     return
+                }else{
+                    alert("Responda a terceira pergunta!")
                 }
             }
            
@@ -80,7 +81,7 @@ function pergunta1(){
     let p1 = document.getElementById("box-alimen_p1");
     for (i = 0; i < p1.length; i++) {
         if(p1.selectedIndex == "0"){
-            alert("Escolha uma opção")
+            alert("Escolha uma das opções para a primeira pergunta!")
             return
         }else if(p1.selectedIndex == "1"){
             result1 = 0;
@@ -105,7 +106,7 @@ function pergunta2(){
     let p2 = document.getElementById("alimentacao_p2");
     for (i = 0; i < p2.length; i++){
         if(p2.selectedIndex == "0"){
-            alert("Escolha uma opção");
+            alert("Selecione uma opção para a segunda pergunta!")
             return
         }else if(p2.selectedIndex == "1"){
             result2 = 25;
@@ -127,8 +128,9 @@ function pergunta2(){
             escolha();
             pergunta1();
             pergunta2();
+            if(p2.selectedIndex == "0" || p1.selectedIndex == "0" || radios[i].value == "" ){
+                alert("Responda todas as perguntas!");
+            }
             soma = result1 + result2 + result3;
-            console.log(result2);
-            console.log(soma);
             alert("Resultado:" + soma);
         }
