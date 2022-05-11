@@ -100,7 +100,6 @@ function pergunta1(){
         }
 }
 }
-
 //Função pergunta 2
 function pergunta2(){
     let p2 = document.getElementById("alimentacao_p2");
@@ -132,5 +131,4 @@ function pergunta2(){
             console.log(result2);
             console.log(soma);
             alert("Resultado:" + soma);
-
         }
