@@ -53,23 +53,23 @@
                 <p>
                     Quantas refeições de carne ou de peixe come por semana?
                 </p>
-                <select id="box-alimen_p1">
-                    <option value="Escolha uma opção">Escolha uma opção</option>
-                    <option value="Nenhuma">Nenhuma</option>
-                    <option value="1 a 3">1 a 3</option>
-                    <option value="4 a 6">4 a 6</option>
-                    <option value="7 a 10">7 a 10</option>
-                    <option value="Mais de 10">Mais de 10</option>
+                <select id="box-alimen_p1" id="p1">
+                    <option id="perg1" value="">Escolha uma opção</option>
+                    <option id="perg1" value="0">Nenhuma</option>
+                    <option id="perg1" value="10">1 a 3</option>
+                    <option id="perg1" value="20">4 a 6</option>
+                    <option id="perg1" value="35">7 a 10</option>
+                    <option id="perg1" value="50">Mais de 10</option>
                 </select>
                 <p>
                     Quantas refeições feitas em casa você como por semana?
                 </p>
-                <select name="" id="alimentacao_p2">
-                    <option value="Escolha uma opção">Escolha uma opção</option>
-                    <option value="Menos de 10">Menos de 10</option>
-                    <option value="10 a 14">10 a 14</option>
-                    <option value="15 a 18">15 a 18</option>
-                    <option value="Mais de 10">Mais de 10</option>
+                <select name="" id="alimentacao_p2" >
+                    <option value="">Escolha uma opção</option>
+                    <option value="25">Menos de 10</option>
+                    <option value="20">10 a 14</option>
+                    <option value="15">15 a 18</option>
+                    <option value="10">Mais de 10</option>
                 </select>
                 <p>
                     Procura comprar alimentos produzidos localmente?
@@ -77,31 +77,31 @@
                 <div class="opcoes">
                     <ul>
                         <li>
-                            <input type="radio" name="pergunta2" id="sim">
+                            <input type="radio" name="pergunta2" id="sim" value="sim">
                             <label for="sim">Sim</label>
                         </li>
                         <li>
-                            <input type="radio" name="pergunta2" id="nao">
+                            <input type="radio" name="pergunta2" id="nao" value="nao">
                             <label for="nao">Não</label>
                         </li>
                         <li>
-                            <input type="radio" name="pergunta2" id="as_vezes">
+                            <input type="radio" name="pergunta2" id="as_vezes" value="as_vezes">
                             <label for="as_vezes">As vezes</label>
                         </li>
                         <li>
-                            <input type="radio" name="pergunta2" id="raramente">
+                            <input type="radio" name="pergunta2" id="raramente" value="raramente">
                             <label for="raramente">Raramente</label>
                         </li>
                     </ul>
                 </div>
 
                 <div class="proximo">
-                    <button><a href="#">Próxima Página</a></button>
+                    <button onclick="resultado()"><a href="#">Próxima Página</a></button>
                 </div>
             </div>
         </main>
         <footer>
-            
+
         </footer>
         <script src="./assests/js/alimentacao.js"></script>
         </body>
