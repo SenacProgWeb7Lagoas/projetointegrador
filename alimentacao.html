@@ -54,7 +54,7 @@
                     Quantas refeições de carne ou de peixe come por semana?
                 </p>
                 <select id="box-alimen_p1" id="p1">
-                    <option id="perg1" value="">Escolha uma opção</option>
+                    <option id="perg1" value="-1">Escolha uma opção</option>
                     <option id="perg1" value="0">Nenhuma</option>
                     <option id="perg1" value="10">1 a 3</option>
                     <option id="perg1" value="20">4 a 6</option>
@@ -64,8 +64,11 @@
                 <p>
                     Quantas refeições feitas em casa você como por semana?
                 </p>
-                <select name="" id="alimentacao_p2" >
-                    <option value="">Escolha uma opção</option>
+                <p id="label_pegunta2" style="display: none;">
+                    * Resposta Obrigatória
+                </p>
+                <select name="" id="alimentacao_p2">
+                    <option value="0">Escolha uma opção</option>
                     <option value="25">Menos de 10</option>
                     <option value="20">10 a 14</option>
                     <option value="15">15 a 18</option>
