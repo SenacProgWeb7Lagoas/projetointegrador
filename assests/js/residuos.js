@@ -84,7 +84,7 @@ function sendSum(){ //Função para retornar a soma.
     alert ("A soma é: " + sum);
 =======
     
-    localStorage['myKey'] = sum;
+    localStorage['residuos'] = sum;
     
     window.location.assign('./resultado.html');
 >>>>>>> resultados

@@ -12,6 +12,7 @@
     /* cores modo claro*/
      --cinza: #c4c4c4;
      --branco: #ffffff;
+     --verde: #12842d;
      --black: #333;
 
      /* cores botao */
@@ -129,7 +130,7 @@ main {
     height: 100%;
     width: 70%;
     max-width: 1200px; 
-    background-color: var(--branco);
+    background-color: var(--verde);
     border-radius: 5px;
     margin: 30px auto;
     padding-top: 10px;
@@ -154,7 +155,7 @@ main {
 .grid-template {
     width: 100%;
     height: 450px;
-    background-color: rgba(0, 0, 0, 0);
+    background-color: rgba(255, 255, 255, 0);
     display: grid;
     grid-template-areas: 
     "columns1 columns1"
@@ -352,11 +353,11 @@ nav.change-color {
 
 /* animação da imagem*/
 
-.animacao {
+/*.animacao {
     animation: go-back 10s;
     width: 100%;
 }
-
+*/
 
 @keyframes go-back {
      0% {
