@@ -1,4 +1,9 @@
 let ativarNoturno = true;
+let result3 = 0
+let result1 = 0
+let result2 = 0
+let soma = 0
+
 
 
 function modoNoturno(){
@@ -38,9 +43,89 @@ function mobile(){
 const escolha = function(){
     let radios = document.getElementsByName("pergunta2");
     for(let i = 0; i<radios.length; i++){
-        if(radios[i].checked){
-            console.log("Escoheu " + radios[i].value);
-            alert("você escolheu como resposta: " + radios[i].value)
+        if(radios[i].c){
+            let marca = radios[i].value
+            for(let i = 0; i<radios.length; i++){
+                if(marca == 'sim'){
+                    result3=+ 25;
+
+                return
+                }else if(marca == 'nao'){
+                    result3=+ 125
+                   
+                    return
+                }else if(marca == 'as_vezes'){
+                    result3=+ 50
+                  
+                    return
+                }else if(marca == 'raramente'){
+                    result3=+ 100
+                    
+                    return
+                }else{
+                    alert("Responda a terceira pergunta!")
+                }
+            }
+           
+                }   
       }
         }
-  }
+
+//1º pergunta
+function pergunta1(){
+    let p1 = document.getElementById("box-alimen_p1");
+    for (i = 0; i < p1.length; i++) {
+        if(p1.selectedIndex == "0"){
+            alert("Escolha uma das opções para a primeira pergunta!")
+            return
+        }else if(p1.selectedIndex == "1"){
+            result1 = 0;
+            return
+        }else if(p1.selectedIndex == "2"){
+            result1 = 10;
+            return
+        }else if(p1.selectedIndex == "3"){
+            result1 = 20;
+            return
+        }else if(p1.selectedIndex == "4"){
+            result1 = 35;
+            return
+        }else if(p1.selectedIndex == "5"){
+            result1 = 50;
+            return
+        }
+}
+}
+//Função pergunta 2
+function pergunta2(){
+    let p2 = document.getElementById("alimentacao_p2");
+    for (i = 0; i < p2.length; i++){
+        if(p2.selectedIndex == "0"){
+            alert("Selecione uma opção para a segunda pergunta!")
+            return
+        }else if(p2.selectedIndex == "1"){
+            result2 = 25;
+            return
+        }else if(p2.selectedIndex == "2"){
+            result2= 20;
+            return
+        }else if(p2.selectedIndex == "3"){
+            result2 = 15;
+            return
+        }else if(p2.selectedIndex == "4"){
+            result2 = 10;
+            return
+        }
+}
+}
+        //Função soma os 3 resultados das respostas
+        function resultado(){
+            escolha();
+            pergunta1();
+            pergunta2();
+            if(p2.selectedIndex == "0" || p1.selectedIndex == "0" || radios[i].value == "" ){
+                alert("Responda todas as perguntas!");
+            }
+            soma = result1 + result2 + result3;
+            alert("Resultado:" + soma);
+        }
