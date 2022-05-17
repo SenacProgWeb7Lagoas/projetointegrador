@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./assests/css/reset.css">
+        <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap" rel="stylesheet">
+        <link href="assests/css/alimentacao.css" rel="stylesheet">
+        <title>Alimentação</title>
+    </head>
+        <body>
+            <header>
+                <div class="estilo">
+                    <button class="noturno" onclick="modoNoturno()">Dark Mode</button>
+                    <div class="nav" onclick="mobile()">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                    </div>
+                </div>
+                <!--Inicio links navegações-->
+                <div class="cabecalho">
+                    <ul class="ul">
+                        <li>
+                            <a href="./moradia.html" class="button1">Moradia</a>
+                        </li>
+                        <li>
+                            <a href="./alimentacao.html" class="button2">Alimentação</a>
+                        </li>
+                        <li>
+                            <a href="./transporte.html" class="button3">Transporte</a>
+                        </li>
+                        <li>
+                            <a href="./consumo.html" class="button4">Consumo</a>
+                        </li>
+                        <li>
+                            <a href="./residuos.html" class="button5">Resíduos</a>
+                        </li>
+                        <li class="logo">
+                            <a href="#"><img src="./assests/img/logo.png" alt="Logo Pegada Ecológica" ></a>
+                        </li>
+                    </ul>
+                </div>
+
+            </header>
+        <main>
+
+            <div class="perguntas">
+                <h1>
+                    Alimentação
+                </h1>
+                <p>
+                    Quantas refeições de carne ou de peixe come por semana?
+                </p>
+                <select id="box-alimen_p1" id="p1">
+                    <option id="perg1" value="-1">Escolha uma opção</option>
+                    <option id="perg1" value="0">Nenhuma</option>
+                    <option id="perg1" value="10">1 a 3</option>
+                    <option id="perg1" value="20">4 a 6</option>
+                    <option id="perg1" value="35">7 a 10</option>
+                    <option id="perg1" value="50">Mais de 10</option>
+                </select>
+                <p>
+                    Quantas refeições feitas em casa você como por semana?
+                </p>
+                <p id="label_pegunta2" style="display: none;">
+                    * Resposta Obrigatória
+                </p>
+                <select name="" id="alimentacao_p2">
+                    <option value="0">Escolha uma opção</option>
+                    <option value="25">Menos de 10</option>
+                    <option value="20">10 a 14</option>
+                    <option value="15">15 a 18</option>
+                    <option value="10">Mais de 10</option>
+                </select>
+                <p>
+                    Procura comprar alimentos produzidos localmente?
+                </p>
+                <div class="opcoes">
+                    <ul>
+                        <li>
+                            <input type="radio" name="pergunta2" id="sim" value="sim">
+                            <label for="sim">Sim</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="pergunta2" id="nao" value="nao">
+                            <label for="nao">Não</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="pergunta2" id="as_vezes" value="as_vezes">
+                            <label for="as_vezes">As vezes</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="pergunta2" id="raramente" value="raramente">
+                            <label for="raramente">Raramente</label>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="proximo">
+                    <button onclick="resultado()"><a href="#">Próxima Página</a></button>
+                </div>
+            </div>
+        </main>
+        <footer>
+          <figure>
+      <img class="logo_rodape" src="assests/img/logo.png" alt="Logo">
+  </figure>
+  <section class="texto_rodape">
+      <div>
+          <h2>Projeto Integrador - Turma 05.2021.0107</h2>
+              <a>Esta calculadora foi elaborada para fins didáticos do curso de programação. Para saber mais sobre o cálculo de pegada ecológica e consultar plataformas mais completas, clique <a href="">aqui.<br></a></a>
+              <a>Site desenvolvido pelos alunos do curso de Programção Web do SENAC Minas - Unidade Sete Lagoas. Este curso faz parte do <a href="https://www.mg.senac.br/Paginas/minas-programando.aspx">Projeto Minas Programando.</a></a>
+      </div>
+  </section>
+  <section class="alunos_rodape">
+      <h2>Desenvolvido por:</h2>
+      <ul>
+          <li>
+              Bianca Araújo | <a href="https://github.com/BrytanniADJ">GitHub</a> | <a class="roxo" href="https://www.linkedin.com/in/bianca-araújo-coelho-bia-b03b3b205/">Linkedin</a>
+          </li>
+          <li>
+              Cláudia Aguiar   | <a href="https://github.com/claudiaapj">GitHub</a> | <a class="roxo" href="https://www.linkedin.com/in/claudiaaguilarpaixao/">Linkedin</a>
+          </li>
+          <li>
+              Gleiton | <a href="https://github.com/gleitons">GitHub</a> | <a class="roxo" href="#">Linkedin</a>
+           </li>
+           <li>
+              Luíza Araújo | <a href="https://github.com/lh-ude">GitHub</a> | <a class="roxo" href="https://br.linkedin.com/in/luiza-helena-ude-goddard-ara%C3%BAjo-b202a9a0">Linkedin</a>
+           </li>
+           <li>
+              Mariane Barbosa | <a href="https://github.com/marianibarbosa">GitHub</a> | <a class="roxo" href="#">Linkedin</a>
+           </li>
+           <li>
+              Marcos Felipe | <a href="https://github.com/marcosfmd">GitHub</a> | <a class="roxo" href="#">Linkedin</a>
+           </li>
+           <li>
+              Michelle Andrade | <a href="https://github.com/MichelleAndrade">GitHub</a> | <a class="roxo" href="#">Linkedin</a>
+           </li>
+           <li>
+              Pedro Gabriel | <a href="https://github.com/PedroProgramador02">GitHub</a> | <a class="roxo" href="#">Linkedin</a>
+           </li>
+           <li>
+              Sávio Francisco | <a href="https://github.com/Savio-Fr">GitHub</a> | <a class="roxo" href="#">Linkedin</a>
+           </li>
+           <h2>Professor:</h2>
+           <li>
+              Wisley Alves | <a href="https://github.com/wistech7l">GitHub</a> | <a class="roxo" href="https://www.linkedin.com/in/wisley-j-alves-87253b5a/">Linkedin</a>
+           </li>
+         </ul>
+    </section>
+        </footer>
+        <script src="./assests/js/alimentacao.js"></script>
+        </body>
+    </html>
