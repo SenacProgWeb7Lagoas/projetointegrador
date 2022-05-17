@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/resultado.css">
+
+    <title>Resultados</title>
+</head>
+<body>
+    <header >
+        <section>
+            <button aria-label="selecionar-modo" class="color-model change-text">
+                Light Mode ON
+            </button>
+        </section>
+
+        <div class="hamburger">
+            <div class="line" id="line1"></div>
+            <div class="line" id="line2"></div>
+            <div class="line" id="line3"></div>
+        </div>
+
+        <nav>
+            <ul>
+                <li class="botao-moradia"><a href="moradia.html">Moradia</a></li>
+                <li class="botao-alimentacao"><a href="alimentacao.html">Alimentação</a></li>
+                <li class="botao-transporte"><a href="transporte.html">Transporte</a></li>
+                <li class="botao-consumo"><a href="consumo.html">Consumo</a></li>
+                <li class="botao-residuos"><a href="residuos.html">Residuos</a> <!-- <span class="positivo"></span>--></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container background ">    
+       
+            <div class="title">
+                <h1>Resultados</h1>
+                <p>Resumo da sua emissão da calculadora de carbono </p>
+            </div>
+        <main class="grid-template">
+            <section class="columns1">
+    
+                <h3>Fonte</h3>
+    
+                <h4>Moradia</h4>
+                <h4>Alimentação</h4>
+                <h4>Transporte</h4>
+                <h4>Consumo</h4>
+                <h4>Residuos</h4>
+    
+                <h3 class="total">TOTAL</h3>
+            </section>
+    
+    
+            <article class="columns2">
+                <h3>Emissoes</h3>
+                <h4 id="outMoradia"></h4>
+                <h4 id="outAlimentação"></h4>
+                <h4 id="outTransporte"></h4>
+                <h4 id="outConsumo"></h4>
+                <h4 id="outResiduos"></h4>
+            </article>
+    
+            <aside class="columns3">
+                <h3>Porcentagem</h3>
+    
+                <h4>.</h4>
+                <h4>.</h4>
+                <h4>.</h4>
+                <h4>.</h4>
+                <h4>.</h4>
+    
+                <h5>.</h5>
+            </aside>
+
+            <!-- 
+                <figure>
+                    <img class="animacao" src="./assests/images/logo.png" alt="animacao">
+                </figure> 
+            -->
+            
+        </main>
+            <p class="rodape-text">Para compensar suas emissões é preciso restaura XXXX, da floresta. Isso equivale x árvores</p>
+        </main>
+    </main>
+
+    <footer>
+            
+    </footer>
+
+    <script src="./assets/js/resultado.js"></script>
+</body>
+</html>
