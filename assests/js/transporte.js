@@ -36,8 +36,35 @@ function saida() {
         const fimdeSemana = document.getElementById('fimdeSemana');
         const infoFimSemana = fimdeSemana.options[fimdeSemana.selectedIndex].value;
         const somatransporte = parseInt(infoFimSemana) + parseInt(infoVeiculo) + parseInt(infoTrabalho) + parseInt(infoPercorrer) + parseInt(infoFerias);
+        if (infoVeiculo == "" ||  infoTrabalho == "" || infoPercorrer == "" || infoFerias == "" || infoFimSemana == "" ) {
+                alert (`POR FAVOR, PREENCHA TODAS AS INFORMAÇÕES`);
+                if(infoVeiculo == "") {
+                        var p1 = "01";
+                        alert(`RESPONDA A PERGUNTA DE NUMERO ${p1}`);
+                };
+                if(infoTrabalho == "") {
+                        var p2 = "02";
+                        alert(`RESPONDA A PERGUNTA DE NUMERO ${p2}`);
+                };
+                if(infoPercorrer == "") {
+                        var p3 = "03"
+                        alert(`RESPONDA A PERGUNTA DE NUMERO ${p3}`);
+                        alert("Cansou né, então responda de uma vez todas as perguntas.")
+                };
+                if(infoFerias == "") {
+                        var p4 = "04";
+                        alert(`RESPONDA A PERGUNTA DE NUMERO ${p4}`);
+                };
+                if(infoFimSemana == "") {
+                        var p5 = "05"
+                        alert(`RESPONDA A PERGUNTA DE NUMERO ${p5}`);
+                };
+                
+
+        } else {                 
         localStorage.setItem('transporte', `${somatransporte}`);
         location.href = '/consumo.html';
+        }
         
         
         
@@ -49,4 +76,7 @@ function menuMobile() {
         } else {
                 menu.style.display = 'flex';                         
         }       
+}
+function nextPage() {        
+        alert("POR FAVOR, PREENCHA AS INFORMAÇÕES, DEPOIS CLIQUE EM PRÓXIMO.")
 }

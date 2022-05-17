@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assests/css/reset.css">
+    <link rel="stylesheet" href="assests/css/stilo.css">
+    <link rel="shortcut icon" href="/assests/img/logo.png" type="image/png">
+    <title>Transporte</title>
+</head>
+<body>
+    <header>
+        <div id="dmode" >
+            <input class="darkM"  type="button" value="escuro" id="modeColor" onclick="dMode()">            
+        </div>
+    </header>
+    <main id="mainD">
+        <section class="SectionTop bb" id="contain_selectPage">
+            <div class="paginas bb" id="pages">
+                <table>
+                    <tr class="">
+                        <td><button  class="moradia overButton"><a href="/moradia.html">Moradia</a></button></td>
+                        <td><button class="alimentacao overButton"><a href="/alimentacao.html">Alimentação</a></button></td>
+                        <td><button class="transporte overButton ativo"><a href="/transporte.html">Transporte</a></button></td>
+                        <td><button class="consumo overButton"><a href="/consumo">Consumo</a></button></td>
+                        <td><button class="residuos overButton"><a href="/residuos.html">Resíduos</a></button></td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+        <section class="questions" id="contain_transporte">
+            <div class="titleTransporte">
+                <h1>TRANSPORTE</h1>
+            </div>
+            
+            <div class="perguntas" id="contain_quests">
+                <h2>1- Possui algum veículo automotor?</h2>
+                <table>
+                    <select class="selectV" id="veiculo">
+                        <option value="">Selecione</option>
+                        <option value="moto">Moto</option>
+                        <option value="carro">Carro</option>
+                        <option value="caminhao">Caminhão</option>
+                        <option value="nao_possuo">Não possuo</option>
+                    </select>
+
+                    <tr>
+                        <td><button>Moto</button></td>
+                        <td><button>Carro</button></td>
+                        <td><button>Caminhão</button></td>
+                        <td><button>Não possuo</button></td>
+                    </tr>
+                </table>
+                <h2>2- Como se desloca para o trabalho ou emprego?</h2>
+                <table>
+                    <tr>
+                        <td><button>Carro</button></td>
+                        <td><button>Carona (dividir)</button></td>
+                        <td><button>Transporte público</button></td>
+                        <td><button>Bicicleta ou a pé</button></td>
+                    </tr>
+                </table>
+                <h2>3- Quantos quilômetros percorre por dia utilizadno o veículo acima:</h2>
+                <table>
+                    <tr>
+                        <td><button>00 a 10 km</button></td>
+                        <td><button>11 a 30 km</button></td>
+                        <td><button>31 a 50 km</button></td>
+                        <td><button>Mais de 51 km</button></td>
+                    </tr>
+                </table>
+                <h2>4- Onde passou as férias?</h2>
+                <table>
+                    <tr><td><button>Não viajei</button></td></tr>
+                    <tr><td><button>Viagem curta até 300km</button></td></tr>
+                    <tr><td><button>Viagem de média distância de 300 a 800km</button></td></tr>
+                    <tr><td><button>Viagem de longa distância acima de 1300km</button></td></tr>
+                </table>
+                <h2>5- Você costuma viajar aos fins de semana? Quantos km?</h2>
+                <table>
+                    <tr>
+                        <td><button>0 km</button></td>
+                        <td><button>1 a 15 km</button></td>
+                        <td><button>16 a 50 km</button></td>
+                        <td><button>Mais de 50 km</button></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="contain_button">
+                <button>Próximoooo</button>
+            </div>
+        </section>
+    </main>
+    <footer >
+        <figure class="imagem_rodape">
+            <img src="./assents/imagem/logo arvore.png" alt="Logo do Projeto">
+        </figure>
+            <p> Projeto integrador - Curso Programadro Web 2022 - SENAC Minas - Unidade Sete Lagoas </p> 
+         <section class="alunos">
+             <h4>Desenvolvido pelos alunos:</h4>
+             <ul>
+                 <li>Gleiton <a href="">GitHub</a></li>
+                 <li>Michelle <a href="">GitHub</a></li>
+                 <li>Pedro <a href="">GitHub</a></li>
+             </ul>
+         </section>   
+
+
+    </footer>
+    <script src="./assests/js/transporte.js"></script>
+</body>
+</html>

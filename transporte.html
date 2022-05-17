@@ -24,11 +24,11 @@
                     <i class="menuMob bi bi-list" onclick="menuMobile()" id="menuC"></i>
                     <tr id="menuM">
                         <div class="menuClick">
-                            <td><button  class="moradia overButton"><a href="/moradia.html">Moradia</a></button></td>
-                            <td><button class="alimentacao overButton"><a href="/alimentacao.html">Alimentação</a></button></td>
-                            <td><button class="transporte overButton ativo"><a href="/transporte.html">Transporte</a></button></td>
-                            <td><button class="consumo overButton"><a href="/consumo">Consumo</a></button></td>
-                            <td><button class="residuos overButton"><a href="/residuos.html">Resíduos</a></button></td>
+                            <td><button  class="moradia overButton" onclick="nextPage()"><a>Moradia</a></button></td>
+                            <td><button class="alimentacao overButton" onclick="nextPage()"><a>Alimentação</a></button></td>
+                            <td><button class="transporte overButton ativo" ><a>Transporte</a></button></td>
+                            <td><button class="consumo overButton" onclick="nextPage()"><a>Consumo</a></button></td>
+                            <td><button class="residuos overButton" onclick="nextPage()"><a>Resíduos</a></button></td>
                         </div>
                     </tr>
                 </table>
@@ -46,7 +46,7 @@
                 <h2>1- Possui algum veículo automotor?</h2>
                 <table>
                     <select class="selectV" id="veiculo">
-                        <option value="0">Selecione</option>
+                        <option value="">Selecione</option>
                         <option value="35">Moto</option>
                         <option value="100">Carro</option>
                         <option value="130">Caminhão</option>
@@ -56,7 +56,7 @@
                 <h2>2- Como se desloca para o trabalho ou emprego?</h2>
                 <table>
                     <select class="selectV" id="TrabalhoEmprego">
-                        <option value="0">Selecione</option>
+                        <option value="">Selecione</option>
                         <option value="60">Carro</option>
                         <option value="30">Carona (dividir)</option>
                         <option value="15">Transporte público</option>
@@ -67,7 +67,7 @@
                 <h2>3- Quantos quilômetros percorre por dia utilizando o veículo acima:</h2>
                 <table>
                     <select class="selectV" id="percorreDia">
-                        <option value="0">Selecione</option>
+                        <option value="">Selecione</option>
                         <option value="10">00 a 10 km</option>
                         <option value="20">11 a 30 km</option>
                         <option value="30">31 a 50 km</option>
@@ -78,7 +78,7 @@
                 <h2>4- Onde passou as férias?</h2>
                 <table>
                     <select class="selectV" id="ferias">
-                        <option value="0">Selecione</option>
+                        <option value="">Selecione</option>
                         <option value="0">Não viajei</option>
                         <option value="10">Viagem curta até 300km</option>
                         <option value="20">Viagem de média distância de 300 a 800km</option>
@@ -90,7 +90,7 @@
                 <table>
                     <tr>
                         <select class="selectV" id="fimdeSemana">
-                            <option value="0">Selecione</option>
+                            <option value="">Selecione</option>
                             <option value="10">0 km</option>
                             <option value="20">1 a 15 km</option>
                             <option value="30">16 a 50 km</option>
@@ -99,7 +99,7 @@
                     </tr>
                 </table>
                 <div class="contain_button ">
-                    <a href="#"><button class="transporte proximo" onclick="saida()">Próximo</button></a>
+                    <a><button class="transporte proximo" onclick="saida()">Próximo</button></a>
                 </div>
             </div>
            
