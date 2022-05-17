@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/transporte.css">
+    <link rel="stylesheet" href="https://github.com/SenacProgWeb7Lagoas/projetointegrador/blob/52c02541aca6805d28cbb35de89dc9b845282435/documentacao/modelo_rodape.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <title>Transporte</title>
+</head>
+<body>
+    <header>
+        <div id="dmode" >
+            <input class="darkM"  type="button" value="Modo escuro" id="modeColor" onclick="dMode()">            
+        </div>
+    </header>
+    <main id="mainD">
+        <section class="SectionTop bb" id="contain_selectPage">
+            <div class="paginas bb" id="pages">
+                <table>
+                    <i class="menuMob bi bi-list" onclick="menuMobile()" id="menuC"></i>
+                    <tr id="menuM">
+                        <div class="menuClick">
+                            <td><button  class="moradia overButton" onclick="nextPage()"><a>Moradia</a></button></td>
+                            <td><button class="alimentacao overButton" onclick="nextPage()"><a>Alimentação</a></button></td>
+                            <td><button class="transporte overButton ativo" ><a>Transporte</a></button></td>
+                            <td><button class="consumo overButton" onclick="nextPage()"><a>Consumo</a></button></td>
+                            <td><button class="residuos overButton" onclick="nextPage()"><a>Resíduos</a></button></td>
+                        </div>
+                    </tr>
+                </table>
+            </div>
+            <div id="saida">
+
+            </div>
+        </section>
+        <section class="questions" id="contain_transporte">
+            <div class="titleTransporte ">
+                <h1>TRANSPORTE</h1>
+            </div>
+            
+            <div class="perguntas" id="contain_quests">
+                <h2>1- Possui algum veículo automotor?</h2>
+                <table>
+                    <select class="selectV" id="veiculo">
+                        <option value="">Selecione</option>
+                        <option value="35">Moto</option>
+                        <option value="100">Carro</option>
+                        <option value="130">Caminhão</option>
+                        <option value="0">Não possuo</option>
+                    </select>
+                </table>
+                <h2>2- Como se desloca para o trabalho ou emprego?</h2>
+                <table>
+                    <select class="selectV" id="TrabalhoEmprego">
+                        <option value="">Selecione</option>
+                        <option value="60">Carro</option>
+                        <option value="30">Carona (dividir)</option>
+                        <option value="15">Transporte público</option>
+                        <option value="0">Bicicleta ou a pé</option>
+                    </select>
+                    
+                </table>
+                <h2>3- Quantos quilômetros percorre por dia utilizando o veículo acima:</h2>
+                <table>
+                    <select class="selectV" id="percorreDia">
+                        <option value="">Selecione</option>
+                        <option value="10">00 a 10 km</option>
+                        <option value="20">11 a 30 km</option>
+                        <option value="30">31 a 50 km</option>
+                        <option value="70">Mais de 51 km</option>
+                    </select>
+                    
+                </table>
+                <h2>4- Onde passou as férias?</h2>
+                <table>
+                    <select class="selectV" id="ferias">
+                        <option value="">Selecione</option>
+                        <option value="0">Não viajei</option>
+                        <option value="10">Viagem curta até 300km</option>
+                        <option value="20">Viagem de média distância de 300 a 800km</option>
+                        <option value="50">Viagem de longa distância acima de 1300km</option>
+                    </select>
+                    
+                </table>
+                <h2>5- Você costuma viajar aos fins de semana? Quantos km?</h2>
+                <table>
+                    <tr>
+                        <select class="selectV" id="fimdeSemana">
+                            <option value="">Selecione</option>
+                            <option value="10">0 km</option>
+                            <option value="20">1 a 15 km</option>
+                            <option value="30">16 a 50 km</option>
+                            <option value="40">Mais de 50 km</option>
+                        </select>                        
+                    </tr>
+                </table>
+                <div class="contain_button ">
+                    <a><button class="transporte proximo" onclick="saida()">Próximo</button></a>
+                </div>
+            </div>
+           
+        </section>
+        
+    </main>
+    <footer>
+        <figure>
+            <img class="logo" src="assets/img/logo.png" alt="Logo">
+        </figure> 
+        <section class="texto_rodape">
+            <div>
+                <h3>Projeto Integrador - Turma 05.2021.0107</h3>
+                    <p>Esta calculadora foi elaborada para fins didáticos do curso de programação. Para saber mais sobre o cálculo de pegada ecológica e consultar plataformas mais completas, clique <a href="/">aqui</a>.</p><!--falta colocar o link da página de ONGs e sites de calculadoras -->
+                    <br>
+                    <p>Site desenvolvido pelos alunos do curso de Programção Web do SENAC Minas - Unidade Sete Lagoas. Este curso faz parte do <a href="https://www.mg.senac.br/Paginas/minas-programando.aspx">Projeto Minas Programando</a>.
+                    </p>
+            </div>
+        </section>
+        <section class="alunos_rodape">
+            <h3>Desenvolvido por:</h3>
+            <ul>    
+                <li>
+                    Bianca Araújo | <a href="https://github.com/BrytanniADJ">GitHub</a> | <a class="roxo" href="https://www.linkedin.com/in/bianca-araújo-coelho-bia-b03b3b205/">Linkedin</a>
+                </li>
+                <li>
+                    Cláudia Aguiar   | <a href="https://github.com/claudiaapj">GitHub</a> | <a class="roxo" href="https://www.linkedin.com/in/claudiaaguilarpaixao/">Linkedin</a>
+                </li>
+                <li>
+                    Gleiton | <a href="https://github.com/gleitons">GitHub</a> | <a class="roxo" href="#">Linkedin</a>
+                 </li>
+                 <li>
+                    Luíza Araújo | <a href="https://github.com/lh-ude">GitHub</a> | <a class="roxo" href="https://br.linkedin.com/in/luiza-helena-ude-goddard-ara%C3%BAjo-b202a9a0">Linkedin</a>
+                 </li>
+                 <li>
+                    Mariane Barbosa | <a href="https://github.com/marianibarbosa">GitHub</a> | <a class="roxo" href="#">Linkedin</a>
+                 </li>
+                 <li>
+                    Marcos Felipe | <a href="https://github.com/marcosfmd">GitHub</a> | <a class="roxo" href="#">Linkedin</a>
+                 </li>
+                 <li>
+                    Michelle Andrade | <a href="https://github.com/MichelleAndrade">GitHub</a> | <a class="roxo" href="#">Linkedin</a>
+                 </li>
+                 <li>
+                    Pedro Gabriel | <a href="https://github.com/PedroProgramador02">GitHub</a> | <a class="roxo" href="#">Linkedin</a>
+                 </li>
+                 <li>
+                    Sávio Francisco | <a href="https://github.com/Savio-Fr">GitHub</a> | <a class="roxo" href="#">Linkedin</a>
+                 </li>
+                 <h2>Professor:</h2>
+                 <li>
+                    Wisley Alves | <a href="https://github.com/wistech7l">GitHub</a> | <a class="roxo" href="https://www.linkedin.com/in/wisley-j-alves-87253b5a/">Linkedin</a>
+                 </li>
+            </ul>
+        </section>
+    </footer>
+    <script src="./assets/js/transporte.js"></script>
+</body>
+</html>
