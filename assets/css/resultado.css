@@ -51,14 +51,14 @@ header section {
 }
 
 .color-model {
-    width: 7.8rem;
+    width: 6.25rem;
     background-color: rgba(0, 0, 0, 0.384);
     border: none;
     border-radius: 5px;
     font-size: 1rem;
     color: var(--branco);
     padding: 8px;
-    margin: 35px 0 0 30px; 
+    margin: 20px 0 0 30px; 
     cursor: pointer; 
 }
 
@@ -145,10 +145,12 @@ main {
 }
 
 .title h1 {
+    color: var(--branco);
     font-size: 2.6rem;
     font-family: var(--font2);
 }
 .title p {
+    color: var(--branco);
     margin-bottom: 30px;
 }
 
@@ -166,12 +168,14 @@ main {
 }
 
 h3 {
+    color: var(--branco);
     font-size: 1.3rem;
     text-align: justify;
     padding-bottom: 20px;
 }
 
 h4 {
+    color: var(--branco);
     font-size: 1rem;
     font-weight: normal;
     padding: 15px 0;
@@ -179,11 +183,13 @@ h4 {
 }
 
 .total {
+    color: var(--branco);
     font-size: 1rem;
     padding: 15px 0;
 }
 
 .rodape-text {
+    color: var(--branco);
     display: flex;
     width: 100%;
     margin-top: -110px;

@@ -51,13 +51,13 @@ header section {
 }
 
 .color-model {
-    width: 9.5rem;
+    width: 6.25rem;
     background-color: var(--fundosite);
     border: none;
-    border-radius: 20px;
+    border-radius: 5px;
     color: var(--branco);
     padding: 5px;
-    margin: 35px 0 0 30px; 
+    margin: 20px 0 0 30px; 
     cursor: pointer; 
 }
 
