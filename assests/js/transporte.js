@@ -7,15 +7,15 @@ function dMode() {
     
     const atual = document.getElementById('modeColor').value;
 
-    if (atual == 'Escuro') {
-            document.getElementById('dmode').innerHTML = `<input class="darkM"  type="button" value="Claro" id="modeColor" onclick="dMode()">`
+    if (atual == 'Modo escuro') {
+            document.getElementById('dmode').innerHTML = `<input class="darkM"  type="button" value="Modo Claro" id="modeColor" onclick="dMode()">`
             mainC.style.background = '#3E3E3E';
             selPage.style.background = '#252625';
             conQuestions.style.background = '#ED217C';      
             conQ.style.background =   '#252625';
             document.documentElement.style.setProperty('--perguntas', '#d6d6d6');
     } else {
-            document.getElementById('dmode').innerHTML = `<input class="darkM"  type="button" value="Escuro" id="modeColor" onclick="dMode()">`
+            document.getElementById('dmode').innerHTML = `<input class="darkM"  type="button" value="Modo escuro" id="modeColor" onclick="dMode()">`
             mainC.style.background = '#C4C4C4';
             selPage.style.background = '#ED217C';
             conQuestions.style.background = '#ED217C';
