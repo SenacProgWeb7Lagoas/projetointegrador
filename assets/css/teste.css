@@ -1,0 +1,53 @@
+
+/* alimentacao */
+.buttonAlimentacao{
+    padding: 10px 15px;
+    font-size: 16px;
+}
+
+.cabecalho1Alimentacao{
+    margin: 10px 120px;
+    height: 100px;
+}
+
+.headerAlimentacao {
+    height: 240px;
+}
+.footerAlimentacao {
+    height: 90px;
+}
+/* moradia */ 
+
+.cabecalho2Moradia{
+    width: 70%;
+    height: 70px;
+    border-radius: 5px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+/* consumo */
+
+.headerConsumo{ 
+    height: 70px;
+}
+
+.cabecalho2Consumo{
+    height: 50px;
+    width: 100%;
+}
+
+.MainConsumo {
+    font-size: 20px;
+}
+
+/*Tamanho da fonte nas caixas de pergunta: 18px*/
+
+.buttonCOnsumo{
+    padding: 10px 15px;
+    font-size: 16px;
+}
+
+.footerConsumo{ 
+    height: 205px;
+}
