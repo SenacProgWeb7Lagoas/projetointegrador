@@ -20,12 +20,6 @@ outResiduos.innerHTML = residuos;
 
 
 
-
-
-
-
-
-
 // Modo Light e Dark-mode
 
 let darkMode = document.querySelector (".color-model")
