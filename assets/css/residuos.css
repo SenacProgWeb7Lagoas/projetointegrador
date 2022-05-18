@@ -7,7 +7,7 @@
     /* fontes */
      --font1: 'Roboto', sans-serif;
      --font2: "Baloo Da 2", serif;
-     --padrao: Arial, Helvetica, sans-serif;
+     --padrao: Helvetica, sans-serif;
 
     /* cores modo claro*/
      --cinza: #c4c4c4;
@@ -34,7 +34,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: var(--font1);
+    font-family: var(--padrao);
     font-size: 1.1rem;
 }
 
@@ -51,13 +51,13 @@ header section {
 }
 
 .color-model {
-    width: 9.5rem;
+    width: 6.25rem;
     background-color: var(--fundosite);
     border: none;
-    border-radius: 20px;
+    border-radius: 5px;
     color: var(--branco);
     padding: 5px;
-    margin: 35px 0 0 30px; 
+    margin: 20px 0 0 30px; 
     cursor: pointer; 
 }
 
@@ -151,7 +151,7 @@ h2 {
     width: 100%;
     height: 110px;
     background-color: var(--residuos);
-    font-family: var(--font2);
+    font-family: var(--padrao);
     font-weight: bolder;
     font-size: 2.2rem;
     color: white;
