@@ -38,10 +38,10 @@ let mudaText = true
         document.querySelector('.change-text').addEventListener('click', function (){
         if (mudaText) {
             mudaText = false
-            document.querySelector('.change-text').innerHTML = 'Dark Mode ON'
+            document.querySelector('.change-text').innerHTML = 'Modo Claro'
         }else {
             mudaText = true
-            document.querySelector('.change-text').innerHTML = 'Light Mode ON'
+            document.querySelector('.change-text').innerHTML = 'Modo Escuro'
         }
 })
 
