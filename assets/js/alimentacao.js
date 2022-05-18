@@ -47,26 +47,24 @@ const escolha = function () {
     let radios = document.getElementsByName("pergunta2");
     let marca = '';
     for (let i = 0; i < radios.length; i++) {
-        if (radios[i].c) {
-            marca = radios[i].value
+        if (radios[i].checked) {
+            marca = radios[i].value;
+            break;
         }
     }
     switch (marca) {
         case 'sim':
-            result3 = 25;
-            break;
+            return 25;
         case 'nao':
-            result3 = 125;
-            break;
+            return 125;
         case 'as_vezes':
-            result3 = 50;
-            break;
+            return 50;
         case 'raramente':
-            result3 = 100
-            break;
+            return 100;
         default:
             let perg3 = document.querySelector('.perg3');
             perg3.style.display = 'block';
+            return;
     }
 
     /*
