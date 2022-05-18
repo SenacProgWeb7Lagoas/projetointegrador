@@ -29,7 +29,7 @@ function modoNoturno() {
         document.documentElement.style.setProperty('--laranja', '#f15a29');
         document.documentElement.style.setProperty('--roxo', '#753874');
         document.querySelector(".noturno").innerHTML = "Modo escuro";
-    } 
+    }
 }
 
 //Responsividade
@@ -43,50 +43,50 @@ function mobile() {
 
 //Função para a 3º pergunta
 const escolha = function () {
-    
+
     let radios = document.getElementsByName("pergunta2");
+    let marca = '';
     for (let i = 0; i < radios.length; i++) {
         if (radios[i].c) {
-            let marca = radios[i].value           
-            for (let i = 0; i < radios.length; i++) {
-                if (marca == 'sim') {
-                    result3 = + 25;
-
-                    return
-                } else if (marca == 'nao') {
-                    result3 = + 125
-
-                    return
-                } else if (marca == 'as_vezes') {
-                    result3 = + 50
-
-                    return
-                } else if (marca == 'raramente') {
-                    result3 = + 100
-
-                    return
-                } 
-            }
-
-        }else{
-            let perg3 = document.querySelector('.perg3')
-            if(perg3.style.display === 'none'){
-                perg3.style.display = 'block';
-            } perg3.style.display = 'block';
+            marca = radios[i].value
         }
     }
+    switch (marca) {
+        case 'sim':
+            result3 = 25;
+            break;
+        case 'nao':
+            result3 = 125;
+            break;
+        case 'as_vezes':
+            result3 = 50;
+            break;
+        case 'raramente':
+            result3 = 100
+            break;
+        default:
+            let perg3 = document.querySelector('.perg3');
+            perg3.style.display = 'block';
+    }
+
+    /*
+    else{
+            let perg3 = document.querySelector('.perg3')
+            if(perg3.style.display === 'none'){
+                perg3.style.display = 'block';perg3.style.display = 'block';
+            } perg3.style.display = 'block';
+        }
+    //*/
 }
 
 //1º pergunta
 function pergunta1() {
     let p1 = document.getElementById("box-alimen_p1");
     let resposta = p1.value;
-    if(resposta === '-1'){
+    if (resposta === '-1') {
         let perg = document.querySelector('.perg')
-        if(perg.style.display === 'none'){
-            perg.style.display = 'block';
-        } perg.style.display = 'block';
-    }else {
+        perg.style.display = 'block';
+    } else {
         return parseInt(resposta);
     }
 }
@@ -96,12 +96,10 @@ function pergunta2() {
     console.log(p2);
     let resposta = p2.value;
     console.log('> ', resposta);
-    if(resposta === '0'){
+    if (resposta === '0') {
         let perg2 = document.querySelector('.perg2')
-        if(perg2.style.display === 'none'){
-            perg2.style.display = 'block';
-        } perg2.style.display = 'block';
-    }else {
+        perg2.style.display = 'block';
+    } else {
         return parseInt(resposta);
     }
 }
@@ -112,7 +110,7 @@ function resultado() {
     result2 = pergunta2();
     soma = result1 + result2 + result3;
     alert("Resultado:" + soma);
-    if(soma !== NaN){
+    if (soma !== NaN) {
         localStorage['alimentacao'] = soma;
         //window.location.assign('./transporte.html');
     }
