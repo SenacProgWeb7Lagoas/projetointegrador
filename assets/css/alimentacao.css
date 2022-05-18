@@ -150,17 +150,14 @@ select{
 .logo img{
     width: 100%;
     height: auto;
+
 }
 
 .logo{
-    color: #ffffff;
-    padding: 10px 15px;
-    text-align: center;
-    text-decoration: none;
-    display: none;
-    font-size: 16px;
-    margin: 20px 10px;
-    cursor: pointer;
+    float: right;
+    width: 80px;
+    height: auto;
+    display: block;
 }
 
 .cabecalho{
@@ -272,23 +269,6 @@ li{
 
     }
 
-<<<<<<< HEAD
-    /* tranforma as 3 linhas em X quando adiciona a class submenu na div nav*/
-
-    .show-menu .line:nth-child(1){
-        transform: rotate(-45deg) translate(.5rem, 1.4rem);
-    }
-    
-    .show-menu .line:nth-child(2){
-        opacity: 0;
-    }
-    
-    .show-menu .line:nth-child(3){
-        transform: rotate(45deg) translate(.6rem, -1.4rem);
-    }
-    /* fim da transformação das linhs*/
-    
-=======
     .show-menu .line:nth-child(1){
         transform: rotate(-45deg) translate(.5rem, 1.4rem);
         width: 1.5rem;
@@ -302,11 +282,10 @@ li{
         transform: rotate(45deg) translate(.7rem, -1.2rem);
         width: 1.5rem;
     }
->>>>>>> alimentacao
     .nav{
         width: 2rem;
         height: 1.5rem;
-        position: absolute; /* a barra de menu não deve acompanhar o scroll */
+        position: fixed;
         z-index: 100;
         right: 2rem;
         top: 1rem;
@@ -314,9 +293,6 @@ li{
         flex-direction: column;
         justify-content: space-evenly;
         cursor: pointer;
-<<<<<<< HEAD
-        padding-right: 5px;
-=======
         position: absolute;
     }
 
@@ -342,59 +318,29 @@ li{
 
     footer{
         height: 90px;
->>>>>>> alimentacao
     }
 
-    .cabecalho{
-        display: none;
-    }
-
-    /* quando o cabeçalho tiver outra classe com ele a show-menu */
-    .cabecalho.show-menu{
-        display: flex;
-        height: 500px;
-    }
-
-    header.show-menu{
-        height: 80vh;
-    }
-    .logo.show-menu{
-        display: inline-block;
-    }
     .button1, .button2, .button3, .button4, .button5{
         width: 50%;
     }
-
     ul{
         display: flex;
         flex-direction: column;
         width: 100%;
 
     }
-
     h1{
         font-size: 50px;
         padding: 15px 0;
     }
-<<<<<<< HEAD
-    
-    p{
-        font-size: 60px;
-=======
     .perguntas p{
         font-size: .9rem;
         height: 8px;
         padding: 10px 0px;
->>>>>>> alimentacao
     }
 
-<<<<<<< HEAD
-    .opcoes {
-        font-size: 60px;
-=======
     .perguntas select{
         font-size: .9rem;
->>>>>>> alimentacao
     }
 
     .opcoes{
