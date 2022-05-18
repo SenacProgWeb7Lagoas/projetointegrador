@@ -18,7 +18,7 @@ function modoNoturno() {
         document.documentElement.style.setProperty('--rosa', '#b12262');
         document.documentElement.style.setProperty('--laranja', '#b44a28');
         document.documentElement.style.setProperty('--roxo', '#5d335c');
-        document.querySelector(".noturno").innerHTML = "Modo claro";
+        document.querySelector(".noturno").innerHTML = "Modo Claro";
 
     } else {
         document.documentElement.style.setProperty('--body', '#c4c4c4');
@@ -29,8 +29,8 @@ function modoNoturno() {
         document.documentElement.style.setProperty('--rosa', '#ed217c');
         document.documentElement.style.setProperty('--laranja', '#f15a29');
         document.documentElement.style.setProperty('--roxo', '#753874');
-        document.querySelector(".noturno").innerHTML = "Modo escuro";
-    } 
+        document.querySelector(".noturno").innerHTML = "Modo Escuro";
+    }
 }
 
 
@@ -46,11 +46,11 @@ function mobile() {
 
 //Função para a 3º pergunta
 const escolha = function () {
-    
+
     let radios = document.getElementsByName("pergunta2");
     for (let i = 0; i < radios.length; i++) {
         if (radios[i].c) {
-            let marca = radios[i].value           
+            let marca = radios[i].value
             for (let i = 0; i < radios.length; i++) {
                 if (marca == 'sim') {
                     result3 = + 25;
@@ -68,7 +68,7 @@ const escolha = function () {
                     result3 = + 100
 
                     return
-                } 
+                }
             }
 
         }else{
