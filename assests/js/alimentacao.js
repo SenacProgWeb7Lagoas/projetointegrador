@@ -30,7 +30,7 @@ function modoNoturno() {
         document.documentElement.style.setProperty('--laranja', '#f15a29');
         document.documentElement.style.setProperty('--roxo', '#753874');
         document.querySelector(".noturno").innerHTML = "Modo escuro";
-    }
+    } 
 }
 
 
@@ -46,10 +46,11 @@ function mobile() {
 
 //Função para a 3º pergunta
 const escolha = function () {
+    
     let radios = document.getElementsByName("pergunta2");
     for (let i = 0; i < radios.length; i++) {
         if (radios[i].c) {
-            let marca = radios[i].value
+            let marca = radios[i].value           
             for (let i = 0; i < radios.length; i++) {
                 if (marca == 'sim') {
                     result3 = + 25;
@@ -67,11 +68,14 @@ const escolha = function () {
                     result3 = + 100
 
                     return
-                } else {
-                    alert("Responda a terceira pergunta!")
-                }
+                } 
             }
 
+        }else{
+            let perg3 = document.querySelector('.perg3')
+            if(perg3.style.display === 'none'){
+                perg3.style.display = 'block';
+            } perg3.style.display = 'block';
         }
     }
 }
@@ -81,7 +85,10 @@ function pergunta1() {
     let p1 = document.getElementById("box-alimen_p1");
     let resposta = p1.value;
     if(resposta === '-1'){
-        alert("Responda a pergunta 1!");
+        let perg = document.querySelector('.perg')
+        if(perg.style.display === 'none'){
+            perg.style.display = 'block';
+        } perg.style.display = 'block';
     }else {
         return parseInt(resposta);
     }
@@ -93,22 +100,23 @@ function pergunta2() {
     let resposta = p2.value;
     console.log('> ', resposta);
     if(resposta === '0'){
-        let label2 = document.getElementById('label_pegunta2');
-        console.log('>> ', label2);
-        alert("Responda a pergunta 2!");
+        let perg2 = document.querySelector('.perg2')
+        if(perg2.style.display === 'none'){
+            perg2.style.display = 'block';
+        } perg2.style.display = 'block';
     }else {
         return parseInt(resposta);
     }
 }
 //Função soma os 3 resultados das respostas
 function resultado() {
-    escolha();
-    pergunta1();
+    result3 = escolha();
+    result1 = pergunta1();
     result2 = pergunta2();
     soma = result1 + result2 + result3;
     alert("Resultado:" + soma);
     if(soma !== NaN){
         localStorage['alimentacao'] = soma;
-        window.location.assign('./transporte.html');
+        //window.location.assign('./transporte.html');
     }
 }

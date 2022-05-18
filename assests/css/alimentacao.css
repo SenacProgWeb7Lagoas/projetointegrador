@@ -211,6 +211,14 @@ li{
 .oculta{
     display: none;
 }
+.perg, .perg2, .perg3{
+    display: none;
+    color: #ff0000;
+    font-size: 12px;
+    position: relative;
+    bottom: -40px;
+
+}
 
 /*Responsividade*/
 @media(max-width: 442px){
