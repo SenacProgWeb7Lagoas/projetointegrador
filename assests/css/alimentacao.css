@@ -61,6 +61,7 @@
 }
 a{
     text-decoration: none;
+    line-height: 17px;
 }
 
 body{
@@ -71,7 +72,7 @@ body{
 footer{
     position: absolute;
     background-color: #322a54;
-    height: 280px;
+    height: 290px;
     width: 100%;
     display: flex;
     justify-content: space-between;
