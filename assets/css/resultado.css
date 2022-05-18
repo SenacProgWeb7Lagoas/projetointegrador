@@ -7,7 +7,7 @@
     /* fontes */
      --font1: 'Roboto', sans-serif;
      --font2: "Baloo Da 2", serif;
-     --padrao: Arial, Helvetica, sans-serif;
+     --padrao: Helvetica, sans-serif;
 
     /* cores modo claro*/
      --cinza: #c4c4c4;
@@ -35,7 +35,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: var(--font1);
+    font-family: var(--padrao);
 }
 
 body {
@@ -147,7 +147,7 @@ main {
 .title h1 {
     color: var(--branco);
     font-size: 2.6rem;
-    font-family: var(--font2);
+    font-family: var(----padrao);
 }
 .title p {
     color: var(--branco);
