@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Residuos</title>
     <link rel="stylesheet" href="./assets/css/residuos.css">
-    <script src="./assets/js/residuos.js" defer></script>   
+    <script src="./assets/js/residuos.js" defer></script>
 </head>
+
 <body>
-    
-    <header >
+
+    <header>
         <section>
             <button aria-label="selecionar-modo" class="color-model change-text">
-                Modo Escuro 
+                Modo Escuro
             </button>
         </section>
 
@@ -29,38 +31,44 @@
                 <li class="botao-alimentacao"><a href="alimentacao.html">Alimentação</a></li>
                 <li class="botao-transporte"><a href="transporte.html">Transporte</a></li>
                 <li class="botao-consumo"><a href="consumo.html">Consumo</a></li>
-                <li class="botao-residuos"><a href="residuos.html">Residuos</a> <!-- <span class="positivo"></span>--></li>
+                <li class="botao-residuos"><a href="residuos.html">Residuos</a> <!-- <span class="positivo"></span>-->
+                </li>
                 <li class="logo"><a href="/"><img src="./assets/images/logo.png" alt=""></a></li>
             </ul>
         </nav>
     </header>
     <!-- fim do cabeçalho ✔️ -->
 
-    <main class="container">
+    <main class="container">    
         <h2>Resíduos</h2>
 
         <section>
             <form action="reduzir-residuos" class="modelo1">
-                <h4>Procuras reduzir a produção de resíduos? (por exemplo: evitar produtos com muita embalagem, reutilizar o papel, evitar os sacos de plastico, etc...)</h4>
+                <h4>Procuras reduzir a produção de resíduos? (por exemplo: evitar produtos com muita embalagem,
+                    reutilizar o papel, evitar os sacos de plastico, etc...)</h4>
                 <label for="sempre1" class="label-type">
-                    Sempre 
-                    <input type="radio" id="inSempre" name="reduzir-produção-residuos" value="Sempre" onclick="fristSection()" checked>
+                    Sempre
+                    <input type="radio" id="inSempre" name="reduzir-produção-residuos" value="Sempre"
+                        onclick="fristSection()" checked>
                 </label>
 
-                <label for="as vezes1" class="label-type"> 
+                <label for="as vezes1" class="label-type">
                     As vezes
-                    <input type="radio" id="inAsVezes" name="reduzir-produção-residuos" value="asvezes" onclick="fristSection()">
+                    <input type="radio" id="inAsVezes" name="reduzir-produção-residuos" value="asvezes"
+                        onclick="fristSection()">
                 </label>
-                
+
                 <label for="raramente1" class="label-type">
                     Raramente
-                    <input type="radio" id="inRaramente" name="reduzir-produção-residuos" value="raramente" onclick="fristSection()"> 
+                    <input type="radio" id="inRaramente" name="reduzir-produção-residuos" value="raramente"
+                        onclick="fristSection()">
                 </label>
 
                 <label for="nunca1" class="label-type">
                     Nunca
-                    <input type="radio" id="inNunca" name="reduzir-produção-residuos" value="nunca" onclick="fristSection()"> 
-                </label>            
+                    <input type="radio" id="inNunca" name="reduzir-produção-residuos" value="nunca"
+                        onclick="fristSection()">
+                </label>
             </form>
         </section>
         <!-- fim do input modelo 1 -->
@@ -70,44 +78,48 @@
                 <h4>Pratica compostagem dos residuos orgânicos?</h4>
                 <label>
                     Sempre
-                    <input type="radio" id="inSempre1" name="praricas-compostagem" value="Sempre1"  class="label-type" onclick="secondSection()" checked> 
+                    <input type="radio" id="inSempre1" name="praricas-compostagem" value="Sempre1" class="label-type"
+                        onclick="secondSection()" checked>
                 </label>
                 <label>
                     As vezes
-                    <input type="radio" id="inAsVezes1" name="praricas-compostagem" value="asvezes1" class="label-type" onclick="secondSection()"> 
-                 </label>
+                    <input type="radio" id="inAsVezes1" name="praricas-compostagem" value="asvezes1" class="label-type"
+                        onclick="secondSection()">
+                </label>
                 <label>
                     Raramente
-                    <input type="radio" id="inRaramente1" name="praricas-compostagem" value="raramente1" class="label-type" onclick="secondSection()">
+                    <input type="radio" id="inRaramente1" name="praricas-compostagem" value="raramente1"
+                        class="label-type" onclick="secondSection()">
                 </label>
                 <label>
                     Nunca
-                    <input type="radio" id="inNunca1" name="praricas-compostagem" value="nunca1" class="label-type" onclick="secondSection()">
+                    <input type="radio" id="inNunca1" name="praricas-compostagem" value="nunca1" class="label-type"
+                        onclick="secondSection()">
                 </label>
             </form>
         </article>
-            <!-- fim do input modelo 2 -->
+        <!-- fim do input modelo 2 -->
 
         <article class="article2">
             <form action="retiralixo" class="modelo3" aria>
                 <h4>Costuma retirar o lixo e coloca-lo na lixeira para ser reciclado?</h4>
-                    <select name="lixolixeira" id="retiralixo" onclick="selector()"> escolha
+                <select name="lixolixeira" id="retiralixo" onclick="selector()"> escolha
 
-                        <option  value="escolha" > Escolha uma opção </option>
-                        <option  value="sempre2" > Sempre </option>
-                        <option  value="asvezes2"> As vezes </option>
-                        <option  value="raramente2"> Raramente </option>
-                        <option  value="nunca2"> Nunca </option>
+                    <option value="escolha"> Escolha uma opção </option>
+                    <option value="sempre2"> Sempre </option>
+                    <option value="asvezes2"> As vezes </option>
+                    <option value="raramente2"> Raramente </option>
+                    <option value="nunca2"> Nunca </option>
 
-                    </select>
+                </select>
             </form>
         </article>
         <!-- fim do input modelo 3 -->
 
         <aside>
             <form action="lixosforadecasa" class="modelo4"></form>
-                <h4>Em média quantos sacos de lixos é produzidor por semana?</h4>
-                <input type="text" id="lixosforadecasa" placeholder="Digite a quantidade" class="input-text">
+            <h4>Em média quantos sacos de lixos é produzidor por semana?</h4>
+            <input type="text" id="lixosforadecasa" placeholder="Digite a quantidade" class="input-text">
         </aside>
         <!-- fim do input modelo 3 -->
 
@@ -116,10 +128,11 @@
         </div>
         <!-- botão envio do formulario -->
     </main>
-    
+
     <footer>
-        
+
     </footer>
-     
+
 </body>
+
 </html>
