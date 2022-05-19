@@ -46,39 +46,58 @@ function mobile() {
 
 //Função para a 3º pergunta
 const escolha = function () {
-    
+    let p3 = document.getElementById("box-alimen_p1");
+    let resposta = p1.value;
+    if(resposta === '-1'){
+        let perg = document.querySelector('.perg')
+        if(perg.style.display === 'none'){
+            perg.style.display = 'block';
+        } perg.style.display = 'block';
+    }else {
+        return parseInt(resposta);
+    }
+
+}
+
     let radios = document.getElementsByName("pergunta2");
     for (let i = 0; i < radios.length; i++) {
-        if (radios[i].c) {
-            let marca = radios[i].value           
+         if (radios[i].c){
+            let marca = radios[i].value  
+       
             for (let i = 0; i < radios.length; i++) {
                 if (marca == 'sim') {
                     result3 = + 25;
 
-                    return
+                    break 
                 } else if (marca == 'nao') {
                     result3 = + 125
 
-                    return
+                    break
                 } else if (marca == 'as_vezes') {
                     result3 = + 50
 
-                    return
+                    break
                 } else if (marca == 'raramente') {
                     result3 = + 100
 
-                    return
+                    break
                 } 
+            } if(marca === null){
+
+                let perg3 = document.querySelector('.perg3')
+                if(perg3.style.display === 'none'){
+                    perg3.style.display = 'block';
+                } perg3.style.display = 'block';  
             }
 
-        }else{
+        }
             let perg3 = document.querySelector('.perg3')
             if(perg3.style.display === 'none'){
                 perg3.style.display = 'block';
             } perg3.style.display = 'block';
         }
-    }
-}
+    
+
 
 //1º pergunta
 function pergunta1() {
@@ -110,7 +129,7 @@ function pergunta2() {
 }
 //Função soma os 3 resultados das respostas
 function resultado() {
-    result3 = escolha();
+    escolha();
     result1 = pergunta1();
     result2 = pergunta2();
     soma = result1 + result2 + result3;
