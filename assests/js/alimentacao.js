@@ -1,8 +1,9 @@
 let ativarNoturno = true;
-let result3 = 0
-let result1 = 0
-let result2 = 0
-let soma = 0
+let result3 = 0;
+let result1 = 0;
+let result2 = 0;
+let soma = 0;
+
 
 
 
@@ -18,7 +19,7 @@ function modoNoturno() {
         document.documentElement.style.setProperty('--rosa', '#b12262');
         document.documentElement.style.setProperty('--laranja', '#b44a28');
         document.documentElement.style.setProperty('--roxo', '#5d335c');
-        document.querySelector(".noturno").innerHTML = "Modo claro";
+        document.querySelector(".noturno").innerHTML = "Modo Claro";
 
     } else {
         document.documentElement.style.setProperty('--body', '#c4c4c4');
@@ -29,8 +30,8 @@ function modoNoturno() {
         document.documentElement.style.setProperty('--rosa', '#ed217c');
         document.documentElement.style.setProperty('--laranja', '#f15a29');
         document.documentElement.style.setProperty('--roxo', '#753874');
-        document.querySelector(".noturno").innerHTML = "Modo escuro";
-    } 
+        document.querySelector(".noturno").innerHTML = "Modo Escuro";
+    }
 }
 
 
@@ -45,59 +46,42 @@ function mobile() {
 //Fim responsividade
 
 //Função para a 3º pergunta
-const escolha = function () {
-    let p3 = document.getElementById("box-alimen_p1");
-    let resposta = p1.value;
-    if(resposta === '-1'){
-        let perg = document.querySelector('.perg')
-        if(perg.style.display === 'none'){
-            perg.style.display = 'block';
-        } perg.style.display = 'block';
-    }else {
-        return parseInt(resposta);
-    }
+    function escolha(){
+        let radios = document.getElementsByName("pergunta3");
+        let marca = '';
+        for (let i = 0; i < radios.length; i++){
+            if(radios[i].checked){
+               let marca = radios[i].value;
+                switch(marca){
+                    case 'sim':
+                        result3= 25;
+                        break
+                    case 'nao':
+                        result3 = + 125;
+                        break
+                    case 'as_vezes':
+                        result3 = + 50;
+                        break
+                    case 'raramente':
+                        result3 = + 100;
+                        break 
+                        
+                            
+                }
+                        }if(marca == null || marca === '' && result3 === 0  ){
+                       
+                            let perg3 = document.querySelector('.perg3');
+                            if(perg3.style.display === 'none'){
+                                perg3.style.display = 'block';
+                            } perg3.style.display = 'block';
+            } else{
+                let perg3 = document.querySelector('.perg3');
+                perg3.style.display = 'none';
 
-}
-
-    let radios = document.getElementsByName("pergunta2");
-    for (let i = 0; i < radios.length; i++) {
-         if (radios[i].c){
-            let marca = radios[i].value  
-       
-            for (let i = 0; i < radios.length; i++) {
-                if (marca == 'sim') {
-                    result3 = + 25;
-
-                    break 
-                } else if (marca == 'nao') {
-                    result3 = + 125
-
-                    break
-                } else if (marca == 'as_vezes') {
-                    result3 = + 50
-
-                    break
-                } else if (marca == 'raramente') {
-                    result3 = + 100
-
-                    break
-                } 
-            } if(marca === null){
-
-                let perg3 = document.querySelector('.perg3')
-                if(perg3.style.display === 'none'){
-                    perg3.style.display = 'block';
-                } perg3.style.display = 'block';  
             }
-
-        }
-            let perg3 = document.querySelector('.perg3')
-            if(perg3.style.display === 'none'){
-                perg3.style.display = 'block';
-            } perg3.style.display = 'block';
-        }
-    
-
+                
+      }
+    }
 
 //1º pergunta
 function pergunta1() {
@@ -115,9 +99,8 @@ function pergunta1() {
 //Função pergunta 2
 function pergunta2() {
     let p2 = document.getElementById("alimentacao_p2");
-    console.log(p2);
+   
     let resposta = p2.value;
-    console.log('> ', resposta);
     if(resposta === '0'){
         let perg2 = document.querySelector('.perg2')
         if(perg2.style.display === 'none'){
@@ -127,8 +110,9 @@ function pergunta2() {
         return parseInt(resposta);
     }
 }
+
 //Função soma os 3 resultados das respostas
-function resultado() {
+function resultado(){
     escolha();
     result1 = pergunta1();
     result2 = pergunta2();
