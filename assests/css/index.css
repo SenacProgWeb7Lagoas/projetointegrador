@@ -1,10 +1,14 @@
 :root{
     --body: #c4c4c4;
-    --cabeca: #02f561;
-    --borda: #0f7491;
+    --cabeca: #ffffff;
     --texto: #000000;
-}
 
+    --verde: #a6ce39;
+    --azul: #0f7491;
+    --rosa: #ed217c;
+    --laranja: #f15a29;
+    --roxo: #753874;
+}
 .noturno{
     background-color: #1d1830;
     border-radius: 7px;
@@ -15,7 +19,6 @@
     margin-top: 28px;
     margin-left: 19px;
 }
-
 .logo_rodape{
     margin-top: 40px;
     width: 170px;
@@ -26,11 +29,10 @@
 .alunos_rodape{
     font-size: 15px;
     background-color: #322a54;
-    color: #ffffff;
     text-align: right;
 }
-.text1, .text2{
-    color: #8dff91;
+.text{
+    color: #ffffff;
 }
 .text1{
     text-align: center;
@@ -58,13 +60,12 @@
 a{
     text-decoration: none;
     line-height: 17px;
+    color: var(--texto);
 }
-
 body{
     background-color: var(--body);
     font-family: Helvetica;
 }
-
 footer{
     position: absolute;
     background-color: #322a54;
@@ -74,37 +75,25 @@ footer{
     justify-content: space-between;
     padding: 2% 5%;
 }
-
 header{
-    height: 240px;
+    height: 85px;
 }
-
 .estilo{
     background-color: #322a54;
     font-weight: bold;
     height: 100px;
-
 }
-
 main{
+    margin-top: 10px;
     margin: 32px 195px;
-    height: 680px;
-}
-.cabecalho{
-    background-color: var(--cabeca);
-    width: 70%;
-    margin: 0 auto;
-    border: 5px solid var(--borda);
-    border-radius: 10px;
-    height: 100px;
-    margin-top: 32px;
+    height: 450px;
 }
 h1{
     font-size: 35px;
     padding: 28px 0px;
     color: #ffffff;
     font-weight: bold;
-    background-color: var(--borda);
+    background-color: #322a54;
     text-align: center;
 }
 h2{
@@ -122,28 +111,6 @@ p{
 select{
     font-size: 17px;
 }
-.perguntas{
-    background-color: var(--cabeca);
-    border: 5px solid var(--borda);
-    border-radius: 10px;
-    color: var(--texto);
-    height: 98%;
-}
-.button1{
-    background-color: var(--cabeca);
-    border: none;
-    color: #ffffff;
-    padding: 10px 15px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 20px;
-    margin: 20px 24px;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-
 .logo img{
     width: 100%;
     height: auto;
@@ -155,14 +122,82 @@ select{
     height: auto;
     display: block;
 }
-
 .cabecalho{
-    background-color: var(--borda);
-    padding: 6px;
+    background-color: #322a54;
+    width: 70%;
+    margin: 0 auto;
+    border: 5px solid #322a54;
+    border-radius: 10px;
+    height: 100px;
+    margin-top: 32px;
 }
 li{
     display: inline-block;
+    color: #ffffff;
 }
 .ul{
     text-align: center;
+}
+.main{
+    background-color: var(--cabeca);
+    width: 70%;
+    margin: 0 auto;
+    border: 5px solid #322a54;
+    border-radius: 10px;
+    height: 300px;
+    margin-top: 13px;
+}
+.proximo {
+    width: 100%;
+    height: 60px;
+    margin-top: 30px;
+    padding: 15px;
+}
+.proximo button{
+    background-color: #322a54;
+    border-radius: 7px;
+    border: none;
+    width: 80px;
+    height: 35px;
+    float: right;
+    margin-right: 5px;
+}
+.proximo a{
+    text-decoration: none;
+    color:#ffffff;
+    text-align: center;
+    font-size: 16px;
+}
+.button1 , .button2 , .button3 , .button4 , .button5{
+    border: none;
+    color: #ffffff;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin: 30px 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.button1{
+    background-color: var(--verde);
+}
+.button2{
+    background-color: var(--azul);
+}
+.button3{
+    background-color: var(--rosa);
+}
+.button4{
+    background-color: var(--laranja);
+}
+.button5{
+    background-color: var(--roxo);
+}
+.texto_main{
+    margin: 10px;
+    font-size: 19px;
+    color: var(--texto);
+    text-align: justify;
 }
