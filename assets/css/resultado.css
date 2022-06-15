@@ -181,6 +181,13 @@ h4 {
     padding: 15px 0;
     border-bottom: 1px solid black;
 }
+#outTotal{
+    color: var(--branco);
+    font-size: 1rem;
+    font-weight: normal;
+    padding: 15px 0;
+    border-bottom: none;
+}
 
 .total {
     color: var(--branco);
