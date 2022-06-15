@@ -5,9 +5,9 @@ let outConsumo = document.getElementById("outConsumo");
 let outResiduos = document.getElementById("outResiduos");
 
 
-const moradia = localStorage.getItem('moradia') || 0
-const alimentacao = localStorage.getItem('alimentacao') || 0
-const transporte = localStorage.getItem('trasnporte') || 0
+const moradia = localStorage.getItem('moradia') || 0;
+const alimentacao = localStorage.getItem('alimentacao') || 0;
+const transporte = localStorage.getItem('trasnporte') || 0;
 const consumo = localStorage.getItem('consumo') || 0;
 const residuos = localStorage.getItem('residuos') || 0;
 
