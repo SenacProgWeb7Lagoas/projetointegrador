@@ -2,6 +2,7 @@
     --body: #c4c4c4;
     --cabeca: #ffffff;
     --borda: #f15a29;
+    --laranja: #f15a29;
     --texto: #000000;
     --verde: #a6ce39;
     --rosa: #ed217c;
@@ -28,6 +29,13 @@ main{
     align-self: center;
     justify-content: space-between;
     line-height: normal;
+}
+.perg{
+    bottom: -40px;
+    position: relative;
+    color: #ff0000;
+    display: none;
+    font-size: 12px;
 }
 nav{
     background-color: var(--body);
@@ -192,7 +200,7 @@ section{
 }
 .noturno{
     background-color: #1d1830;
-    font-size: 20px;
+    font-size: 15px;
     border-radius: 5px;
     border: none;
     width: 80px;
@@ -249,4 +257,10 @@ ul{
   border-radius: 10px;
   color: var(--texto);
   background-color: var(--cabeca)
+}
+.cor1{
+    color: #00bfff;
+}
+.cor2{
+    color: #00ff87;
 }
