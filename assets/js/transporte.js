@@ -25,6 +25,7 @@ function dMode() {
 
 }
 function saida() {
+        
         const veiculo = document.getElementById('veiculo');
         const infoVeiculo = veiculo.options[veiculo.selectedIndex].value;
         const TrabalhoEmprego = document.getElementById('TrabalhoEmprego');
