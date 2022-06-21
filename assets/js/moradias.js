@@ -1,3 +1,8 @@
+let valorPergunta1 = 0;
+let valorPergunta2 = 0;
+let valorPergunta3 = 0;
+
+
 function hamburger() {
     let menuBurger = document.querySelector(".hamburger")
     /*A variável acima recebe a função queryselector, que vai acessar documentos dentro da classe
@@ -25,4 +30,17 @@ function modoCor() {
     document.querySelector("main").classList.toggle("change_color")
     document.querySelector("nav").classList.toggle("change_color")
     document.querySelector("body").classList.toggle("change_color")
+}
+
+function test(){
+    let p1 = document.getElementById("pergunta1")
+    console.log(p1.value);
+    valorPergunta1 = parseInt(p1.value)
+}
+
+
+function test2(){
+    let p2 = document.querySelector('.op2')
+    console.log(p2)
+    valorPergunta2 = parseInt(p2.value)
 }

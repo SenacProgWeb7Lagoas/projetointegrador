@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,19 +10,20 @@
     <script src="./assets/js/moradias.js" defer></script>
     <title> Moradia </title>
 </head>
+
 <body>
     <header class="cabecalho">
         <section>
-            <button aria-label="Modo de cor do site" id="color-model" class="butonModo" onclick="modoCor()"> 
+            <button aria-label="Modo de cor do site" id="color-model" class="butonModo" onclick="modoCor()">
                 Modo Escuro
             </button>
         </section>
 
-        <div class="hamburger"> 
+        <div class="hamburger">
             <div class="line" id="line1"></div>
             <div class="line" id="line2"></div>
-            <div class="line" id="line3"></div>            
-        </div>        
+            <div class="line" id="line3"></div>
+        </div>
 
         <nav>
             <ul>
@@ -36,41 +38,36 @@
     </header>
 
     <main>
-        
-        <h2> Moradia </h2>        
 
-        <section>
-            <form action="" class="pergunta1">
-                <h4> Quantas pessoas moram em sua casa? </h4>
-                <select name="pessoas-casa" id="">
-                    <option> Escolha uma opção </option>
-                    <option> 1 </option>
-                    <option> 2 </option>
-                    <option> 3 </option>
-                    <option> 4 </option>
-                    <option> 5 ou mais </option>         
-                </select>
+        <h2> Moradia </h2>
 
-            </form>
+        <section class="pergunta1">
+            <h4> Quantas pessoas moram em sua casa? </h4>
+            <select name="pessoas-casa" onchange="test()" id="pergunta1">
+                <option value="0"> Escolha uma opção </option>
+                <option value="1"> 1 </option>
+                <option value="2"> 2 </option>
+                <option value="3"> 3 </option>
+                <option value="4"> 4 </option>
+                <option value="5"> 5 ou mais </option>
+            </select>
         </section>
 
-        <article>
-            <form action="" class="pergunta2">
-                <h4> Quantas torneiras existem em sua casa? </h4>
-                <label for="torneiras-a">
-                    <input type="radio" name="opcao"> Menos de 3            
-                </label>
-                <label for="torneiras-b">                    
-                    <input type="radio" name="opcao"> 6 a 8                    
-                </label>
-                <label for="torneiras-c">                    
-                    <input type="radio" name="opcao"> 8 a 10                    
-                </label>
-                <label for="torneiras-d">                    
-                    <input type="radio" name="opcao"> Mais de 10
-                </label>
-            </form>
-        </article>
+        <section class="pergunta2" onchange="test2()">
+            <h4> Quantas torneiras existem em sua casa? </h4>
+            <label for="torneiras-a">
+                <input type="radio" value="1" class="op2"> Menos de 3
+            </label>
+            <label for="torneiras-b">
+                <input type="radio" value="2" class="op2"> 6 a 8
+            </label>
+            <label for="torneiras-c">
+                <input type="radio" value="3" class="op2"> 8 a 10
+            </label>
+            <label for="torneiras-d">
+                <input type="radio" value="4" class="op2"> Mais de 10
+            </label>
+        </section>
 
         <aside>
             <form action="" class="pergunta3">
@@ -78,12 +75,12 @@
                 <select name="tipo-casa" id="">
                     <option> Escolha uma opção </option>
                     <option> Casa </option>
-                    <option> Apartamento </option>                            
+                    <option> Apartamento </option>
                 </select>
             </form>
         </aside>
 
-        <button type="submit" class="botao-proximo"> <a href=""> Próximo </a>  </button>
+        <button type="submit" class="botao-proximo"> <a href=""> Próximo </a> </button>
 
     </main>
     <footer>
@@ -144,6 +141,7 @@
             </ul>
         </section>
     </footer>
-    
+
 </body>
+
 </html>
