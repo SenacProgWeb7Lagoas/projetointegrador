@@ -90,7 +90,7 @@ header{
 main{
     margin-top: 10px;
     margin: 32px 195px;
-    height: 850px;
+    height: 1150px;
 }
 h1{
     font-size: 35px;
@@ -148,7 +148,7 @@ li{
     margin: 0 auto;
     border: 5px solid #322a54;
     border-radius: 10px;
-    height: 750px;
+    height: 1050px;
     margin-top: 13px;
 }
 .proximo{
