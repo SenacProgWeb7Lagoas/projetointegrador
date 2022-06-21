@@ -39,6 +39,8 @@ main{
 }
 nav{
     background-color: var(--body);
+    max-width: 1920px;
+    margin: auto;
 }
 .cabecalho{
     background-color: var(--borda);
@@ -61,7 +63,7 @@ h1{
 footer{
     position: absolute;
     background-color: #322a54;
-    height: 205px;
+    height: 290px;
     width: 100%;
     display: flex;
     justify-content: space-between;

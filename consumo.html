@@ -8,6 +8,27 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap">
     <link rel="stylesheet" href="./assets/css/consumo.css" >
     
+    <nav>
+        <div class="cabecalho">
+            <ul>
+                <li>
+                    <a href="./moradia.html" class="button1">Moradia</a>
+                </li>
+                <li>
+                    <a href="./alimentacao.html" class="button2">Alimentação</a>
+                </li>
+                <li>
+                    <a href="./transporte.html" class="button3">Transporte</a>
+                </li>
+                <li>
+                    <a href="./consumo.html" class="button4">Consumo</a>
+                </li>
+                <li>
+                    <a href="./residuos.html" class="button5">Resíduos</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
     <title>CONSUMO</title>
 </head>
 <body>
@@ -15,36 +36,13 @@
         <button class="noturno" onclick="modoNoturno()">Modo noturno</button>
     </header>
     <main>
-        <nav>
-            <div class="cabecalho">
-                <ul>
-                    <li>
-                        <a href="./moradia.html" class="button1">Moradia</a>
-                    </li>
-                    <li>
-                        <a href="./alimentacao.html" class="button2">Alimentação</a>
-                    </li>
-                    <li>
-                        <a href="./transporte.html" class="button3">Transporte</a>
-                    </li>
-                    <li>
-                        <a href="./consumo.html" class="button4">Consumo</a>
-                    </li>
-                    <li>
-                        <a href="./residuos.html" class="button5">Resíduos</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-        <nav>   
-            <div class="perguntas">
-                <h1>
-                    Consumo
-                </h1>
-                <section>
-
-                    <p>Quantas compras de grande volume você, ou sua família, fez no último ano? (ex: TV, computador, móveis, eletrodométicos, etc.)</p> 
-                    <select id="box_consumo_p1">
+        <div class="perguntas">
+            <h1>
+                Consumo
+            </h1>
+            <section>
+                <p>Quantas compras de grande volume você, ou sua família, fez no último ano? (ex: TV, computador, móveis, eletrodométicos, etc.)</p> 
+                <select id="box_consumo_p1">
                             <option value="Escolha uma opção">Escolha uma opção</option>
                             <option value="Nenhuma">Nenhuma</option>
                             <option value="1 a 3">1 a 3</option>
@@ -61,10 +59,9 @@
                             <label for="Nao">Não</label>
                 </section>
                 <div class="proximo">
-                    <button><a href="./residuos.html">Próximo</a></button>
+                    <button onclick="resultados">Próximo</button>
                 </div>
             </div>
-        </nav> 
     </main>
 <footer>
     <figure>
