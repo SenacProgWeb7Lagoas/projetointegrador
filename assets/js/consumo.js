@@ -53,7 +53,8 @@ function secondSection() { // Função que seleciona os valores da segunda pergu
     return value2;
 }
 
-object.onclick function resultados() { 
+object.onclick = function resultados() { 
+
 sum = firstSection() + secondSection();
 
 localStorage['consumo'] = sum;
