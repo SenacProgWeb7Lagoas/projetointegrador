@@ -25,22 +25,19 @@ function dMode() {
 
 }
 
-        
+
 
         
 
 function saida() {
-        var radios = document.body.querySelectorAll("input[type='radio']");
-        for(var x=0; x < radios.length; x++){
-        radios[x].onclick = function(){
-        clique(this.value);
-        }
-        function clique(i){
-                return infoPercorrer = i;                
-        }
-        }
-        console(clique(i));
-        alert(infoPercorrer)
+        const selecVeiculo = document.querySelector('input[name=viajar]:checked').value
+        const selecPercorre = document.querySelector('input[name=percorre]:checked').value
+
+        const selecViajar = document.querySelector('input[name=viajar]:checked').value
+        
+        console.log(selecPercorre);
+        console.log(selecViajar);
+        console.log(selecVeiculo);
         
         const veiculo = document.getElementById('veiculo');
         const infoVeiculo = veiculo.options[veiculo.selectedIndex].value;

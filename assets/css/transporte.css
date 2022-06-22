@@ -29,6 +29,7 @@ main {
 button {
     font-size: 20px;
     padding: 2px;
+    border-radius: 8px;
 }
 a {
     color: white;
@@ -155,9 +156,9 @@ a {
     border: none;
     margin: 10px auto;
     height: 35px;
-    background-image:linear-gradient(to bottom, #ed217d74, rgb(202, 202, 202), #ed217d71);
+    background-color: white;
     width: 200px;
-    
+    border: #ED217C solid 2px;
     text-align: center;
     font-size: 20px;
 }
@@ -300,6 +301,13 @@ ul{
 .dNone {
     display: none;
 }
+@media (max-width: 360px) {
+    .SectionTop {
+        width: 100%;
+        
+        
+        
+        
+    }
 
-
-
+}
