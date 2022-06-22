@@ -91,14 +91,9 @@ document.querySelector('.change-text').addEventListener('click', function (){
             mudaText = false
             document.querySelector('.change-text').innerHTML = 'Modo Claro'
         }else {
-<<<<<<< HEAD
-            mudaText = true
-            document.querySelector('.change-text').innerHTML = 'Modo Escuro'
-=======
                 mudaText = true
                 document.querySelector('.change-text').innerHTML = 'Light Mode ON'
             }
->>>>>>> resultados
         }
     )
 
