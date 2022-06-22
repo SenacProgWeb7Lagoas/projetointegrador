@@ -24,13 +24,29 @@ function dMode() {
     }
 
 }
+
+        
+
+        
+
 function saida() {
+        var radios = document.body.querySelectorAll("input[type='radio']");
+        for(var x=0; x < radios.length; x++){
+        radios[x].onclick = function(){
+        clique(this.value);
+        }
+        function clique(i){
+                return infoPercorrer = i;                
+        }
+        }
+        console(clique(i));
+        alert(infoPercorrer)
+        
         const veiculo = document.getElementById('veiculo');
         const infoVeiculo = veiculo.options[veiculo.selectedIndex].value;
         const TrabalhoEmprego = document.getElementById('TrabalhoEmprego');
         const infoTrabalho = TrabalhoEmprego.options[TrabalhoEmprego.selectedIndex].value;
-        const percorreDia = document.getElementById('percorreDia');
-        const infoPercorrer = percorreDia.options[percorreDia.selectedIndex].value;
+        
         const ferias = document.getElementById('ferias');
         const infoFerias = ferias.options[ferias.selectedIndex].value;
         const fimdeSemana = document.getElementById('fimdeSemana');

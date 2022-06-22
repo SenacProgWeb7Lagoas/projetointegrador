@@ -24,11 +24,11 @@
                     <i class="menuMob bi bi-list" onclick="menuMobile()" id="menuC"></i>
                     <tr id="menuM">
                         <div class="menuClick">
-                            <td><button  class="moradia overButton" onclick="nextPage()"><a>Moradia</a></button></td>
-                            <td><button class="alimentacao overButton" onclick="nextPage()"><a>Alimentação</a></button></td>
-                            <td><button class="transporte overButton ativo" ><a>Transporte</a></button></td>
-                            <td><button class="consumo overButton" onclick="nextPage()"><a>Consumo</a></button></td>
-                            <td><button class="residuos overButton" onclick="nextPage()"><a>Resíduos</a></button></td>
+                            <td><a href="./consumo.html"><button  class="moradia overButton">Moradia</button></a></td>
+                            <td><a href="./consumo.html"><button class="alimentacao overButton" >Alimentação</button></a></td>
+                            <td><a href="./consumo.html"><button class="transporte overButton ativo" >Transporte</button></a></td>
+                            <td><a href="./consumo.html"><button class="consumo overButton" >Consumo</button></a></td>
+                            <td><a href="./residuos.html"><button class="residuos overButton" >Resíduos</button></a></td>
                         </div>
                     </tr>
                 </table>
@@ -44,14 +44,12 @@
             
             <div class="perguntas" id="contain_quests">
                 <h2>1- Possui algum veículo automotor?</h2>
+                <p>*Marque apenas uma opção</p>
                 <table>
-                    <select class="selectV" id="veiculo">
-                        <option value="">Selecione</option>
-                        <option value="35">Moto</option>
-                        <option value="100">Carro</option>
-                        <option value="130">Caminhão</option>
-                        <option value="0">Não possuo</option>
-                    </select>
+                        <INPUT TYPE="checkbox" NAME="OPCAO" value="35">Moto <br>
+                        <INPUT TYPE="checkbox" NAME="OPCAO" value="100">Carro <br>
+                        <INPUT TYPE="checkbox" NAME="OPCAO" value="130">Caminhão <br>
+                        <input TYPE="checkbox" NAME="OPCAO" value="0">Não possuo                    
                 </table>
                 <h2>2- Como se desloca para o trabalho ou emprego?</h2>
                 <table>
@@ -65,15 +63,13 @@
                     
                 </table>
                 <h2>3- Quantos quilômetros percorre por dia utilizando o veículo acima:</h2>
-                <table>
-                    <select class="selectV" id="percorreDia">
-                        <option value="">Selecione</option>
-                        <option value="10">00 a 10 km</option>
-                        <option value="20">11 a 30 km</option>
-                        <option value="30">31 a 50 km</option>
-                        <option value="70">Mais de 51 km</option>
-                    </select>
-                    
+                
+                <table >         
+                        <input TYPE="RADIO" NAME="OPCAO" id="1" value="0">Não utilizo <br>              
+                        <input TYPE="RADIO" NAME="OPCAO" id="1" value="10">00 a 10 km <br>
+                        <input TYPE="RADIO" NAME="OPCAO" id="2" value="20">11 a 30 km <br>
+                        <input TYPE="RADIO" NAME="OPCAO" id="3" value="30">31 a 50 km <br>
+                        <input TYPE="RADIO" NAME="OPCAO" id="4" value="70">Mais de 51 km    <br>                 
                 </table>
                 <h2>4- Onde passou as férias?</h2>
                 <table>
@@ -86,17 +82,15 @@
                     </select>
                     
                 </table>
-                <h2>5- Você costuma viajar aos fins de semana? Quantos km?</h2>
-                <table>
-                    <tr>
-                        <select class="selectV" id="fimdeSemana">
-                            <option value="">Selecione</option>
-                            <option value="10">0 km</option>
-                            <option value="20">1 a 15 km</option>
-                            <option value="30">16 a 50 km</option>
-                            <option value="40">Mais de 50 km</option>
-                        </select>                        
-                    </tr>
+                <h2>5- Você costuma viajar aos fins de semana? Quantos km?</h2>                
+                    <p>*Marque apenas uma opção</p>
+                    <table>
+                            <INPUT TYPE="checkbox" NAME="OPCAO" value="10">0 km <br>
+                            <INPUT TYPE="checkbox" NAME="OPCAO" value="20">1 a 15 km <br>
+                            <INPUT TYPE="checkbox" NAME="OPCAO" value="30">16 a 50 km <br>
+                            <input TYPE="checkbox" NAME="OPCAO" value="40">Mais de 50 km                 
+                    </table>
+                    
                 </table>
                 <div class="contain_button ">
                     <a><button class="transporte proximo" onclick="saida()">Próximo</button></a>
