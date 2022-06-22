@@ -1,86 +1,86 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./assets/css/reset.css">
+        <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap" rel="stylesheet">
+        <link href="assets/css/index.css" rel="stylesheet">
+        <title>Home</title>
+    </head>
+        <body>
+            <header>
+                <div class="estilo">
+                    <button class="noturno" onclick="modoNoturno()">Modo Escuro</button>
+                    <div class="nav" onclick="mobile()">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                    </div>
+            </header>
+        <main>
+            <div class="cabecalho">
+                 <ul class="ul">
+                     <li>
+                         <a href="./moradia.html" class="button1">Moradia</a>
+                     </li>
+                     <li>
+                         <a href="./alimentacao.html" class="button2">Alimentação</a>
+                     </li>
+                     <li>
+                         <a href="./transporte.html" class="button3">Transporte</a>
+                     </li>
+                     <li>
+                         <a href="./consumo.html" class="button4">Consumo</a>
+                     </li>
+                     <li>
+                         <a href="./residuos.html" class="button5">Resíduos</a>
+                     </li>
+                 </ul>
+             </div>
+            <div class="main">
+                <h1>
+                    Pegada Ecológica
+                </h1>
+                <div class="texto_main">
+                    <p class="perguntas">
+                        Por que essa calculadora foi criada?
+                    </p>
+                        Essa calculadora foi criada para fins didáticos do curso Programador Web do SENAC Minas.
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/reset.css">
-    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap" rel="stylesheet">
-    <link href="assets/css/index.css" rel="stylesheet">
-    <title>Home</title>
-</head>
+                    <p class="perguntas">
+                        Qual é a função da pegada ecológica?
+                    </p>
+                        A Pegada Ecológica é uma metodologia de contabilidade ambiental que avalia a pressão do consumo
+                        das populações humanas sobre os recursos naturais. Expressa em hectares globais (gha), permite
+                        comparar diferentes padrões de consumo e verificar se estão dentro da capacidade ecológica do planeta.
 
-<body>
-    <header>
-        <div class="estilo">
-            <button class="noturno" onclick="modoNoturno()">Modo Escuro</button>
-            <div class="nav" onclick="mobile()">
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
+                    <p class="perguntas">
+                        Como nossa calculadora funciona?
+                    </p>
+                        Ela avalia qual o impacto que a sua alimentação, os seus hábitos de consumo, habitação, transporte,
+                        entre outros, têm sobre o planeta.
+                    <p class="perguntas">
+                        Porque é importante diminuir a pegada ecológica?
+                    </p>
+                        Sem essa mudança o risco de o planeta não suportar a nossa carga de poluição e uso de recursos
+                        naturais é grande e tragédias ambientais serão cada vez mais comuns até inviabilizar a nossa existência
+                        como conhecemos hoje.
+
+                    <p class="perguntas">
+                        Como os problemas ambientais estão relacionados com as atividades humanas e a
+                        pegada ecológica das cidades e pessoas?
+                    </p>
+                        A pegada ecológica está ligada à crescente demanda mundial por bens de consumo, que coloca em risco os
+                        principais recursos naturais do planeta. Muitas vezes, a indústria e os consumidores não estão
+                        plenamente conscientes do nível do impacto que essa exigência pode causar no equilíbrio ambiental.
+
+                </div>
+                <div class="proximo">
+                   <button onclick="resultado()"><a href="./moradia.html">Iniciar</a></button>
+                </div>
             </div>
-    </header>
-    <main>
-        <div class="cabecalho">
-            <ul class="ul">
-                <li>
-                    <a href="./moradia.html" class="button1">Moradia</a>
-                </li>
-                <li>
-                    <a href="./alimentacao.html" class="button2">Alimentação</a>
-                </li>
-                <li>
-                    <a href="./transporte.html" class="button3">Transporte</a>
-                </li>
-                <li>
-                    <a href="./consumo.html" class="button4">Consumo</a>
-                </li>
-                <li>
-                    <a href="./residuos.html" class="button5">Resíduos</a>
-                </li>
-            </ul>
-        </div>
-        <div class="main">
-            <h1>
-                Pegada Ecológica
-            </h1>
-            <div class="texto_main">
-                <p>
-                    Essa calculadora foi criada para fins didáticos do curso Programador Web do SENAC Minas.
-                </p>
-                <p>
-                    Qual é a função da pegada ecológica? <br>
-                    A Pegada Ecológica é uma metodologia de contabilidade ambiental que avalia a pressão do consumo
-                    das populações humanas sobre os recursos naturais. Expressa em hectares globais (gha), permite
-                    comparar diferentes padrões de consumo e verificar se estão dentro da capacidade ecológica do
-                    planeta.
-                </p>
-                <p>
-                    Como nossa calculadora funciona? <br>
-                    Ela avalia qual o impacto que a sua alimentação, os seus hábitos de consumo, habitação, transporte,
-                    entre outros, têm sobre o planeta.
-                </p>
-                <p>
-                    Porque é importante diminuir a pegada ecológica? <br>
-                    Sem essa mudança o risco de o planeta não suportar a nossa carga de poluição e uso de recursos
-                    naturais é grande e tragédias ambientais serão cada vez mais comuns até inviabilizar a nossa
-                    existência
-                    como conhecemos hoje.
-                </p>
-                <p>
-                    Como os problemas ambientais estão relacionados com as atividades humanas e a
-                    pegada ecológica das cidades e pessoas? <br>
-                    A pegada ecológica está ligada à crescente demanda mundial por bens de consumo, que coloca em risco
-                    os
-                    principais recursos naturais do planeta. Muitas vezes, a indústria e os consumidores não estão
-                    plenamente conscientes do nível do impacto que essa exigência pode causar no equilíbrio ambiental.
-                </p>
-            </div>
-            <div class="proximo">
-                <button onclick="resultado()"><a href="./moradia.html">Iniciar</a></button>
-            </div>
-        </div>
     </main>
     <footer>
         <figure>
