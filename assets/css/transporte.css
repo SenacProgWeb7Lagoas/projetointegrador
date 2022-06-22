@@ -41,6 +41,7 @@ a {
 }
 .SectionTop {
     width: 85%;
+    max-width: 1200px;
     background-color: var(--transporte);    
     padding: 12px 0px;
     margin: auto;
@@ -131,6 +132,7 @@ a {
 }
 .questions {
     width: 85%;
+    max-width: 1200px;
     background-color: #ED217C;
     border-radius: 8px;
     margin: 20px auto;
