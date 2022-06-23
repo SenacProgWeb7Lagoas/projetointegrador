@@ -1,9 +1,18 @@
+//Pega as referências da página de resultados e guarda em cada variável
 let outMoradia = document.getElementById("outMoradia");
 let outAlimentacao = document.getElementById("outAlimentação");
 let outTransporte = document.getElementById("outTransporte");
 let outConsumo = document.getElementById("outConsumo");
 let outResiduos = document.getElementById("outResiduos");
 let outTotal = document.getElementById("outTotal");
+
+//Pega as referências da página de resultados e guarda em cada variável
+let outPerMoradia = document.getElementById("outPerMoradia");
+let outPerAlimentacao = document.getElementById("outPerAlimentacao");
+let outPerTransporte = document.getElementById("outPerTransporte");
+let outPerConsumo = document.getElementById("outPerConsumo");
+let outPerResiduos = document.getElementById("outPerResiduos");
+
 
 let outHectares = document.getElementById("outHectares");
 let outArvores = document.getElementById("outArvores");
@@ -14,19 +23,34 @@ const transporte = localStorage.getItem('trasnporte') || 0;
 const consumo = localStorage.getItem('consumo') || 0;
 const residuos = localStorage.getItem('residuos') || 0;
 
-const total = parseInt(moradia + alimentacao + transporte + consumo + residuos); // realiza a soma das opções escolhidas pelo user
+const total = (parseInt(moradia) + parseInt(alimentacao) + parseInt(transporte) + parseInt(consumo) + parseInt(residuos)); // realiza a soma das opções escolhidas pelo user
 
+//Saída das somas para a página resultados
 outMoradia.innerHTML = moradia;
 outAlimentacao.innerHTML = alimentacao;
 outTransporte.innerHTML = transporte;
 outConsumo.innerHTML = consumo;
 outResiduos.innerHTML = residuos;
 
-outTotal.innerHTML = total; // show in page the total of the options 
+outTotal.innerHTML = parseInt(total); // show in page the total of the options 
+// Cáculo da  porcentagem
+const perMoradia = ((moradia * 100) /total).toFixed(3) + " %";
+const perAlimentacao = ((alimentacao * 100) /total).toFixed(3) + " %";
+const perTransporte = ((transporte * 100) /total).toFixed(3) + " %";
+const perConsumo = ((consumo * 100) /total).toFixed(3) + " %";
+const perResiduos = ((residuos * 100) /total).toFixed(3) + " %";
 
-if (total >= 0 && total <= 38){
-    outHectares.innerHTML = 1;
-    outArvores.innerHTML = 2500;
+//Saídas das porcentagem para a página resultados parte de porcentagem
+outPerMoradia.innerHTML = perMoradia;
+outPerAlimentacao.innerHTML = perAlimentacao;
+outPerTransporte.innerHTML = perTransporte;
+outPerConsumo.innerHTML = perConsumo;
+outPerResiduos.innerHTML = perResiduos;
+
+
+if (total > 0 && total <= 38){
+    outHectares.innerHTML = (" " + 1 + " Hectares");
+    outArvores.innerHTML =  " " + 2500;
     
 }else if(total >= 39 && total <= 75){
     outHectares.innerHTML = 2;
@@ -41,7 +65,7 @@ if (total >= 0 && total <= 38){
     outArvores.innerHTML = 10000;
 
 }else if(total >= 151 && total <= 275){
-    outHectares.innerHTML = 5;
+    outHectares.innerHTML =  10 + " hectares";
     outArvores.innerHTML = 12500;
 
 }else if(total >= 276 && total <= 400){
