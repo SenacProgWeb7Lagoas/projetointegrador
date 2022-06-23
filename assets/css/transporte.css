@@ -1,17 +1,29 @@
+
 * {
     font-family: Helvetica, Arial,  sans-serif
 }
+
 :root {
-    --transporte:#ED217C;
-    --perguntas:rgb(40, 40, 40);
-}
+    --body: #c4c4c4;
+    --cabeca: #ffffff;
+    --borda: #ed217c;
+    --texto: #000000;
+    --verde: #a6ce39;
+    --laranja: #f15a29;
+    --roxo: #753874;
+    --azul: #0f7491;
+  }
+
+  body{
+    background-color: var(--body);
+    font-family: Helvetica;
+    color:var(--texto);
+  }
 
 header {
     width: 100%;
     height: 100px;
     background-color: #322954;
-    
-    
 }
 .darkM {        
     width: fit-content;
@@ -20,12 +32,20 @@ header {
     cursor: pointer;
     top: 29px;
     left: 31px;
+    font-size: 14px;
+    background-color: #1d1830;
+    border-radius: 7px;
+    border: none;
+    width: 100px;
+    height: 40px;
+    color: #ffffff;
 }
 main {
-    
-    padding: 20px 100px;
-    background-color: #C4C4C4;
+    margin: 32px auto;
+    max-width: 1200px;
+    width: 70%;
 }
+
 button {
     font-size: 20px;
     padding: 2px;
@@ -40,15 +60,12 @@ a {
     /* border: black solid 1px; */
 }
 .SectionTop {
-    width: 85%;
-    max-width: 1200px;
-    background-color: var(--transporte);    
-    padding: 12px 0px;
-    margin: auto;
-    border-radius: 8px;
-    
-    
-    
+    background-color: var(--borda);  
+    padding-top: 15px;  
+    padding-bottom: 8px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 8px;   
 }
 
 .paginas {
@@ -92,53 +109,45 @@ a {
     filter: brightness(120%);
 }
 .moradia {
-    background-color: #8DC641;    
+    background-color: var(--verde);    
 }
 .alimentacao {
-    background-color: #1E7491;    
+    background-color: var(--azul);    
 }
 .transporte {
-    background-color: #ED217C;    
+    background-color: var(--borda);    
 }
 .consumo {
-    background-color: #F15A29;    
+    background-color: var(--laranja);    
 }
 .residuos {
-    background-color: #753875;    
+    background-color: var(--roxo);    
 }
 .overButton:hover {
     cursor: pointer;;
 }
 /* Fim botões */
 .ativo {
-    box-shadow: #ED217C 0px 0px 10px 0px;
-    background-color: #ed217d;
+    box-shadow: var(--borda) 0px 0px 10px 0px;
+    background-color: var(--borda);
     border: #ffffff solid 1px;
     
 }
 
-.titleTransporte {
-    background-color: var(--transporte);
-    width: 100%;
-    padding: 8px;
-    font-size: 23px;
-    color: white;
-    margin-bottom: 10px;
+.titleTransporte h1 {
+    font-size: 2.2rem;
+    padding: 28px 48px;
+    color: #ffffff;
+    font-weight: bold;
+    background-color: var(--borda);
     text-align: center;
-    padding: 20px;
-    border-radius: 8px;
-    font-weight: 800;
-    
+    width: 100%;
 }
 .questions {
-    width: 85%;
-    max-width: 1200px;
-    background-color: #ED217C;
+    background-color: var(--cabeca);
     border-radius: 8px;
-    margin: 20px auto;
-    padding: 10px 3px;
-   
-    
+    border: 5px solid var(--borda);
+    margin: 28px 0px;
 }
 .cor1 {
     color: #00bfff;
@@ -151,16 +160,15 @@ a {
     
 }
 .perguntas {
-    background-color: white;
-    padding: 10px;
+    padding: 15px 25px;
     border-radius: 1px;
     text-align: inherit;
-    padding-left: 10px;
 }
 .perguntas h2 {
-    color: var(--perguntas);
+    color: var(--texto);
     font-size: 20px;
-    
+    font-weight: bold;
+    padding: 15px 15px;
 }
 
 
@@ -189,7 +197,6 @@ a {
 }
 
 footer{
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     position: absolute;
     background-color: #322a54;
     min-height: 250px;
@@ -205,32 +212,50 @@ h3{
     padding-bottom: 20px;
     padding-top: 10px;
 }
-.logo {  
-    width: 150px;
-    height: 150px;
+.logo_rodape {
+    margin-top: 40px;
+    width: 170px;
+    height: 170px;
     background-color: #322a54;
     align-content: center;
-}
-.alunos_rodape{
+  }
+  .alunos_rodape {
     font-size: 15px;
     background-color: #322a54;
     color: #ffffff;
+    text-align: right;
+  }
+  .text1,
+  .text2 {
+    color: #8dff91;
+  }
+  .text1 {
     text-align: center;
-} 
-.alunos_rodape ul li{
+  }
+  .text2 {
+    text-align: left;
+  }
+.alunos_rodape ul li {
     display: block;
-}
-.texto_rodape{
+  }
+  .texto_rodape {
+    margin-top: 54px;
     font-size: 15px;
     background-color: #322a54;
     color: #ffffff;
     width: 50%;
     text-align: justify;
-}
-li{
+  }
+  .cor1 {
+    color: #00bfff;
+  }
+  .cor2 {
+    color: #00ff87;
+  }
+footer li {
     display: inline-block;
-}
-ul{
+  }
+footer ul{
     text-align: center;
 }
 @media (max-width: 800px) {
