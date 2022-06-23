@@ -142,10 +142,8 @@ main h2{
     background-color: #047e45;
     border-radius: 7px;
     border: none;
-    width: 80px;
-    height: 35px;
-    float: right;
-    margin-right: 5px;
+    padding: 15px;
+    margin: 0 296px;
 }
 .proximo a{
     text-decoration: none;
