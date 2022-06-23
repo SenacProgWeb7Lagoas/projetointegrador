@@ -43,14 +43,17 @@
             </div>
             
             <div class="perguntas" id="contain_quests">
+                <span id="possui"></span>
+                
                 <h2>1- Possui algum veículo automotor?</h2>
-                <p>*Marque apenas uma opção</p>
-                <table>
-                        <INPUT TYPE="checkbox" NAME="veiculo" value="35">Moto <br>
-                        <INPUT TYPE="checkbox" NAME="veiculo" value="100">Carro <br>
-                        <INPUT TYPE="checkbox" NAME="veiculo" value="130">Caminhão <br>
-                        <input TYPE="checkbox" NAME="veiculo" value="0">Não possuo                    
+                
+                <table >
+                        <INPUT TYPE="checkbox" class="inp" NAME="veiculo" value="35" onclick="marcaVeiculo(this)"><span>Moto</span> <br>
+                        <INPUT TYPE="checkbox" NAME="veiculo" value="100" onclick="marcaVeiculo(this)"><span>Carro</span> <br>
+                        <INPUT TYPE="checkbox" NAME="veiculo" value="130" onclick="marcaVeiculo(this)"><span>Caminhão</span> <br>
+                        <input TYPE="checkbox" NAME="veiculo" value="0" onclick="marcaVeiculo(this)"><span>Não possuo                    </span>
                 </table>
+                <span id="desloca"></span>
                 <h2>2- Como se desloca para o trabalho ou emprego?</h2>
                 <table>
                     <select class="selectV" id="TrabalhoEmprego">
@@ -65,11 +68,11 @@
                 <h2>3- Quantos quilômetros percorre por dia utilizando o veículo acima:</h2>
                 
                 <table >         
-                        <input TYPE="RADIO" NAME="percorre" id="nu" value="0">Não utilizo <br>              
-                        <input TYPE="RADIO" NAME="percorre" id="010" value="10">00 a 10 km <br>
-                        <input TYPE="RADIO" NAME="percorre" id="1130" value="20">11 a 30 km <br>
-                        <input TYPE="RADIO" NAME="percorre" id="3150" value="30">31 a 50 km <br>
-                        <input TYPE="RADIO" NAME="percorre" id="51" value="70">Mais de 51 km    <br>                 
+                        <input TYPE="RADIO" NAME="percorre" id="nu" value="0"><span>Não utilizo </span><br>              
+                        <input TYPE="RADIO" NAME="percorre" id="010" value="10"><span>00 a 10 km </span><br>
+                        <input TYPE="RADIO" NAME="percorre" id="1130" value="20"><span>11 a 30 km </span><br>
+                        <input TYPE="RADIO" NAME="percorre" id="3150" value="30"><span>31 a 50 km</span> <br>
+                        <input TYPE="RADIO" NAME="percorre" id="51" value="70"><span>Mais de 51 km    </span><br>                 
                 </table>
                 <h2>4- Onde passou as férias?</h2>
                 <table>
@@ -83,15 +86,16 @@
                     
                 </table>
                 <h2>5- Você costuma viajar aos fins de semana? Quantos km?</h2>                
-                    <p>*Marque apenas uma opção</p>
+                    <br>
                     <table>
-                            <INPUT TYPE="checkbox" NAME="viajar" value="10">0 km <br>
-                            <INPUT TYPE="checkbox" NAME="viajar" value="20">1 a 15 km <br>
-                            <INPUT TYPE="checkbox" NAME="viajar" value="30">16 a 50 km <br>
-                            <input TYPE="checkbox" NAME="viajar" value="40">Mais de 50 km                 
+                            <INPUT TYPE="radio" NAME="viajar" value="10" ><span>0 km</span> <br>
+                            <INPUT TYPE="radio" NAME="viajar" value="20"><span>1 a 15 km </span><br>
+                            <INPUT TYPE="radio" NAME="viajar" value="30"><span>16 a 50 km </span><br>
+                            <input TYPE="radio" NAME="viajar" value="40"><span>Mais de 50 km</span>                 
                     </table>
                     
                 </table>
+                <p class="pObrigatoria">*Todas as perguntas são obrigatórias</p>
                 <div class="contain_button ">
                     <a><button class="transporte proximo" onclick="saida()">Próximo</button></a>
                 </div>
@@ -117,36 +121,33 @@
             <h3>Desenvolvido por:</h3>
             <ul>    
                 <li>
-                    Bianca Araújo | <a href="https://github.com/BrytanniADJ">GitHub</a> | <a class="roxo" href="https://www.linkedin.com/in/bianca-araújo-coelho-bia-b03b3b205/">Linkedin</a>
+                    Bianca Araújo | <a class="cor1" href="https://github.com/BrytanniADJ">GitHub</a> | <a class="cor2" href="https://www.linkedin.com/in/bianca-araújo-coelho-bia-b03b3b205/">Linkedin</a>
                 </li>
                 <li>
-                    Cláudia Aguiar   | <a href="https://github.com/claudiaapj">GitHub</a> | <a class="roxo" href="https://www.linkedin.com/in/claudiaaguilarpaixao/">Linkedin</a>
+                    Cláudia Aguilar | <a class="cor1" href="https://github.com/claudiaapj">GitHub</a> | <a class="cor2" href="https://www.linkedin.com/in/claudiaaguilarpaixao/">Linkedin</a>
                 </li>
                 <li>
-                    Gleiton | <a href="https://github.com/gleitons">GitHub</a> | <a class="roxo" href="#">Linkedin</a>
-                 </li>
-                 <li>
-                    Luíza Araújo | <a href="https://github.com/lh-ude">GitHub</a> | <a class="roxo" href="https://br.linkedin.com/in/luiza-helena-ude-goddard-ara%C3%BAjo-b202a9a0">Linkedin</a>
-                 </li>
-                 <li>
-                    Mariane Barbosa | <a href="https://github.com/marianibarbosa">GitHub</a> | <a class="roxo" href="#">Linkedin</a>
-                 </li>
-                 <li>
-                    Marcos Felipe | <a href="https://github.com/marcosfmd">GitHub</a> | <a class="roxo" href="#">Linkedin</a>
-                 </li>
-                 <li>
-                    Michelle Andrade | <a href="https://github.com/MichelleAndrade">GitHub</a> | <a class="roxo" href="#">Linkedin</a>
-                 </li>
-                 <li>
-                    Pedro Gabriel | <a href="https://github.com/PedroProgramador02">GitHub</a> | <a class="roxo" href="#">Linkedin</a>
-                 </li>
-                 <li>
-                    Sávio Francisco | <a href="https://github.com/Savio-Fr">GitHub</a> | <a class="roxo" href="#">Linkedin</a>
-                 </li>
-                 <h2>Professor:</h2>
-                 <li>
-                    Wisley Alves | <a href="https://github.com/wistech7l">GitHub</a> | <a class="roxo" href="https://www.linkedin.com/in/wisley-j-alves-87253b5a/">Linkedin</a>
-                 </li>
+                    Gleiton | <a class="cor1" href="https://github.com/gleitons">GitHub</a> | <a class="cor2" href="https://www.linkedin.com/in/gleiton/">Linkedin</a>
+                </li>
+                <li>
+                    Luíza Araújo | <a class="cor1" href="https://github.com/lh-ude">GitHub</a> | <a class="cor2" href="https://br.linkedin.com/in/luiza-helena-ude-goddard-ara%C3%BAjo-b202a9a0">Linkedin</a>
+                </li>
+                <li>
+                    Mariane Barbosa | <a class="cor1" href="https://github.com/marianibarbosa">GitHub</a> | <a class="cor2" href="https://br.linkedin.com/in/marianibarbosa">Linkedin</a>
+                </li>
+                <li>
+                    Michelle Andrade | <a class="cor1" href="https://github.com/MichelleAndrade">GitHub</a> | <a class="cor2" href="#">Linkedin</a>
+                </li>
+                <li>
+                    Pedro Gabriel | <a class="cor1" href="https://github.com/PedroProgramador02">GitHub</a> | <a class="cor2" href="#">Linkedin</a>
+                </li>
+                <li>
+                    Sávio Francisco | <a class="cor1" href="https://github.com/Savio-Fr">GitHub</a> | <a class="cor2" href="https://www.linkedin.com/in/s%C3%A1vio-francisco-7aa431210/">Linkedin</a>
+                </li>
+                <h2 class="text1">Professor:</h2>
+                <li>
+                    Wisley Alves | <a class="cor1" href="https://github.com/wistech7l">GitHub</a> | <a class="cor2" href="https://www.linkedin.com/in/wisley-j-alves-87253b5a/">Linkedin</a>
+                </li>
             </ul>
         </section>
     </footer>
