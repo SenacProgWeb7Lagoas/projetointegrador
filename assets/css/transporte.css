@@ -10,36 +10,47 @@ header {
     width: 100%;
     height: 100px;
     background-color: #322954;
-    position: relative;
+    
+    
 }
 .darkM {        
     width: fit-content;
     position: absolute;
     padding: 5px;    
     cursor: pointer;
-    top: 60px;
-    left: 120px;
+    top: 29px;
+    left: 31px;
 }
 main {
     
     padding: 20px 100px;
     background-color: #C4C4C4;
 }
+button {
+    font-size: 20px;
+    padding: 2px;
+    border-radius: 8px;
+}
 a {
     color: white;
     text-decoration: none;
+    font-size: 20px;
 }
 .bb{
     /* border: black solid 1px; */
 }
 .SectionTop {
     width: 85%;
+    max-width: 1200px;
     background-color: var(--transporte);    
-    padding: 22px 0px;
+    padding: 12px 0px;
     margin: auto;
-    box-shadow: rgba(0, 0, 0, 0.286) 0px 10px 20px 0px; 
-    border-radius: 8px;  
+    border-radius: 8px;
+    
+    
+    
 }
+
 .paginas {
    justify-content: space-between;   
    margin: auto;  
@@ -47,12 +58,17 @@ a {
 
 .paginas table {
     width: 95%;
+    
     margin: auto;    
 }
+.perguntas table {
+    margin-bottom: 20px;
+}
 .paginas table tr td button{
-    border-radius: 5px;
-    padding: 11px 40px;    
-    margin: 5px 20px;        
+    
+    padding: 6px 10px;    
+    margin: 5px 20px;     
+    border-radius: 8px;   
    
 }
 .menuMob {
@@ -111,10 +127,12 @@ a {
     text-align: center;
     padding: 20px;
     border-radius: 8px;
+    font-weight: 800;
     
 }
 .questions {
     width: 85%;
+    max-width: 1200px;
     background-color: #ED217C;
     border-radius: 8px;
     margin: 20px auto;
@@ -125,8 +143,9 @@ a {
 .perguntas {
     background-color: white;
     padding: 10px;
-    border-radius: 8px;
-    text-align: center;
+    border-radius: 1px;
+    text-align: inherit;
+    padding-left: 10px;
 }
 .perguntas h2 {
     color: var(--perguntas);
@@ -139,9 +158,9 @@ a {
     border: none;
     margin: 10px auto;
     height: 35px;
-    background-image:linear-gradient(to bottom, #ed217d74, rgb(202, 202, 202), #ed217d71);
+    background-color: white;
     width: 200px;
-    box-shadow: rgb(64, 64, 64) 0px 2px 5px 0px;
+    border: #ED217C solid 2px;
     text-align: center;
     font-size: 20px;
 }
@@ -284,6 +303,13 @@ ul{
 .dNone {
     display: none;
 }
+@media (max-width: 360px) {
+    .SectionTop {
+        width: 100%;
+        
+        
+        
+        
+    }
 
-
-
+}
