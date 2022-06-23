@@ -9,41 +9,45 @@ function dMode() {
 
         if (atual == 'Modo escuro') {
                 document.getElementById('dmode').innerHTML = `<input class="darkM"  type="button" value="Modo Claro" id="modeColor" onclick="dMode()">`
-                mainC.style.background = '#3E3E3E';
-                selPage.style.background = '#252625';
-                conQuestions.style.background = '#ED217C';
-                conQ.style.background = '#252625';
-                document.documentElement.style.setProperty('--perguntas', '#d6d6d6');
+                document.documentElement.style.setProperty('--body', '#3e3e3e');
+                document.documentElement.style.setProperty('--cabeca', '#252625');
+                document.documentElement.style.setProperty('--borda', '#b12262');
+                document.documentElement.style.setProperty('--texto', '#ffffff');
+                document.documentElement.style.setProperty('--verde', '#779451');
+                document.documentElement.style.setProperty('--laranja', '#b44a28');
+                document.documentElement.style.setProperty('--roxo', '#5d335c');
         } else {
                 document.getElementById('dmode').innerHTML = `<input class="darkM"  type="button" value="Modo escuro" id="modeColor" onclick="dMode()">`
-                mainC.style.background = '#C4C4C4';
-                selPage.style.background = '#ED217C';
-                conQuestions.style.background = '#ED217C';
-                conQ.style.background = 'white';
-                document.documentElement.style.setProperty('--perguntas', 'rgb(40, 40, 40)');
+                document.documentElement.style.setProperty('--body', '#c4c4c4');
+                document.documentElement.style.setProperty('--cabeca', '#ffffff');
+                document.documentElement.style.setProperty('--borda', '#ed217c');
+                document.documentElement.style.setProperty('--texto', '#000000');
+                document.documentElement.style.setProperty('--verde', '#a6ce39');
+                document.documentElement.style.setProperty('--laranja', '#f15a29');
+                document.documentElement.style.setProperty('--roxo', '#753874');
         }
 
 }
 
 
 
-        
+
 
 function saida() {
         const selecVeiculo = document.querySelector('input[name=viajar]:checked').value
         const selecPercorre = document.querySelector('input[name=percorre]:checked').value
 
         const selecViajar = document.querySelector('input[name=viajar]:checked').value
-        
+
         console.log(selecPercorre);
         console.log(selecViajar);
         console.log(selecVeiculo);
-        
+
         const veiculo = document.getElementById('veiculo');
         const infoVeiculo = veiculo.options[veiculo.selectedIndex].value;
         const TrabalhoEmprego = document.getElementById('TrabalhoEmprego');
         const infoTrabalho = TrabalhoEmprego.options[TrabalhoEmprego.selectedIndex].value;
-        
+
         const ferias = document.getElementById('ferias');
         const infoFerias = ferias.options[ferias.selectedIndex].value;
         const fimdeSemana = document.getElementById('fimdeSemana');
