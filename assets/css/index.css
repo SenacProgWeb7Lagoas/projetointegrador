@@ -90,7 +90,7 @@ header{
 main{
     margin-top: 10px;
     margin: 32px 195px;
-    height: 1230px;
+    height: 1130px;
 }
 h1{
     font-size: 35px;
@@ -124,15 +124,6 @@ select{
     height: auto;
     display: block;
 }
-.cabecalho{
-    background-color: #322a54;
-    width: 70%;
-    margin: 0 auto;
-    border: 5px solid #322a54;
-    border-radius: 10px;
-    height: 100px;
-    margin-top: 32px;
-}
 li{
     display: inline-block;
     color: #ffffff;
@@ -159,43 +150,14 @@ li{
     background-color: #322a54;
     border-radius: 7px;
     border: none;
-    width: 80px;
-    height: 35px;
-    float: right;
-    margin-right: 5px;
+    padding: 15px;
+    margin: 0 200px;
 }
 .proximo a{
     text-decoration: none;
     color:#ffffff;
     text-align: center;
     font-size: 16px;
-}
-.button1 , .button2 , .button3 , .button4 , .button5{
-    border: none;
-    color: #ffffff;
-    padding: 10px 15px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 18px;
-    margin: 30px 5px;
-    cursor: pointer;
-    border-radius: 5px;
-}
-.button1{
-    background-color: var(--verde);
-}
-.button2{
-    background-color: var(--azul);
-}
-.button3{
-    background-color: var(--rosa);
-}
-.button4{
-    background-color: var(--laranja);
-}
-.button5{
-    background-color: var(--roxo);
 }
 .texto_main{
     margin: 10px;
