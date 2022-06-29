@@ -19,7 +19,7 @@ let outArvores = document.getElementById("outArvores");
 
 const moradia = localStorage.getItem('moradia') || 0; // operation to change the value of the constant.
 const alimentacao = localStorage.getItem('alimentacao') || 0;
-const transporte = localStorage.getItem('trasnporte') || 0;
+const transporte = localStorage.getItem('transporte') || 0;
 const consumo = localStorage.getItem('consumo') || 0;
 const residuos = localStorage.getItem('residuos') || 0;
 
