@@ -5,15 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="./assets/css/reset.css">
-    <link rel="stylesheet" href="./assets/css/transporte.css">
-    <link rel="stylesheet" href="https://github.com/SenacProgWeb7Lagoas/projetointegrador/blob/52c02541aca6805d28cbb35de89dc9b845282435/documentacao/modelo_rodape.css">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/transporte.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <title>Transporte</title>
 </head>
 <body>
     <header>
-        <div id="dmode" >
+        <div id="dmode">
             <input class="darkM"  type="button" value="Modo escuro" id="modeColor" onclick="dMode()">            
         </div>
     </header>
@@ -43,14 +42,17 @@
             </div>
             
             <div class="perguntas" id="contain_quests">
+                <span id="possui"></span>
+                
                 <h2>1- Possui algum veículo automotor?</h2>
-                <p>*Marque apenas uma opção</p>
-                <table>
-                        <INPUT TYPE="checkbox" NAME="veiculo" value="35">Moto <br>
-                        <INPUT TYPE="checkbox" NAME="veiculo" value="100">Carro <br>
-                        <INPUT TYPE="checkbox" NAME="veiculo" value="130">Caminhão <br>
-                        <input TYPE="checkbox" NAME="veiculo" value="0">Não possuo                    
+                
+                <table >
+                        <INPUT TYPE="checkbox" class="inp" NAME="veiculo" value="35" onclick="marcaVeiculo(this)"><span>Moto</span> <br>
+                        <INPUT TYPE="checkbox" NAME="veiculo" value="100" onclick="marcaVeiculo(this)"><span>Carro</span> <br>
+                        <INPUT TYPE="checkbox" NAME="veiculo" value="130" onclick="marcaVeiculo(this)"><span>Caminhão</span> <br>
+                        <input TYPE="checkbox" NAME="veiculo" value="0" onclick="marcaVeiculo(this)"><span>Não possuo                    </span>
                 </table>
+                <span id="desloca"></span>
                 <h2>2- Como se desloca para o trabalho ou emprego?</h2>
                 <table>
                     <select class="selectV" id="TrabalhoEmprego">
@@ -65,11 +67,11 @@
                 <h2>3- Quantos quilômetros percorre por dia utilizando o veículo acima:</h2>
                 
                 <table >         
-                        <input TYPE="RADIO" NAME="percorre" id="nu" value="0">Não utilizo <br>              
-                        <input TYPE="RADIO" NAME="percorre" id="010" value="10">00 a 10 km <br>
-                        <input TYPE="RADIO" NAME="percorre" id="1130" value="20">11 a 30 km <br>
-                        <input TYPE="RADIO" NAME="percorre" id="3150" value="30">31 a 50 km <br>
-                        <input TYPE="RADIO" NAME="percorre" id="51" value="70">Mais de 51 km    <br>                 
+                        <input TYPE="RADIO" NAME="percorre" id="nu" value="0"><span>Não utilizo </span><br>              
+                        <input TYPE="RADIO" NAME="percorre" id="010" value="10"><span>00 a 10 km </span><br>
+                        <input TYPE="RADIO" NAME="percorre" id="1130" value="20"><span>11 a 30 km </span><br>
+                        <input TYPE="RADIO" NAME="percorre" id="3150" value="30"><span>31 a 50 km</span> <br>
+                        <input TYPE="RADIO" NAME="percorre" id="51" value="70"><span>Mais de 51 km    </span><br>                 
                 </table>
                 <h2>4- Onde passou as férias?</h2>
                 <table>
@@ -83,15 +85,16 @@
                     
                 </table>
                 <h2>5- Você costuma viajar aos fins de semana? Quantos km?</h2>                
-                    <p>*Marque apenas uma opção</p>
+                    <br>
                     <table>
-                            <INPUT TYPE="checkbox" NAME="viajar" value="10">0 km <br>
-                            <INPUT TYPE="checkbox" NAME="viajar" value="20">1 a 15 km <br>
-                            <INPUT TYPE="checkbox" NAME="viajar" value="30">16 a 50 km <br>
-                            <input TYPE="checkbox" NAME="viajar" value="40">Mais de 50 km                 
+                            <INPUT TYPE="radio" NAME="viajar" value="10" ><span>0 km</span> <br>
+                            <INPUT TYPE="radio" NAME="viajar" value="20"><span>1 a 15 km </span><br>
+                            <INPUT TYPE="radio" NAME="viajar" value="30"><span>16 a 50 km </span><br>
+                            <input TYPE="radio" NAME="viajar" value="40"><span>Mais de 50 km</span>                 
                     </table>
                     
                 </table>
+                <p class="pObrigatoria">*Todas as perguntas são obrigatórias</p>
                 <div class="contain_button ">
                     <a><button class="transporte proximo" onclick="saida()">Próximo</button></a>
                 </div>
@@ -119,6 +122,7 @@
             <h2 class="text1">Desenvolvido por:</h2>
             <ul>
                 <li>
+
                     Bianca Araújo | <a class="cor1" href="https://github.com/BrytanniADJ">GitHub</a> | <a class="cor2"
                         href="https://www.linkedin.com/in/bianca-araújo-coelho-bia-b03b3b205/">Linkedin</a>
                 </li>

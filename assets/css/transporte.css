@@ -1,3 +1,8 @@
+
+* {
+    font-family: Helvetica, Arial,  sans-serif
+}
+
 :root {
     --body: #c4c4c4;
     --cabeca: #ffffff;
@@ -144,6 +149,16 @@ a {
     border: 5px solid var(--borda);
     margin: 28px 0px;
 }
+.cor1 {
+    color: #00bfff;
+  }
+  .cor2 {
+    color: #00ff87;
+  }
+.pObrigatoria {
+    color: red;
+    
+}
 .perguntas {
     padding: 15px 25px;
     border-radius: 1px;
@@ -155,6 +170,7 @@ a {
     font-weight: bold;
     padding: 15px 15px;
 }
+
 
 .selectV {
     border-radius: 8px;
