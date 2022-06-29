@@ -88,7 +88,7 @@ function saida() {
 
                         
         localStorage.setItem('transporte', `${somatransporte}`);
-        location.href = '/consumo.html';
+        location.href = './consumo.html';
         
         
         
