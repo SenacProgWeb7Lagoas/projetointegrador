@@ -43,44 +43,42 @@
 
         <section class="pergunta1">
             <h4> Quantas pessoas moram em sua casa? </h4>
-            <select name="pessoas-casa" onchange="test()" id="pergunta1">
+            <select name="pessoas-casa" onchange="pergunta1()" id="pergunta1">
                 <option value="0"> Escolha uma opção </option>
-                <option value="1"> 1 </option>
-                <option value="2"> 2 </option>
-                <option value="3"> 3 </option>
-                <option value="4"> 4 </option>
-                <option value="5"> 5 ou mais </option>
+                <option value="30"> 1 </option>
+                <option value="25"> 2 </option>
+                <option value="20"> 3 </option>
+                <option value="15"> 4 </option>
+                <option value="10"> 5 ou mais </option>
             </select>
         </section>
 
-        <section class="pergunta2" onchange="test2()">
+        <section class="pergunta2" onchange="pergunta2()">
             <h4> Quantas torneiras existem em sua casa? </h4>
-            <label for="torneiras-a">
-                <input type="radio" value="1" class="op2"> Menos de 3
-            </label>
-            <label for="torneiras-b">
-                <input type="radio" value="2" class="op2"> 6 a 8
-            </label>
-            <label for="torneiras-c">
-                <input type="radio" value="3" class="op2"> 8 a 10
-            </label>
-            <label for="torneiras-d">
-                <input type="radio" value="4" class="op2"> Mais de 10
-            </label>
+            <input type="radio" name="fav_language" value="5" class="op2">
+            <label for="torneira-a">Menos de 3</label><br>
+            <input type="radio" name="fav_language" value="10" class="op2">
+            <label for="torneira-b">3 a 5</label><br>
+            <input type="radio" name="fav_language" value="15" class="op2">
+            <label for="torneira-c">6 a 8</label><br>
+            <input type="radio"  name="fav_language" value="20" class="op2">
+            <label for="torneira-e"> 8 a 10</label><br>
+            <input type="radio"  name="fav_language" value="25" class="op2">
+            <label for="torneira-f"> Mais de 10</label><br>
         </section>
 
         <aside>
             <form action="" class="pergunta3">
                 <h4> Em que tipo de moradia você vive? </h4>
-                <select name="tipo-casa" id="">
-                    <option> Escolha uma opção </option>
-                    <option> Casa </option>
-                    <option> Apartamento </option>
+                <select name="tipo-casa" id="pergunta3"  onchange="pergunta3()">
+                    <option value="0"> Escolha uma opção </option>
+                    <option value="40"> Casa </option>
+                    <option value="20"> Apartamento </option>
                 </select>
             </form>
         </aside>
 
-        <button type="submit" class="botao-proximo"> <a href=""> Próximo </a> </button>
+        <button class="botao-proximo" onclick="avancar()"> Próximo </button>
 
     </main>
     <footer>

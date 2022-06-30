@@ -32,15 +32,37 @@ function modoCor() {
     document.querySelector("body").classList.toggle("change_color")
 }
 
-function test(){
+function pergunta1(){
     let p1 = document.getElementById("pergunta1")
     console.log(p1.value);
     valorPergunta1 = parseInt(p1.value)
 }
 
 
-function test2(){
-    let p2 = document.querySelector('.op2')
-    console.log(p2)
-    valorPergunta2 = parseInt(p2.value)
+function pergunta2(){
+    let p2 = document.getElementsByClassName('op2')
+    let valor = 0;
+    for(i=0; i< p2.length; i++){
+        if(p2[i].checked){
+            valor = parseInt(p2[i].value);
+            break;
+        }
+    }
+    valorPergunta2 = parseInt(valor);
+}
+
+function pergunta3(){
+    let p3 = document.getElementById("pergunta3")
+    console.log(p3.value);
+    valorPergunta3 = parseInt(p3.value)
+}
+
+function avancar() {
+    test();
+    test2();
+    test3();
+    const soma = valorPergunta1 + valorPergunta2 + valorPergunta3;
+
+    localStorage.setItem('moradia', soma);
+    location.href = './alimentacao.html';
 }
