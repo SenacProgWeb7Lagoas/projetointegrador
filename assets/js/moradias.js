@@ -58,9 +58,9 @@ function pergunta3(){
 }
 
 function avancar() {
-    test();
-    test2();
-    test3();
+    pergunta1();
+    pergunta2();
+    pergunta3();
     const soma = valorPergunta1 + valorPergunta2 + valorPergunta3;
 
     localStorage.setItem('moradia', soma);
