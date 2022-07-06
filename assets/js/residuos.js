@@ -1,4 +1,22 @@
 var  sum; // Variável responsável por realizar as somas e retornar o resultado.
+let modoNoturno = parseModoNoturno()
+
+console.log('>> ',modoNoturno)
+
+function parseModoNoturno() {
+    if (localStorage.getItem('modoNoturno')) {
+        switch (localStorage.getItem('modoNoturno')) {
+            case 'true':
+                return true;
+            case 'false':
+                return false;
+            default:
+                return false;
+        }
+    } else {
+        return false;
+    }
+}
 
 function fristSection(){ //Função que seleciona os valores da primeira pergunta.
 
@@ -86,25 +104,39 @@ function sendSum(){ //Função para retornar a soma.
 }
 // Modo Light e Dark-mode
 
+function setCor() {
+
+    if(modoNoturno){
+        document.querySelector(".container").classList.add("change-color")
+        document.querySelector("body").classList.add("change-color")
+        localStorage.setItem('modoNoturno','true');
+    }else{
+        document.querySelector(".container").classList.remove("change-color")
+        document.querySelector("body").classList.remove("change-color")
+        localStorage.setItem('modoNoturno','false');
+    }
+}
+
 let darkMode = document.querySelector (".color-model")
 
-    document.querySelector(".color-model").addEventListener("click", function(){
-    document.querySelector(".container").classList.toggle("change-color")
-    document.querySelector("body").classList.toggle("change-color")
-    document.querySelector("nav").classList.toggle("change-color")
-})
+function checkNoturno() {
+    modoNoturno = !modoNoturno
+    setCor()
+}
+
+setCor()
 
 // Muda o texto do botão de acordo com o modo
 
 let mudaText = true
     
-        document.querySelector('.change-text').addEventListener('click', function (){
+document.querySelector('.change-text').addEventListener('click', function (){
         if (mudaText) {
             mudaText = false
-            document.querySelector('.change-text').innerHTML = 'Dark Mode ON'
+            document.querySelector('.change-text').innerHTML = 'Modo Claro'
         }else {
             mudaText = true
-            document.querySelector('.change-text').innerHTML = 'Light Mode ON'
+            document.querySelector('.change-text').innerHTML = 'Modo Escuro'
         }
 })
 

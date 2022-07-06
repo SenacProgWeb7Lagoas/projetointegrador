@@ -1,12 +1,28 @@
-let ativarNoturno = true;
 let result3 = 0;
 let result1 = 0;
 let result2 = 0;
 let soma = 0;
 
-function modoNoturno(){
-    ativarNoturno = !ativarNoturno
-    if (!ativarNoturno){
+let ativarNoturno = parseModoNoturno()
+console.log('>> ',ativarNoturno)
+
+function parseModoNoturno() {
+    if (localStorage.getItem('modoNoturno')) {
+        switch (localStorage.getItem('modoNoturno')) {
+            case 'true':
+                return true;
+            case 'false':
+                return false;
+            default:
+                return false;
+        }
+    } else {
+        return false;
+    }
+}
+
+function setCor() {
+    if (ativarNoturno){
         document.documentElement.style.setProperty('--body', '#3e3e3e');
         document.documentElement.style.setProperty('--cabeca', '#252625');
         document.documentElement.style.setProperty('--borda', '#165d71');
@@ -16,6 +32,7 @@ function modoNoturno(){
         document.documentElement.style.setProperty('--laranja', '#b44a28');
         document.documentElement.style.setProperty('--roxo', '#5d335c');
         document.querySelector(".noturno").innerHTML = "Modo Claro";
+        localStorage.setItem('modoNoturno','true');
     }else{
         document.documentElement.style.setProperty('--body', '#c4c4c4');
         document.documentElement.style.setProperty('--cabeca', '#ffffff');
@@ -26,8 +43,17 @@ function modoNoturno(){
         document.documentElement.style.setProperty('--laranja', '#f15a29');
         document.documentElement.style.setProperty('--roxo', '#753874');
         document.querySelector(".noturno").innerHTML = "Modo escuro";
+        localStorage.setItem('modoNoturno','false');
     }
 }
+
+function modoNoturno(){
+    ativarNoturno = !ativarNoturno
+    setCor();  
+}
+
+setCor();
+
 function mobile(){
     document.querySelector(".cabecalho").classList.toggle("show-menu")
     document.querySelector(".nav").classList.toggle("show-menu")

@@ -1,7 +1,24 @@
 let valorPergunta1 = 0;
 let valorPergunta2 = 0;
 let valorPergunta3 = 0;
+let modoNoturno = parseModoNoturno()
 
+console.log('>> ',modoNoturno)
+
+function parseModoNoturno() {
+    if (localStorage.getItem('modoNoturno')) {
+        switch (localStorage.getItem('modoNoturno')) {
+            case 'true':
+                return true;
+            case 'false':
+                return false;
+            default:
+                return false;
+        }
+    } else {
+        return false;
+    }
+}
 
 function hamburger() {
     let menuBurger = document.querySelector(".hamburger")
@@ -25,25 +42,40 @@ function hamburger() {
 
 hamburger();
 
-function modoCor() {
-    console.log('Test')
-    document.querySelector("main").classList.toggle("change_color")
-    document.querySelector("nav").classList.toggle("change_color")
-    document.querySelector("body").classList.toggle("change_color")
+function setCor(){
+    if (modoNoturno) {
+        document.querySelector("body").classList.add("change_color")
+        document.querySelector("main").classList.add("change_color")
+        document.querySelector("nav").classList.add("change_color")
+        localStorage.setItem('modoNoturno','true');
+    } else {
+        document.querySelector("body").classList.remove("change_color")
+        document.querySelector("main").classList.remove("change_color")
+        document.querySelector("nav").classList.remove("change_color")
+        localStorage.setItem('modoNoturno','false');
+    }
 }
 
-function pergunta1(){
+function modoCor() {
+    console.log('Test ', modoNoturno)
+    modoNoturno = !modoNoturno
+    setCor();
+}
+
+setCor()
+
+function pergunta1() {
     let p1 = document.getElementById("pergunta1")
     console.log(p1.value);
     valorPergunta1 = parseInt(p1.value)
 }
 
 
-function pergunta2(){
+function pergunta2() {
     let p2 = document.getElementsByClassName('op2')
     let valor = 0;
-    for(i=0; i< p2.length; i++){
-        if(p2[i].checked){
+    for (i = 0; i < p2.length; i++) {
+        if (p2[i].checked) {
             valor = parseInt(p2[i].value);
             break;
         }
@@ -51,7 +83,7 @@ function pergunta2(){
     valorPergunta2 = parseInt(valor);
 }
 
-function pergunta3(){
+function pergunta3() {
     let p3 = document.getElementById("pergunta3")
     console.log(p3.value);
     valorPergunta3 = parseInt(p3.value)
