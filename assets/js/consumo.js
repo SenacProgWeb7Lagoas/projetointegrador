@@ -81,9 +81,9 @@ function secondSection() { // Função que seleciona os valores da segunda pergu
 function resultados() {
     sum = firstSection() + secondSection();
 
-    alert(`${sum}`)
+    //alert(`${sum}`)
 
     localStorage['consumo'] = sum;
 
-    //window.location.assign('./residuos.html');
+    window.location.assign('./residuos.html');
 }
