@@ -2,49 +2,94 @@
     --body: #c4c4c4;
     --cabeca: #ffffff;
     --borda: #f15a29;
-    --laranja: #f15a29;
     --texto: #000000;
     --verde: #a6ce39;
     --rosa: #ed217c;
-    --azul:#0f7491;
+    --azul: #0f7491;
     --roxo: #753874;
+}
+.noturno{
+    background-color: #1d1830;
+    border-radius: 7px;
+    border: none;
+    width: 100px;
+    height: 40px;
+    color: #ffffff;
+    margin-top: 28px;
+    margin-left: 19px;
+}
+.logo_rodape{
+    margin-top: 40px;
+    width: 170px;
+    height: 170px;
+    background-color: #322a54;
+    align-content: center;
+}
+.alunos_rodape{
+    font-size: 15px;
+    background-color: #322a54;
+    color: #ffffff;
+    text-align: right;
+}
+.text1, .text2{
+    color: #8dff91;
+}
+.text1{
+    text-align: center;
+}
+.text2{
+    text-align: left;
+}
+.alunos_rodape ul li{
+    display: block;
+}
+.texto_rodape{
+    margin-top: 54px;
+    font-size: 15px;
+    background-color: #322a54;
+    color: #ffffff;
+    width: 50%;
+    text-align: justify;
+}
+.cor1{
+    color: #00bfff;
+}
+.cor2{
+    color: #00ff87;
+}
+a{
+    text-decoration: none;
+    line-height: 17px;
 }
 body{
     background-color: var(--body);
     font-family: Helvetica;
 }
-header{
+footer{
+    position: absolute;
     background-color: #322a54;
+    height: 290px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 5%;
+}
+header{
+    height: 240px;
+}
+.estilo{
+    background-color: #322a54;
+    font-weight: bold;
     height: 100px;
-    font-weight: bold;    
+
 }
 main{
-    background-color: #ffffff;
-    width: 70%;
-    margin: 5px 195px;
-    font-size: 20px;
-    height: auto;
-    border-color: solid var(--borda);
-    border-radius: 10px;
-    align-self: center;
-    justify-content: space-between;
-    line-height: normal;
-}
-.perg{
-    bottom: -40px;
-    position: relative;
-    color: #ff0000;
-    display: none;
-    font-size: 12px;
-}
-nav{
-    background-color: var(--body);
-    max-width: 1920px;
-    margin: auto;
+    margin: 32px 195px;
+    height: 600px;
 }
 .cabecalho{
-    background-color: var(--borda);
-    width: 100%;
+    background-color: var(--cabeca);
+    width: 70%;
     margin: 0 auto;
     border: 5px solid var(--borda);
     border-radius: 10px;
@@ -58,182 +103,95 @@ h1{
     font-weight: bold;
     background-color: var(--borda);
     text-align: center;
-    width: 100%;
 }
-footer{
-    position: absolute;
-    background-color: #322a54;
-    height: 290px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    padding: 2% 5%;
-}
-h3{
+h2{
     font-size: 20px;
     color: #ffffff;
     padding-bottom: 20px;
     padding-top: 10px;
 }
-.logo{  
-    float: right;
-    width: 80px;
-    height: auto;
-    display: block;
-}
-.alunos_rodape{
-    font-size: 15px;
-    background-color: #322a54;
-    color: #ffffff;
-    text-align: center;
-} 
-.alunos_rodape ul li{
-    display: block;
-}
-.texto_rodape{
-    font-size: 15px;
-    background-color: #322a54;
-    color: #ffffff;
-    width: 50%;
-    text-align: justify;
+p{
+    font-size: 20px;
+    margin: 40px 0px;
+    padding: 2px 30px;
+    text-align: left;
 }
 select{
-    font-size: 18px;
-}
-section{
-    padding-block: 10px;
+    font-size: 17px;
 }
 .perguntas{
     background-color: var(--cabeca);
     border: 5px solid var(--borda);
     border-radius: 10px;
     color: var(--texto);
-    height: 100%;
-    text-align: justify;
+    height: 97%;
+}
+.button1 , .button2 , .button3 , .button4 , .button5{
+    border: none;
+    color: #ffffff;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
     font-size: 20px;
-    margin: 32px 0px;
-    width: 100%;
+    margin: 20px 24px;
+    cursor: pointer;
+    border-radius: 5px;
 }
 .button1{
     background-color: var(--verde);
-    border: none;
-    color: #ffffff;
-    padding: 10px 15px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 20px;
-    border-radius: 5px;
-    margin: 4px 2px;
-    cursor: pointer;
-}
-.button1:hover{
-    scale: 90%;
-    background-color:#388038
 }
 .button2{
     background-color: var(--azul);
-    border: none;
-    color: #ffffff;
-    padding: 10px 15px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 20px;
-    border-radius: 5px;
-    margin: 4px 2px;
-    cursor: pointer;
-}
-.button2:hover{
-    scale: 90%;
-    background-color:#79d1ff;
 }
 .button3{
     background-color: var(--rosa);
-    border: none;
-    color: #ffffff;
-    padding: 10px 15px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 20px;
-    border-radius: 5px;
-    margin: 4px 2px;
-    cursor: pointer;
-}
-.button3:hover{
-    scale: 90%;
-    background-color: #ffb0fc;
 }
 .button4{
     background-color: var(--borda);
-    border: none;
-    color: #ffffff;
-    padding: 10px 15px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 20px;
-    border-radius: 5px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border: 1px solid #ffffff
-}
-.button4:hover{
-    scale: 90%;
-    background-color: #ffad34;
+    border: 1px solid #ffffff;
 }
 .button5{
     background-color: var(--roxo);
-    border: none;
-    color: #ffffff;
-    padding: 10px 15px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 20px;
-    border-radius: 5px;
-    margin: 4px 2px;
-    cursor: pointer;
 }
-.button5:hover{
-    scale: 90%;
-    background-color: #a378a1;
+
+.logo img{
+    width: 100%;
+    height: auto;
+
 }
-.noturno{
-    background-color: #1d1830;
-    font-size: 15px;
-    border-radius: 5px;
-    border: none;
+
+.logo{
+    float: right;
     width: 80px;
-    height: 35px;
-    color: #ffffff;
-    margin-top: 19px;
-    margin-left: 10px;
-    
+    height: auto;
+    display: block;
 }
-.noturno:hover{
-    scale: 90%;
-    background-color:#615c6f;
+
+.cabecalho{
+    background-color: var(--borda);
+    padding: 6px;
 }
 li{
     display: inline-block;
 }
-ul{
+.ul{
     text-align: center;
 }
 .opcoes{
     padding: 10px;
+    margin: 0px 85px;
 }
 .opcoes label {
-    font-size: 18px;
+    font-size: 17px;
     margin-right: 20px;
 }
 .proximo {
-    background-color: var(--cabeca);
     width: 100%;
     height: 60px;
-    padding: 10px;
+    margin-top: 70px;
+    padding: 25px;
+
 }
 .proximo button{
     background-color: var(--borda);
@@ -244,25 +202,462 @@ ul{
     float: right;
     margin-right: 20px;
 }
-.proximo button:hover{
-    background-color: #71a0b5;
-}
 .proximo a{
     text-decoration: none;
     color:#ffffff;
     text-align: center;
     font-size: 16px;
 }
-#box_consumo_p1, #opcoes{
+#consumo_p1, #consumo_p2{
   border: 2px solid var(--borda);
-  margin-top: 10px;
   border-radius: 10px;
   color: var(--texto);
-  background-color: var(--cabeca)
+  background-color: var(--cabeca);
+  margin: 0px 100px;
 }
-.cor1{
-    color: #00bfff;
+
+.oculta{
+    display: none;
 }
-.cor2{
-    color: #00ff87;
+.perg, .perg2, .perg3{
+    display: none;
+    color: #ff0000;
+    font-size: 12px;
+    position: relative;
+    bottom: -40px;
+
+}
+
+/*Responsividade*/
+@media(max-width: 442px){
+
+     main{
+         margin: 10px 22px;
+
+     }
+     main{
+         height: 1500px;
+     }
+ }
+
+
+@media(max-width: 580px){
+
+   header {
+       height: 130px;
+
+   }
+    main{
+        margin: 10px 30px;
+        height: 600px;
+
+    }
+    .cabecalho{
+        width: 50%;
+        height: 350px;
+        position: absolute;
+        z-index: 1;
+        right: 80px;
+        top: 150px;
+        opacity: .9;
+    }
+
+    .perguntas{
+        height: 100%;
+
+    }
+
+    .line{
+        box-shadow:0.1rem 0.1rem  1px #000000;
+        background-color: #ffffff;
+        height: 2rem;
+        width: 100%;
+        transition: transform 1s;
+        margin: 2.5px;
+
+    }
+
+    .show-menu .line:nth-child(1){
+        transform: rotate(-45deg) translate(.5rem, 1.4rem);
+        width: 1.5rem;
+    }
+
+    .show-menu .line:nth-child(2){
+        opacity: 0;
+    }
+
+    .show-menu .line:nth-child(3){
+        transform: rotate(45deg) translate(.7rem, -1.2rem);
+        width: 1.5rem;
+    }
+    .nav{
+        width: 2rem;
+        height: 1.5rem;
+        position: fixed;
+        z-index: 100;
+        right: 2rem;
+        top: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        cursor: pointer;
+        position: absolute;
+    }
+
+     .cabecalho{
+        display: none;
+    }
+
+    .cabecalho.show-menu{
+        display: flex;
+        height: 400px;
+    }
+
+
+    .logo{
+        position: relative;
+        left: 30%;
+        right: 30%;
+    }
+
+    .logo.show-menu{
+        display:inline-flex
+    }
+
+    footer{
+        height: 90px;
+    }
+
+    .button1, .button2, .button3, .button4, .button5{
+        width: 50%;
+    }
+    ul{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+    }
+    h1{
+        font-size: 50px;
+        padding: 15px 0;
+    }
+    .perguntas p{
+        font-size: .9rem;
+        height: 8px;
+        padding: 10px 0px;
+    }
+
+    .perguntas select{
+        font-size: .9rem;
+    }
+
+    .opcoes{
+        height: 120px;
+        align-items: center;
+    }
+    .opcoes ul{
+        height: 100px;
+    }
+    .opcoes li{
+        height: 100%
+    }
+
+    .proximo {
+        margin-top: 10px;
+        padding: 10px;
+
+    }
+    .proximo button{
+        height: 35px;
+        margin-right: 20px;
+    }
+}
+
+
+@media(max-width: 1050px){
+
+    .button1{
+        padding: 8px 10px;
+        font-size: 16px;
+        margin: 15px 8px;
+    }
+    .button2{
+        padding: 8px 10px;
+        font-size: 16px;
+        margin: 15px 8px;
+    }
+    .button3{
+        padding: 8px 10px;
+        font-size: 16px;
+        margin: 15px 8px;
+    }
+    .button4{
+        padding: 8px 10px;
+        font-size: 16px;
+        margin: 15px 8px;
+    }
+    .button5{
+        padding: 8px 10px;
+        font-size: 16px;
+        margin: 15px 8px;
+    }
+    p{
+        font-size: 18px;
+    }
+
+    select{
+        font-size: 16px;
+    }
+
+    .opcoes label{
+        font-size: 16px;
+    }
+
+    .proximo a{
+        font-size: 16px ;
+        width: 70px;
+    }
+
+}
+
+@media(max-width: 915px){
+    main{
+        margin: 15px 100px;
+        height: 800px;
+
+    }
+
+    footer{
+        height: 120px;
+    }
+
+
+    .cabecalho{
+        margin: 15px 100px;
+    }
+
+
+    .button1{
+        padding: 8px 10px;
+        font-size: 15px;
+        margin: 15px 7px;
+    }
+    .button2{
+        padding: 8px 10px;
+        font-size: 15px;
+        margin: 15px 7px;
+    }
+    .button3{
+        padding: 8px 10px;
+        font-size: 15px;
+        margin: 15px 7px;
+    }
+    .button4{
+        padding: 8px 10px;
+        font-size: 15px;
+        margin: 15px 7px;
+    }
+    .button5{
+        padding: 8px 10px;
+        font-size: 15px;
+        margin: 15px 7px;
+    }
+    h1{
+        font-size: 32px;
+        padding: 30px 0px;
+    }
+    p{
+        margin-top: 50px;
+        font-size: 18px;
+    }
+
+    select{
+        font-size: 16px;
+    }
+
+    .opcoes label{
+        font-size: 16px;
+    }
+
+    .proximo a{
+        font-size: 16px ;
+        width: 70px;
+    }
+    .proximo {
+        position: relative;
+        top: 120px;
+
+    }
+
+
+}
+
+@media(max-width: 890px){
+    main{
+        margin: 15px 90px;
+    }
+
+    .cabecalho{
+        margin: 15px 90px;
+    }
+
+    .button1{
+        padding: 8px 10px;
+        font-size: .90rem;
+        margin: 15px 6px;
+        padding: 9px 12px;
+    }
+    .button2{
+        padding: 8px 10px;
+        font-size: .90rem;
+        margin: 15px 7px;
+    }
+    .button3{
+        padding: 8px 10px;
+        font-size: .90rem;
+        margin: 15px 7px;
+    }
+    .button4{
+        padding: 8px 10px;
+        font-size: .90rem;
+        margin: 15px 7px;
+    }
+    .button5{
+        padding: 8px 10px;
+        font-size: .90rem;
+        margin: 15px 7px;
+    }
+
+    h1{
+        font-size: 30px;
+    }
+    p{
+        font-size: 17px;
+    }
+
+    select{
+        font-size: 15px;
+    }
+
+    .opcoes label{
+        font-size: .90rem;
+    }
+
+    .proximo a{
+        font-size: .90rem ;
+        width: 70px;
+    }
+
+
+}
+@media(max-width: 820px){
+    main{
+        margin: 15px 80px;
+    }
+
+    .cabecalho{
+        margin: 15px 80px;
+    }
+
+
+    .button1{
+        padding: 8px 9px;
+        font-size: .90rem;
+        margin: 15px 6px;
+    }
+    .button2{
+        padding: 8px 9px;
+        font-size: .90rem;
+        margin: 15px 6px;
+    }
+    .button3{
+        padding: 8px 9px;
+        font-size: .90rem;
+        margin: 15px 6px;
+    }
+    .button4{
+        padding: 8px 9px;
+        font-size: .90rem;
+        margin: 15px 6px;
+    }
+    .button5{
+        padding: 8px 9px;
+        font-size: .90rem;
+        margin: 15px 6px;
+    }
+    h1{
+        font-size: 28px;
+    }
+    p{
+        font-size: 17px;
+    }
+
+    select{
+        font-size: 15px;
+    }
+
+    .opcoes label{
+        font-size: 15px;
+    }
+
+    .proximo a{
+        font-size: 15px ;
+        width: 70px;
+    }
+}
+
+@media(max-width: 760px){
+
+    main{
+        margin: 15px 37px;
+    }
+    .cabecalho{
+        margin: 15px 37px;
+    }
+
+
+    .button1{
+        padding: 8.2px ;
+        font-size: 0.88rem;
+        margin: 15px 4px;
+    }
+    .button2{
+        padding: 8.2px ;
+        font-size: 0.88rem;
+        margin: 15px 4px;
+    }
+    .button3{
+        padding: 8.2px ;
+        font-size: 0.88rem;
+        margin: 15px 4px;
+    }
+    .button4{
+        padding: 8.2px ;
+        font-size: 0.88rem;
+        margin: 15px 4px;
+    }
+    .button5{
+        padding: 8.2px ;;
+        font-size: 0.88rem;
+        margin: 15px 4px;
+    }
+    h1{
+        font-size: 23px;
+    }
+    p{
+        font-size: 15px;
+    }
+
+    select{
+        font-size: 13px;
+    }
+
+    .opcoes label{
+        font-size: 13px;
+    }
+
+    .proximo a{
+        font-size: 13px ;
+        width: 60px;
+    }
 }
