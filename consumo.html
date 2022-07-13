@@ -1,115 +1,130 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/reset.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap">
-    <link rel="stylesheet" href="./assets/css/consumo.css" >
-    
-    <nav>
-        <div class="cabecalho">
-            <ul>
-                <li>
-                    <a href="./moradia.html" class="button1">Moradia</a>
-                </li>
-                <li>
-                    <a href="./alimentacao.html" class="button2">Alimentação</a>
-                </li>
-                <li>
-                    <a href="./transporte.html" class="button3">Transporte</a>
-                </li>
-                <li>
-                    <a href="./consumo.html" class="button4">Consumo</a>
-                </li>
-                <li>
-                    <a href="./residuos.html" class="button5">Resíduos</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <title>CONSUMO</title>
-</head>
-<body>
-    <header>
-        <button class="noturno" onclick="modoNoturno()">Modo noturno</button>
-    </header>
-    <main>
-        <div class="perguntas">
-            <h1>
-                Consumo
-            </h1>
-            <section>
-                <p>Quantas compras de grande volume você, ou sua família, fez no último ano? (ex: TV, computador, móveis, eletrodométicos, etc.)</p> 
-                <select id="box_consumo_p1">
-                            <option value="Escolha uma opção">Escolha uma opção</option>
-                            <option value="Nenhuma">Nenhuma</option>
-                            <option value="1 a 3">1 a 3</option>
-                            <option value="4 a 6">4 a 6</option>
-                            <option value="Mais de 6">Mais de 6</option>
-                        </select>
-                </section>
-                <section>
-                    <p>Ao comprar este tipo de produto, você costuma dar preferência a produtos de baixo impacto ambiental?</p>
-                        <div class="opcoes">
-                            <input type="radio" name="pergunta2" id="Sim">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./assests/css/reset.css">
+        <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap" rel="stylesheet">
+        <link href="assests/css/consumo.css" rel="stylesheet">
+        <title>Consumo</title>
+    </head>
+        <body>
+            <header>
+                <div class="estilo">
+                    <button class="noturno" onclick="modoNoturno()">Modo Escuro</button>
+                    <div class="nav" onclick="mobile()">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                    </div>
+                </div>
+                <div class="cabecalho">
+                    <ul class="ul">
+                        <li>
+                            <a href="./moradia.html" class="button1">Moradia</a>
+                        </li>
+                        <li>
+                            <a href="./alimentacao.html" class="button2">Alimentação</a>
+                        </li>
+                        <li>
+                            <a href="./transporte.html" class="button3">Transporte</a>
+                        </li>
+                        <li>
+                            <a href="./consumo.html" class="button4">Consumo</a>
+                        </li>
+                        <li>
+                            <a href="./residuos.html" class="button5">Resíduos</a>
+                        </li>
+                        <li class="logo oculta">
+                            <a href="#"><img src="./assests/img/logo.png" alt="Logo Pegada Ecológica" ></a>
+                        </li>
+                    </ul>
+                </div>
+            </header>
+        <main>
+            <div class="perguntas">
+                <h1>
+                    Consumo
+                </h1>
+                <p>
+                    Quantas compras de grande volume você, ou sua família,
+                    fez no último ano? (ex: TV, computador, móveis, eletrodométicos, etc.)
+                </p>
+                <select id="consumo_p1">
+                    <option value="Escolha uma opção">Escolha uma opção</option>
+                    <option value="Nenhuma">Nenhuma</option>
+                    <option value="1 a 3">1 a 3</option>
+                    <option value="4 a 6">4 a 6</option>
+                    <option value="Mais de 6">Mais de 6</option>
+                </select>
+                <p>
+                    Ao comprar este tipo de produto, você
+                    costuma dar preferência a produtos de baixo impacto ambiental?
+                </p>
+                <div class="opcoes">
+                    <ul>
+                        <li>
+                            <input type="radio" name="pergunta3" id="Sim">
                             <label for="Sim">Sim</label>
-                            <input type="radio" name="pergunta2" id="Nao">
-                            <label for="Nao">Não</label>
-                </section>
+                        </li>
+                        <li>
+                          <input type="radio" name="pergunta3" id="Nao">
+                          <label for="Nao">Não</label>
+                        </li>
+                    </ul>
+                </div>
+
                 <div class="proximo">
-                    <button onclick="resultados">Próximo</button>
+                    <button onclick="resultado()"><a href="./residuos.html">Próximo</a></button>
                 </div>
             </div>
-    </main>
-<footer>
-    <figure>
-        <img class="logo" src="./assets/img/logo.png" alt="Logo">
-    </figure> 
-    <section class="texto_rodape">
-        <div>
-            <h3>Projeto Integrador - Turma 05.2021.0107</h3>
-                <p>Esta calculadora foi elaborada para fins didáticos do curso de programação. Para saber mais sobre o cálculo de pegada ecológica e consultar plataformas mais completas, clique <a href="">aqui</a>.</p><!--falta colocar o link da página de ONGs e sites de calculadoras -->
-                <br>
-                <p>Site desenvolvido pelos alunos do curso de Programção Web do SENAC Minas - Unidade Sete Lagoas. Este curso faz parte do <a href="https://www.mg.senac.br/Paginas/minas-programando.aspx">Projeto Minas Programando</a>.
-                </p>
-        </div>
+        </main>
+        <footer>
+          <figure>
+      <img class="logo_rodape" src="assests/img/logo.png" alt="Logo">
+  </figure>
+  <section class="texto_rodape">
+      <div>
+          <h2 class="text2">Projeto Integrador - Turma 05.2021.0107</h2>
+              <a>Esta calculadora foi elaborada para fins didáticos do curso de programação. Para saber mais sobre o cálculo de pegada ecológica e consultar plataformas mais completas, clique <a class="cor1" href="">aqui.<br></a></a>
+              <a>Site desenvolvido pelos alunos do curso de Programção Web do SENAC Minas - Unidade Sete Lagoas. Este curso faz parte do <a class="cor2" href="https://www.mg.senac.br/Paginas/minas-programando.aspx">Projeto Minas Programando.</a></a>
+      </div>
+  </section>
+  <section class="alunos_rodape">
+      <h2 class="text1">Desenvolvido por:</h2>
+      <ul>
+          <li>
+              Bianca Araújo | <a class="cor1" href="https://github.com/BrytanniADJ">GitHub</a> | <a class="cor2" href="https://www.linkedin.com/in/bianca-araújo-coelho-bia-b03b3b205/">Linkedin</a>
+          </li>
+          <li>
+              Cláudia Aguilar | <a class="cor1" href="https://github.com/claudiaapj">GitHub</a> | <a class="cor2" href="https://www.linkedin.com/in/claudiaaguilarpaixao/">Linkedin</a>
+          </li>
+          <li>
+              Gleiton | <a class="cor1" href="https://github.com/gleitons">GitHub</a> | <a class="cor2" href="https://www.linkedin.com/in/gleiton/">Linkedin</a>
+           </li>
+           <li>
+              Luíza Araújo | <a class="cor1" href="https://github.com/lh-ude">GitHub</a> | <a class="cor2" href="https://br.linkedin.com/in/luiza-helena-ude-goddard-ara%C3%BAjo-b202a9a0">Linkedin</a>
+           </li>
+           <li>
+              Mariane Barbosa | <a class="cor1" href="https://github.com/marianibarbosa">GitHub</a> | <a class="cor2" href="https://br.linkedin.com/in/marianibarbosa">Linkedin</a>
+           </li>
+           <li>
+              Michelle Andrade | <a class="cor1" href="https://github.com/MichelleAndrade">GitHub</a> | <a class="cor2" href="#">Linkedin</a>
+           </li>
+           <li>
+              Pedro Gabriel | <a class="cor1" href="https://github.com/PedroProgramador02">GitHub</a> | <a class="cor2" href="#">Linkedin</a>
+           </li>
+           <li>
+              Sávio Francisco | <a class="cor1" href="https://github.com/Savio-Fr">GitHub</a> | <a class="cor2" href="https://www.linkedin.com/in/s%C3%A1vio-francisco-7aa431210/">Linkedin</a>
+           </li>
+           <h2 class="text1">Professor:</h2>
+           <li>
+              Wisley Alves | <a class="cor1" href="https://github.com/wistech7l">GitHub</a> | <a class="cor2" href="https://www.linkedin.com/in/wisley-j-alves-87253b5a/">Linkedin</a>
+           </li>
+         </ul>
     </section>
-    <section class="alunos_rodape">
-        <h3>Desenvolvido por:</h3>
-        <ul>
-            <li>
-                Bianca Araújo | <a class="cor1" href="https://github.com/BrytanniADJ">GitHub</a> | <a class="cor2" href="https://www.linkedin.com/in/bianca-araújo-coelho-bia-b03b3b205/">Linkedin</a>
-            </li>
-            <li>
-                Cláudia Aguilar | <a class="cor1" href="https://github.com/claudiaapj">GitHub</a> | <a class="cor2" href="https://www.linkedin.com/in/claudiaaguilarpaixao/">Linkedin</a>
-            </li>
-            <li>
-                Gleiton | <a class="cor1" href="https://github.com/gleitons">GitHub</a> | <a class="cor2" href="https://www.linkedin.com/in/gleiton/">Linkedin</a>
-             </li>
-             <li>
-                Luíza Araújo | <a class="cor1" href="https://github.com/lh-ude">GitHub</a> | <a class="cor2" href="https://br.linkedin.com/in/luiza-helena-ude-goddard-ara%C3%BAjo-b202a9a0">Linkedin</a>
-             </li>
-             <li>
-                Mariane Barbosa | <a class="cor1" href="https://github.com/marianibarbosa">GitHub</a> | <a class="cor2" href="https://br.linkedin.com/in/marianibarbosa">Linkedin</a>
-             </li>
-             <li>
-                Michelle Andrade | <a class="cor1" href="https://github.com/MichelleAndrade">GitHub</a> | <a class="cor2" href="#">Linkedin</a>
-             </li>
-             <li>
-                Pedro Gabriel | <a class="cor1" href="https://github.com/PedroProgramador02">GitHub</a> | <a class="cor2" href="#">Linkedin</a>
-             </li>
-             <li>
-                Sávio Francisco | <a class="cor1" href="https://github.com/Savio-Fr">GitHub</a> | <a class="cor2" href="https://www.linkedin.com/in/s%C3%A1vio-francisco-7aa431210/">Linkedin</a>
-             </li>
-             <h2 class="text1">Professor:</h2>
-             <li>
-                Wisley Alves | <a class="cor1" href="https://github.com/wistech7l">GitHub</a> | <a class="cor2" href="https://www.linkedin.com/in/wisley-j-alves-87253b5a/">Linkedin</a>
-             </li>
-           </ul>
-    </section>
-</footer>
-<script src="./assets/js/consumo.js"></script>
-</body>
-</html>           
+        </footer>
+        <script src="./assests/js/consumo.js"></script>
+        </body>
+    </html>
